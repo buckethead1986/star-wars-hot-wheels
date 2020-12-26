@@ -27,16 +27,6 @@ export default function SimpleContainer(props) {
   const classes = useStyles();
   console.log("value = ", props.value);
 
-  // const makeGridItems = (
-  //   <Grid container>
-  //     {[
-  //       ["this is the text", "first"],
-  //       [" this say something else", "second"],
-  //       ["and yet a third", "third"]
-  //     ].map((text, index) => <GridItem item xs={6} text={text} />)}
-  //   </Grid>
-  // );
-
   const makeSelectedGridItem = (
     <Grid container>
       {ships2.starWarsShips2
