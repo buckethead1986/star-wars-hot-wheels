@@ -139,14 +139,6 @@ export default function ResponsiveDrawer(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  // const [value, setValue] = React.useState("");
-  // const [filteredValue, setFilteredValue] = React.useState("");
-  //
-  // const handleDrawerData = drawerData => {
-  //   console.log(drawerData);
-  //   setFilteredValue(drawerData != undefined ? drawerData : "");
-  // };
-
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -199,12 +191,14 @@ export default function ResponsiveDrawer(props) {
           </IconButton>
         </div>
         <Divider />
+        <Searchbar handleSearchbarData={props.handleSearchbarData} />
+        {/*Fix margins for searchbar inside drawer */}
+        <Divider />
         <DrawerList
           handleDrawerData={props.handleDrawerData}
           primary="Year"
           list={["2016", "2017", "2018", "2019"]}
         />
-
         <DrawerList
           handleDrawerData={props.handleDrawerData}
           primary="Ship Type"
@@ -219,7 +213,6 @@ export default function ResponsiveDrawer(props) {
             "TIE Fighter"
           ]}
         />
-
         <Divider />
       </Drawer>
 

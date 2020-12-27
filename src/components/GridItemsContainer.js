@@ -3,9 +3,10 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
+import Divider from "@material-ui/core/Divider";
 
 import StarWarsGridItem from "./StarWarsGridItem.js";
-import starWarsShips from "./Playground.js";
+// import starWarsShips from "./Playground.js";
 import ships2 from "./StarWarsShips.js";
 
 import Paper from "@material-ui/core/Paper";
@@ -91,7 +92,9 @@ export default function SimpleContainer(props) {
         >
           <Grid container>
             {makeSelectedGridItem}
-
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>Divider</Paper>
+            </Grid>
             {makeStarWarsGridItems}
           </Grid>
         </Typography>

@@ -1,5 +1,5 @@
 import React from "react";
-import Drawer2 from "./Drawer2.js";
+import Drawer from "./Drawer.js";
 import GridItemsContainer from "./GridItemsContainer.js";
 
 export default function Container() {
@@ -15,7 +15,7 @@ export default function Container() {
   };
   return (
     <div>
-      <Drawer2
+      <Drawer
         handleDrawerData={handleDrawerData}
         handleSearchbarData={handleSearchbarData}
       />
