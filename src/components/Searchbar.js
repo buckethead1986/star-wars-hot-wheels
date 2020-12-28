@@ -57,11 +57,6 @@ const searchbarRegex = string => {
   let lowerCaseString = string != undefined ? string.toLowerCase() : "";
   let variable = lowerCaseString.substring(0, 1);
   let regexChecker = dynamicRegexCreator(lowerCaseString, variable);
-  // const xwing = /^x.?w/; // function made to create dynamic regex based on searchbar input. I assume they got the
-  // const ywing = /^y.?w/; // letter right for x, y, u, b, a wing, but misspelled it xwing, x=wing, x wing, etc.
-  // const bwing = /^b.?w/;
-  // const awing = /^a.?w/;
-  // const uwing = /^u.?w/;
   const atst = /^at.?st/;
   const atat = /^at.?at/; //simplified version of below with string set to lowercase
   // const atat = /^[Aa][Tt].?[Aa][Tt]/ //matches misspellings of AT-AT. Capital or lowercase 'AT's, with any character or no character in between
@@ -100,7 +95,6 @@ export default function SearchBox(props) {
           <TextField
             classes={{ root: classes.root }}
             style={{
-              width: 300,
               position: "relative"
             }}
             {...params}
