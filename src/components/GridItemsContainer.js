@@ -95,7 +95,7 @@ export default function SimpleContainer(props) {
             <Grid item xs={12}>
               <Paper className={classes.paper}>Divider</Paper>
             </Grid>
-            {makeStarWarsGridItems}
+            {makeSelectedGridItem}
           </Grid>
         </Typography>
       </Container>
