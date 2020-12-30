@@ -8,10 +8,10 @@ export default function Container() {
 
   const handleDrawerData = drawerData => {
     console.log(drawerData);
-    setFilteredValue(drawerData != undefined ? drawerData : "");
+    setFilteredValue(drawerData !== undefined ? drawerData : "");
   };
   const handleSearchbarData = searchbarData => {
-    setValue(searchbarData != undefined ? searchbarData : "");
+    setValue(searchbarData !== undefined ? searchbarData : "");
   };
   return (
     <div>

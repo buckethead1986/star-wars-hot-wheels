@@ -64,7 +64,7 @@ export default function SearchBox(props) {
       onChange={(event, value) => {
         props.handleSearchbarData(searchbarRegex(value));
       }}
-      options={starWarsShips.starWarsShips2.map(ship => ship.name)}
+      options={starWarsShips.starWarsShips.map(ship => ship.name)}
       renderInput={params => (
         <div>
           <TextField

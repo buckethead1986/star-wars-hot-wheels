@@ -1,4 +1,4 @@
-export const starWarsShips2 = [
+export const starWarsShips = [
   {
     id: 0,
     name: "Obi-Wan Kenobi's Jedi Starfighter",
@@ -950,4 +950,4 @@ export const starWarsShips2 = [
   }
 ];
 
-export default { starWarsShips2 };
+export default { starWarsShips };
