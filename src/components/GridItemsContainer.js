@@ -4,10 +4,8 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
-
 import StarWarsGridItem from "./StarWarsGridItem.js";
 import starWarsShips from "./StarWarsShips.js";
-
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/Styles";
 

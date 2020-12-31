@@ -3,9 +3,8 @@ import React from "react";
 import { fade, makeStyles, useTheme } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import SearchIcon from "@material-ui/icons/Search";
-import InputBase from "@material-ui/core/InputBase";
-
+// import SearchIcon from "@material-ui/icons/Search";
+// import InputBase from "@material-ui/core/InputBase";
 import starWarsShips from "./StarWarsShips.js";
 
 const useStyles = makeStyles(theme => ({
@@ -29,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 
 const searchbarRegex = string => {
   //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
-  let lowerCaseString = string != undefined ? string.toLowerCase() : "";
+  let lowerCaseString = string !== undefined ? string.toLowerCase() : "";
   let variable = lowerCaseString.substring(0, 1);
   let regexChecker = dynamicRegexCreator(lowerCaseString, variable);
   const atst = /^at.?st/;
