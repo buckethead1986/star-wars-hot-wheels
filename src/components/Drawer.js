@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { fade, makeStyles, useTheme } from "@material-ui/core/styles";
+import { fade, makeStyles, useTheme } from "@material-ui/core/styles"; //fade never used, remove in final
 import Drawer from "@material-ui/core/Drawer";
 import DrawerList from "./DrawerList.js";
 import CssBaseline from "@material-ui/core/CssBaseline";

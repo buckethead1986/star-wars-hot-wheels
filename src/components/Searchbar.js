@@ -3,9 +3,7 @@ import React from "react";
 import { fade, makeStyles, useTheme } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-// import SearchIcon from "@material-ui/icons/Search";
-// import InputBase from "@material-ui/core/InputBase";
-import starWarsShips from "./StarWarsShips.js";
+import { starWarsShips } from "./StarWarsShips.js";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -54,7 +52,7 @@ const dynamicRegexCreator = (lowerCaseString, variable) => {
 
 export default function SearchBox(props) {
   const classes = useStyles();
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <Autocomplete
@@ -63,7 +61,7 @@ export default function SearchBox(props) {
       onChange={(event, value) => {
         props.handleSearchbarData(searchbarRegex(value));
       }}
-      options={starWarsShips.starWarsShips.map(ship => ship.name)}
+      options={starWarsShips.map(ship => ship.name)}
       renderInput={params => (
         <div>
           <TextField

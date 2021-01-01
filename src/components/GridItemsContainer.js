@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import StarWarsGridItem from "./StarWarsGridItem.js";
-import starWarsShips from "./StarWarsShips.js";
+import { starWarsShips } from "./StarWarsShips.js";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/Styles";
 
@@ -28,13 +28,13 @@ export default function SimpleContainer(props) {
 
   const makeSelectedGridItems = (
     <Grid container>
-      {starWarsShips.starWarsShips
+      {starWarsShips
         .filter(item =>
           item.name.toLowerCase().includes(props.value.toLowerCase())
         )
         .map((ship, index) => (
-          <Grid item xs={12} xs={6}>
-            <StarWarsGridItem ship={ship}>xs=12</StarWarsGridItem>
+          <Grid item xs={12} sm={6}>
+            <StarWarsGridItem ship={ship}>xs=12 sm=6</StarWarsGridItem>
           </Grid>
         ))}
     </Grid>
@@ -42,8 +42,8 @@ export default function SimpleContainer(props) {
 
   const makeStarWarsGridItems = (
     <Grid container>
-      {starWarsShips.starWarsShips.map((ship, index) => (
-        <Grid item xs={12} xs={6}>
+      {starWarsShips.map((ship, index) => (
+        <Grid item xs={12} sm={6}>
           <StarWarsGridItem ship={ship}>xs=12</StarWarsGridItem>
         </Grid>
       ))}
