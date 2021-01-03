@@ -102,7 +102,7 @@ export const starWarsShips = [
     name: "Star Destroyer",
     year: 2015,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171206012121",
+      "https://media.mattel.com/root/Images/MainImage/cgw57_hwsw_starship_star_destro_xxx.jpg",
     model: "CGW57",
     pack: "Single",
     type: "Capital",
@@ -134,7 +134,7 @@ export const starWarsShips = [
     name: "Y-Wing Starfighter",
     year: 2015,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest?cb=20150627084020",
+      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest/scale-to-width-down/340?cb=20150627084020",
     model: "CGW59",
     pack: "Single",
     type: "Fighter",

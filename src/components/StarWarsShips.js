@@ -102,7 +102,7 @@ export const starWarsShips = [
     name: "Star Destroyer",
     year: 2015,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171206012121",
+      "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20171206012121",
     model: "CGW57",
     pack: "Single",
     type: "Capital",
@@ -134,7 +134,7 @@ export const starWarsShips = [
     name: "Y-Wing Starfighter",
     year: 2015,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest?cb=20150627084020",
+      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest/scale-to-width-down/340?cb=20150627084020",
     model: "CGW59",
     pack: "Single",
     type: "Fighter",
@@ -348,7 +348,7 @@ export const starWarsShips = [
     name: "ARC-170 Starfighter",
     year: 2016,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest?cb=20171001004433",
+      "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest/scale-to-width-down/800?cb=20171001004433",
     model: "DMP65",
     pack: "Single",
     type: "Fighter",
@@ -381,7 +381,7 @@ export const starWarsShips = [
     name: "Speeder Bike",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/d/d4/Speeder_Bike_%28DMP66%29_01.jpeg/revision/latest/scale-to-width-down/340?cb=20180319001739",
+      "https://static.wikia.nocookie.net/hotwheels/images/d/d4/Speeder_Bike_%28DMP66%29_01.jpeg/revision/latest/scale-to-width-down/450?cb=20180319001739",
     model: "DMP66",
     pack: "Single",
     type: "Speeder",
@@ -403,7 +403,7 @@ export const starWarsShips = [
     name: "Millenium Falcon",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/d/de/Millenium_Falcon.jpg/revision/latest?cb=20150627083911",
+      "https://static.wikia.nocookie.net/hotwheels/images/c/c1/DXX45_Millennium_Falcon.jpg/revision/latest/scale-to-width-down/565?cb=20170905084521",
     model: "DXX45",
     pack: "Single",
     type: "Fighter",
@@ -456,7 +456,7 @@ export const starWarsShips = [
     name: "Tantive IV",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/9/90/Tantive_IV_%28CGW61%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171015013320",
+      "https://static.wikia.nocookie.net/hotwheels/images/9/90/Tantive_IV_%28CGW61%29_01.jpg/revision/latest/scale-to-width-down/284?cb=20171015013320",
     model: "DXX52",
     pack: "Single",
     type: "Capital",
@@ -500,7 +500,7 @@ export const starWarsShips = [
     name: "Star Destroyer",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/a/a1/Star_Destroyer_%28DXX57%29_01.jpeg/revision/latest/scale-to-width-down/340?cb=20171206012224",
+      "https://static.wikia.nocookie.net/hotwheels/images/a/a1/Star_Destroyer_%28DXX57%29_01.jpeg/revision/latest/scale-to-width-down/450?cb=20171206012224",
     model: "DXX57",
     pack: "Single",
     type: "Capital",
@@ -617,7 +617,7 @@ export const starWarsShips = [
     name: "A-Wing Fighter",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/3/31/Resistance_A-wing_Fighter_%28FBB07%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171015014148",
+      "https://static.wikia.nocookie.net/hotwheels/images/3/34/FBB07_Resistance_A-wing_Fighter.jpg/revision/latest/scale-to-width-down/565?cb=20170905083804",
     model: "FBB07",
     pack: "Single",
     type: "Fighter",
@@ -638,8 +638,7 @@ export const starWarsShips = [
     id: 59,
     name: "Y-Wing Fighter",
     year: 2017,
-    src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest?cb=20150627084020",
+    src: "https://live.staticflickr.com/4485/38138930471_29bd4e0a79_b.jpg",
     model: "FBB39",
     pack: "Single",
     type: "Fighter",
@@ -865,7 +864,7 @@ export const starWarsShips = [
     name: "Landspeeder",
     year: 2018,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/0/0c/Concept_Landspeeder_%28FJF22%29_02.jpg/revision/latest/scale-to-width-down/340?cb=20200426192431",
+      "https://static.wikia.nocookie.net/hotwheels/images/0/0c/Concept_Landspeeder_%28FJF22%29_02.jpg/revision/latest/scale-to-width-down/650?cb=20200426192431",
     model: "FJF22",
     pack: "Single",
     type: "Speeder",
