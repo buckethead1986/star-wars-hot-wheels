@@ -14,6 +14,8 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Searchbar from "./Searchbar.js";
 
+import GridItemsContainer from "./GridItemsContainer.js";
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -171,6 +173,10 @@ export default function ResponsiveDrawer(props) {
         <div className={classes.drawerHeader} />
 
         <Typography paragraph>Filler Text</Typography>
+        <GridItemsContainer
+          filteredValue={props.filteredValue}
+          value={props.value}
+        />
       </main>
     </div>
   );

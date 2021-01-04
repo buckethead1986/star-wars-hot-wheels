@@ -13,13 +13,15 @@ export default function Container() {
   const handleSearchbarData = searchbarData => {
     setValue(searchbarData !== undefined ? searchbarData : "");
   };
+  // <GridItemsContainer filteredValue={filteredValue} value={value} />
   return (
     <div>
       <Drawer
         handleDrawerData={handleDrawerData}
         handleSearchbarData={handleSearchbarData}
+        filteredValue={filteredValue}
+        value={value}
       />
-      <GridItemsContainer filteredValue={filteredValue} value={value} />
     </div>
   );
 }
