@@ -176,6 +176,8 @@ export default function ResponsiveDrawer(props) {
         <GridItemsContainer
           filteredValue={props.filteredValue}
           value={props.value}
+          selected={props.selected}
+          handleSelect={props.handleSelect}
         />
       </main>
     </div>

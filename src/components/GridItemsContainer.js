@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleContainer(props) {
   const classes = useStyles();
-  console.log("value = ", props.value);
+  // console.log("value = ", props.value);
 
   const makeSelectedGridItems = (
     <Grid container>
@@ -34,7 +34,13 @@ export default function SimpleContainer(props) {
         )
         .map((ship, index) => (
           <Grid item xs={12} sm={6}>
-            <StarWarsGridItem ship={ship}>xs=12 sm=6</StarWarsGridItem>
+            <StarWarsGridItem
+              ship={ship}
+              selected={props.selected}
+              handleSelect={props.handleSelect}
+            >
+              xs=12 sm=6
+            </StarWarsGridItem>
           </Grid>
         ))}
     </Grid>
