@@ -43,8 +43,8 @@ export default function NestedGrid(props) {
             props.handleSelect(props.ship.id);
           }}
         >
-          <Grid container spacing={1}>
-            <Grid item xs={4}>
+          <Grid container direction="row">
+            <Grid item>
               <ButtonBase
                 className={
                   props.selected === props.ship.id

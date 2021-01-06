@@ -56,7 +56,7 @@ export default function SearchBox(props) {
 
   return (
     <Autocomplete
-      id="free-solo-demo"
+      id="star-wars-searchbar"
       freeSolo
       onChange={(event, value) => {
         props.handleSearchbarData(searchbarRegex(value));
