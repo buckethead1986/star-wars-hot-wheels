@@ -1,14 +1,15 @@
 import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import { makeStyles } from "@material-ui/core/Styles";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import StarWarsGridItem from "./StarWarsGridItem.js";
+import StarWarsDataGrid from "./StarWarsDataGrid.js";
 import LargeStarWarsGridItem from "./LargeStarWarsGridItem.js";
 import { starWarsShips } from "./StarWarsShips.js";
 import Paper from "@material-ui/core/Paper";
-import { makeStyles } from "@material-ui/core/Styles";
 
 //'paper' class only used for divider, remove in final
 const useStyles = makeStyles(theme => ({
@@ -87,6 +88,12 @@ export default function SimpleContainer(props) {
                 Divider
               </Paper>
             </Grid>
+            <StarWarsDataGrid
+              filteredValue={props.filteredValue}
+              value={props.value}
+              selected={props.selected}
+              handleSelect={props.handleSelect}
+            />
             {makeLargeStarWarsGridItems}
           </Grid>
         </Typography>
