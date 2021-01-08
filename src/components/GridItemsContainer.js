@@ -40,9 +40,7 @@ export default function SimpleContainer(props) {
               ship={ship}
               selected={props.selected}
               handleSelect={props.handleSelect}
-            >
-              xs=12 sm=6
-            </StarWarsGridItem>
+            />
           </Grid>
         ))}
     </Grid>
@@ -75,6 +73,13 @@ export default function SimpleContainer(props) {
             <Grid item xs={12}>
               <Paper className={classes.paper}>Divider</Paper>
             </Grid>
+
+            <StarWarsDataGrid
+              filteredValue={props.filteredValue}
+              value={props.value}
+              selected={props.selected}
+              handleSelect={props.handleSelect}
+            />
             <Grid item xs={12}>
               <Paper
                 style={{
@@ -88,12 +93,6 @@ export default function SimpleContainer(props) {
                 Divider
               </Paper>
             </Grid>
-            <StarWarsDataGrid
-              filteredValue={props.filteredValue}
-              value={props.value}
-              selected={props.selected}
-              handleSelect={props.handleSelect}
-            />
             {makeLargeStarWarsGridItems}
           </Grid>
         </Typography>
