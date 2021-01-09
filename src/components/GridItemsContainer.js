@@ -80,6 +80,7 @@ export default function SimpleContainer(props) {
               selected={props.selected}
               handleSelect={props.handleSelect}
             />
+
             <Grid item xs={12}>
               <Paper
                 style={{
