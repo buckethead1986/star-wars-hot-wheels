@@ -163,6 +163,11 @@ export default function ResponsiveDrawer(props) {
           ]}
         />
         <Divider />
+        <DrawerList
+          handleDrawerData={props.handleDrawerData}
+          primary="Faction"
+          list={["Rebellion", "Empire", "Smuggler", "Bounty Hunter"]}
+        />
       </Drawer>
 
       <main

@@ -38,7 +38,8 @@ export default function DataGridDemo(props) {
       flex: 0.5
     },
     { field: "pack", headerName: "Pack Type", flex: 0.5 },
-    { field: "type", headerName: "Ship Type", flex: 0.5 }
+    { field: "type", headerName: "Ship Type", flex: 0.5 },
+    { field: "special", headerName: "Extra", flex: 0.5 }
   ];
 
   return (
