@@ -3,7 +3,6 @@ import { DataGrid } from "@material-ui/data-grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { starWarsShips } from "./StarWarsShips.js";
 import Button from "@material-ui/core/Button";
-// import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles(theme => ({
   img: {
@@ -43,14 +42,12 @@ export default function DataGridDemo(props) {
   ];
 
   return (
-    <div style={{ height: 400, width: "100%" }}>
-      <DataGrid
-        rows={starWarsShips}
-        columns={columns}
-        checkboxSelection
-        autoHeight
-        rowHeight={128}
-      />
-    </div>
+    <DataGrid
+      rows={starWarsShips}
+      columns={columns}
+      checkboxSelection
+      autoHeight
+      rowHeight={128}
+    />
   );
 }
