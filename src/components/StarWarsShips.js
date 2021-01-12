@@ -8,7 +8,7 @@ export const starWarsShips = [
     model: "CGW65",
     pack: "Single",
     type: "Fighter",
-    special: ""
+    special: "Eta-2 Actis Class Interceptor"
   },
   {
     id: 1,
@@ -286,7 +286,7 @@ export const starWarsShips = [
     model: "DNP18",
     pack: "Single",
     type: "Fighter",
-    special: ""
+    special: "Modified Eta-2 Actis Class Interceptor"
   },
   {
     id: 27,

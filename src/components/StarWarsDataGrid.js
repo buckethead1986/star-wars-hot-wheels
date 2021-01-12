@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { starWarsShips } from "./StarWarsShips.js";
@@ -15,6 +16,16 @@ const useStyles = makeStyles(theme => ({
 
 export default function DataGridDemo(props) {
   const classes = useStyles();
+  const [navigationHeight, setNavigationHeight] = useState(undefined);
+  const navigation = React.createRef();
+  console.log(navigation, navigationHeight);
+
+  useEffect(() => {
+    //   setNavigationHeight(navigation.current.offsetHeight);
+    // }, []);
+    console.log(navigation.current.offsetHeight);
+  });
+
   const columns = [
     {
       field: "src",
@@ -42,12 +53,16 @@ export default function DataGridDemo(props) {
   ];
 
   return (
-    <DataGrid
-      rows={starWarsShips}
-      columns={columns}
-      checkboxSelection
-      autoHeight
-      rowHeight={128}
-    />
+    <div ref={navigation} style={{ height: 400, backgroundColor: "white" }}>
+      <DataGrid
+        rows={starWarsShips}
+        columns={columns}
+        checkboxSelection
+        autoHeight
+        rowHeight={128}
+        showCellRightBorder={true}
+        showColumnRightBorder={true}
+      />
+    </div>
   );
 }
