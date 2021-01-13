@@ -18,13 +18,20 @@ export default function DataGridDemo(props) {
   const classes = useStyles();
   const [navigationHeight, setNavigationHeight] = useState(undefined);
   const navigation = React.createRef();
-  console.log(navigation, navigationHeight);
+  // console.log(navigation, navigationHeight);
 
-  useEffect(() => {
-    //   setNavigationHeight(navigation.current.offsetHeight);
-    // }, []);
-    console.log(navigation.current.offsetHeight);
-  });
+  // componentDidMount() {
+  //   console.log(navigation.current.offsetHeight)
+  // }
+  useEffect(
+    () => {
+      if (navigation.current) {
+        // console.log(navigation.current.offsetHeight);
+        setNavigationHeight(navigation.current.offsetHeight);
+      }
+    },
+    [navigation]
+  );
 
   const columns = [
     {
@@ -53,8 +60,9 @@ export default function DataGridDemo(props) {
   ];
 
   return (
-    <div ref={navigation} style={{ height: 400, backgroundColor: "white" }}>
+    <div style={{ height: navigationHeight, backgroundColor: "white" }}>
       <DataGrid
+        ref={navigation}
         rows={starWarsShips}
         columns={columns}
         checkboxSelection
