@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as react from "react";
 import { useEffect, useState } from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { makeStyles } from "@material-ui/core/styles";
@@ -16,22 +16,18 @@ const useStyles = makeStyles(theme => ({
 
 export default function DataGridDemo(props) {
   const classes = useStyles();
-  const [navigationHeight, setNavigationHeight] = useState(undefined);
-  const navigation = React.createRef();
-  // console.log(navigation, navigationHeight);
+  // const [navigationHeight, setNavigationHeight] = useState(undefined);
+  // const navigation = React.createRef();
 
-  // componentDidMount() {
-  //   console.log(navigation.current.offsetHeight)
-  // }
-  useEffect(
-    () => {
-      if (navigation.current) {
-        // console.log(navigation.current.offsetHeight);
-        setNavigationHeight(navigation.current.offsetHeight);
-      }
-    },
-    [navigation]
-  );
+  // useEffect(
+  //   () => {
+  //     if (navigation.current) {
+  //       console.log(navigation.current.offsetHeight);
+  //       setNavigationHeight(navigation.current.offsetHeight);
+  //     }
+  //   },
+  //   [navigation]
+  // );
 
   const columns = [
     {
@@ -59,10 +55,18 @@ export default function DataGridDemo(props) {
     { field: "special", headerName: "Extra", flex: 0.5 }
   ];
 
+  const gridWrapperRef = react.useRef(null);
+  react.useLayoutEffect(() => {
+    const gridDiv = gridWrapperRef.current;
+    if (gridDiv) {
+      const gridEl: HTMLDivElement = gridDiv.querySelector("div");
+      gridEl.style.height = "";
+    }
+  });
+
   return (
-    <div style={{ height: navigationHeight, backgroundColor: "white" }}>
+    <div ref={gridWrapperRef}>
       <DataGrid
-        ref={navigation}
         rows={starWarsShips}
         columns={columns}
         checkboxSelection

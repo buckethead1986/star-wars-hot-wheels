@@ -52,7 +52,6 @@ const dynamicRegexCreator = (lowerCaseString, variable) => {
 
 export default function SearchBox(props) {
   const classes = useStyles();
-  // const theme = useTheme();
 
   return (
     <Autocomplete
