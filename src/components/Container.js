@@ -8,7 +8,6 @@ export default function Container() {
   const [filteredValue, setFilteredValue] = React.useState("");
 
   const handleDrawerData = drawerData => {
-    // console.log(drawerData);
     setFilteredValue(drawerData !== undefined ? drawerData : "");
   };
   const handleSearchbarData = searchbarData => {
@@ -17,7 +16,6 @@ export default function Container() {
 
   //toggles bigger paper view for selected ship
   const handleSelect = clickId => {
-    // console.log(clickId);
     setSelected(selected === clickId ? "" : clickId);
   };
   // <GridItemsContainer filteredValue={filteredValue} value={value} />

@@ -16,18 +16,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function DataGridDemo(props) {
   const classes = useStyles();
-  // const [navigationHeight, setNavigationHeight] = useState(undefined);
-  // const navigation = React.createRef();
-
-  // useEffect(
-  //   () => {
-  //     if (navigation.current) {
-  //       console.log(navigation.current.offsetHeight);
-  //       setNavigationHeight(navigation.current.offsetHeight);
-  //     }
-  //   },
-  //   [navigation]
-  // );
 
   const columns = [
     {
