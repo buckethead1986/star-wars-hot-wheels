@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleContainer(props) {
   const classes = useStyles();
+  console.log(props);
 
   const makeSelectedGridItems = (
     <Grid container>
@@ -33,6 +34,25 @@ export default function SimpleContainer(props) {
         .filter(item =>
           item.name.toLowerCase().includes(props.value.toLowerCase())
         )
+        .map((ship, index) => (
+          <Grid item xs={12} sm={6}>
+            <StarWarsGridItem
+              ship={ship}
+              selected={props.selected}
+              handleSelect={props.handleSelect}
+            />
+          </Grid>
+        ))}
+      <Grid item xs={12}>
+        <Paper className={classes.paper}>Divider</Paper>
+      </Grid>
+    </Grid>
+  );
+
+  const makeShipTypeGridItems = (
+    <Grid container>
+      {starWarsShips
+        .filter(item => item.type === props.selectedShipType)
         .map((ship, index) => (
           <Grid item xs={12} sm={6}>
             <StarWarsGridItem
@@ -70,8 +90,9 @@ export default function SimpleContainer(props) {
           component="div"
           style={{ backgroundColor: "#cfe8fc", height: "100%" }}
         >
+          {makeShipTypeGridItems}
           <StarWarsDataGrid
-            filteredValue={props.filteredValue}
+            selectedShipType={props.selectedShipType}
             value={props.value}
             selected={props.selected}
             handleSelect={props.handleSelect}

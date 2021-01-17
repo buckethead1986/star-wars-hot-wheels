@@ -105,7 +105,7 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20171206012121",
     model: "CGW57",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -221,7 +221,7 @@ export const starWarsShips = [
     src: "https://i.ebayimg.com/images/g/2dEAAOSw-CpX~81Z/s-l600.jpg",
     model: "CGW93",
     pack: "2-Pack",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -263,7 +263,7 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7//wcsstore/MattelCAS/CKJ72_Viewer?storeId=10151&SKU=CKJ72",
     model: "CKJ72",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -307,7 +307,7 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=CGW61",
     model: "CGW61",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -459,7 +459,7 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/9/90/Tantive_IV_%28CGW61%29_01.jpg/revision/latest/scale-to-width-down/284?cb=20171015013320",
     model: "DXX52",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -503,7 +503,7 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/a/a1/Star_Destroyer_%28DXX57%29_01.jpeg/revision/latest/scale-to-width-down/450?cb=20171206012224",
     model: "DXX57",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -631,7 +631,7 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/81a8de5f-2b7c-40b9-82cd-6cbfc7a8ca25_1.79c8883d86fae1f25e70c118e6bb1457.jpeg",
     model: "FBB30",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -727,7 +727,7 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/71PAzvN2V2L.jpg",
     model: "FND10",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: "40th Anniversary"
   },
   {
@@ -803,7 +803,7 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81Id%2BovS2cL._AC_SY355_.jpg",
     model: "FBX12",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -834,7 +834,7 @@ export const starWarsShips = [
     src: "https://images.mattel.com/scene7/FJF25_01?$oslarge$&wid=549&hei=549",
     model: "FJF25",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: ""
   },
   {
@@ -889,7 +889,7 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71XwzEfX6JL._AC_SL1500_.jpg",
     model: "FJF21",
     pack: "Single",
-    type: "Capital",
+    type: "Capital Ship",
     special: "Concept"
   },
   {

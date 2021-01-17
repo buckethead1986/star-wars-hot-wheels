@@ -39,7 +39,7 @@ export default function DrawerList(props) {
     }
 
     setChecked(newChecked);
-    props.handleDrawerData(item);
+    props.handleSelectedShipType(item);
   };
 
   const makeListItems = (
@@ -49,7 +49,7 @@ export default function DrawerList(props) {
         return (
           <ListItem
             button
-            onClick={event => props.handleDrawerData(item)}
+            onClick={event => props.handleSelectedShipType(item)}
             key={item}
             className={classes.nested}
           >

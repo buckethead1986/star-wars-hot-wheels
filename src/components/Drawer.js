@@ -144,12 +144,12 @@ export default function ResponsiveDrawer(props) {
         {/*Fix margins for searchbar inside drawer */}
         <Divider />
         <DrawerList
-          handleDrawerData={props.handleDrawerData}
+          handleSelectedShipType={props.handleSelectedShipType}
           primary="Year"
-          list={["2016", "2017", "2018", "2019"]}
+          list={["2016", "2017", "2018", "2019", "2020"]}
         />
         <DrawerList
-          handleDrawerData={props.handleDrawerData}
+          handleSelectedShipType={props.handleSelectedShipType}
           primary="Ship Type"
           list={[
             "Capital Ship",
@@ -164,7 +164,7 @@ export default function ResponsiveDrawer(props) {
         />
         <Divider />
         <DrawerList
-          handleDrawerData={props.handleDrawerData}
+          handleSelectedShipType={props.handleSelectedShipType}
           primary="Faction"
           list={["Rebellion", "Empire", "Smuggler", "Bounty Hunter"]}
         />
@@ -179,7 +179,7 @@ export default function ResponsiveDrawer(props) {
 
         <Typography paragraph>Filler Text</Typography>
         <GridItemsContainer
-          filteredValue={props.filteredValue}
+          selectedShipType={props.selectedShipType}
           value={props.value}
           selected={props.selected}
           handleSelect={props.handleSelect}
