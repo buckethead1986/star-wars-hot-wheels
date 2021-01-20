@@ -8,9 +8,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71Cueb-pu6L._AC_SY450_.jpg",
     model: "CGW65",
     pack: "Single",
-    type: "Fighter",
     special: "Eta-2 Actis Class Interceptor",
-    faction: ""
+    keywords: "Jedi Fighter"
   },
   {
     id: 1,
@@ -20,9 +19,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81ZBEb-ptsL._AC_SY606_.jpg",
     model: "CKJ63",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Bounty Hunter Fighter"
   },
   {
     id: 2,
@@ -32,9 +30,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81A8MCd7YlL._AC_SX425_.jpg",
     model: "CGW69",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 3,
@@ -44,9 +41,8 @@ export const starWarsShips = [
       "https://media.mattel.com/root/Images/MainImage/cgw71_hot_wheels_star_wars_starship_vulture_droid_hot_wheels_star_wars_starship_vulture_droid_xxx.jpg",
     model: "CGW71",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: ""
   },
   {
     id: 4,
@@ -56,9 +52,8 @@ export const starWarsShips = [
       "https://cdn10.bigcommerce.com/s-r8yraidg/products/9900/images/9430/ghost__57736.1430445600.1280.1280.jpg?c=2",
     model: "CGW62",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Rebel Resistance Fighter"
   },
   {
     id: 5,
@@ -68,9 +63,8 @@ export const starWarsShips = [
       "https://wwwassets.pricespider.com/product_static/450/9438/9438871.png",
     model: "CGW56",
     pack: "Single",
-    type: "Fighter, Rebel",
     special: "",
-    faction: ""
+    keywords: "Rebel Millenium Falcon Fighter"
   },
   {
     id: 6,
@@ -80,9 +74,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=CGW70",
     model: "CGW70",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Republic Fighter"
   },
   {
     id: 7,
@@ -91,9 +84,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/81cFbVHMHGL.jpg",
     model: "CGW58",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Republic Fighter"
   },
   {
     id: 8,
@@ -103,9 +95,8 @@ export const starWarsShips = [
       "https://cdn10.bigcommerce.com/s-r8yraidg/products/9901/images/9431/snowspeeder__50670.1430445773.1280.1280.jpg?c=2",
     model: "CGW63",
     pack: "Single",
-    type: "Speeder, Rebel",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel Speeder"
   },
   {
     id: 9,
@@ -115,9 +106,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171206012121",
     model: "CGW57",
     pack: "Single",
-    type: "Capital Ship, Imperial",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Capital Ship"
   },
   {
     id: 10,
@@ -126,9 +116,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/81zRvVnwgZL.jpg",
     model: "CGW53",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 11,
@@ -138,9 +127,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/41paoWmpNgL._AC_SY400_.jpg",
     model: "CKR61",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel X-Wing Fighter"
   },
   {
     id: 12,
@@ -150,9 +138,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest/scale-to-width-down/340?cb=20150627084020",
     model: "CGW59",
     pack: "Single",
-    type: "Fighter, Y-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel Y-Wing Fighter"
   },
   {
     id: 13,
@@ -162,9 +149,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71UI1YgXCwL._AC_SL1486_.jpg",
     model: "CKJ65",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Resistance Fighter"
   },
   {
     id: 14,
@@ -174,9 +160,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/51fwRo9PH9L._AC_SY400_.jpg",
     model: "CKJ66",
     pack: "Single",
-    type: "Fighter, Rebel",
     special: "",
-    faction: ""
+    keywords: "Rebel Millenium Falcon Fighter"
   },
   {
     id: 15,
@@ -185,9 +170,8 @@ export const starWarsShips = [
     src: "https://i.ebayimg.com/images/g/nfQAAOSwTZpeTPC6/s-l640.jpg",
     model: "DJJ63",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel Resistance X-Wing Fighter"
   },
   {
     id: 16,
@@ -197,9 +181,8 @@ export const starWarsShips = [
       "https://wwwassets.pricespider.com/product_static/450/9595/9595073.png",
     model: "CKJ68",
     pack: "Single",
-    type: "Shuttle, Imperial",
     special: "",
-    faction: ""
+    keywords: "Imperial First Order Shuttle"
   },
   {
     id: 17,
@@ -208,9 +191,8 @@ export const starWarsShips = [
     src: "https://media.mattel.com/root/Images/MainImage/ckj67_r.jpg",
     model: "CKJ67",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order TIE Fighter"
   },
   {
     id: 18,
@@ -220,9 +202,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/519zSc8iR4L._AC_SY400_.jpg",
     model: "DJJ61",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order TIE Fighter"
   },
   {
     id: 19,
@@ -231,9 +212,8 @@ export const starWarsShips = [
     src: "https://media.mattel.com/root/Images/MainImage/ckj71_r.jpg",
     model: "CKJ71",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Rebel, Resistance"
+    keywords: "Rebel Resistance X-Wing Fighter"
   },
   {
     id: 20,
@@ -242,9 +222,8 @@ export const starWarsShips = [
     src: "https://i.ebayimg.com/images/g/2dEAAOSw-CpX~81Z/s-l600.jpg",
     model: "CGW93",
     pack: "2-Pack",
-    type: "Capital Ship, Rebel, Imperial",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Rebel Capital Ship"
   },
   {
     id: 21,
@@ -253,9 +232,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/81NMUlHmTYL.jpg",
     model: "CKJ81",
     pack: "2-Pack",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order Resistance X-Wing Fighter"
   },
   {
     id: 22,
@@ -264,9 +242,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/71o3OoascwL.jpg",
     model: "CKJ69",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: ""
+    keywords: "Speeder"
   },
   {
     id: 23,
@@ -276,9 +253,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71FHI9f6z1L._AC_SL1500_.jpg",
     model: "CKJ70",
     pack: "Single",
-    type: "Speeder, Imperial",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order Speeder"
   },
   {
     id: 24,
@@ -288,9 +264,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7//wcsstore/MattelCAS/CKJ72_Viewer?storeId=10151&SKU=CKJ72",
     model: "CKJ72",
     pack: "Single",
-    type: "Capital Ship, Imperial",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order Capital Ship"
   },
   {
     id: 25,
@@ -300,9 +275,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71AmhNxo6hL._AC_SL1500_.jpg",
     model: "CGW60",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: ""
+    keywords: "Speeder"
   },
   {
     id: 26,
@@ -312,9 +286,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/DNP18_01?$oslarge$&wid=412&hei=412&wid=1600&hei=1600",
     model: "DNP18",
     pack: "Single",
-    type: "Fighter",
     special: "Modified Eta-2 Actis Class Interceptor",
-    faction: ""
+    keywords: "Jedi Fighter"
   },
   {
     id: 27,
@@ -324,9 +297,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/619b57b3-d16d-4325-afea-55df179a7021_1.1776049a29223b536a49f89805356d75.jpeg",
     model: "CGW72",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Imperial Sith Fighter"
   },
   {
     id: 28,
@@ -336,9 +308,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=CGW61",
     model: "CGW61",
     pack: "Single",
-    type: "Capital Ship",
     special: "",
-    faction: ""
+    keywords: "Rebel Capital Ship"
   },
   {
     id: 29,
@@ -348,9 +319,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DMP61",
     model: "DMP61",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Republic Fighter"
   },
   {
     id: 30,
@@ -360,9 +330,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71YfkGawszL._AC_SY741_.jpg",
     model: "DMP62",
     pack: "Single",
-    type: "Shuttle",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Shuttle"
   },
   {
     id: 31,
@@ -372,9 +341,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DMP64",
     model: "DMP64",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 32,
@@ -384,9 +352,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest?cb=20171001004433",
     model: "DMP65",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Republic Fighter"
   },
   {
     id: 33,
@@ -396,9 +363,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/61nnhfg97NL._AC_UL474_SR474,450_.jpg",
     model: "DML94",
     pack: "2-Pack",
-    type: "Walker",
     special: "",
-    faction: "Rebel"
+    keywords: "Imperial Walker Rebel Speeder"
   },
   {
     id: 34,
@@ -408,9 +374,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=CGW92",
     model: "CGW92",
     pack: "2-Pack",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Bounty Hunter Jedi Fighter"
   },
   {
     id: 35,
@@ -420,9 +385,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/d/d4/Speeder_Bike_%28DMP66%29_01.jpeg/revision/latest/scale-to-width-down/450?cb=20180319001739",
     model: "DMP66",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: ""
+    keywords: "Speeder"
   },
   {
     id: 36,
@@ -432,9 +396,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=FJD65",
     model: "FJD65",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: ""
+    keywords: "Resistance Speeder"
   },
   {
     id: 37,
@@ -444,9 +407,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/c/c1/DXX45_Millennium_Falcon.jpg/revision/latest/scale-to-width-down/565?cb=20170905084521",
     model: "DXX45",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Rebel Millenium Falcon Fighter"
   },
   {
     id: 38,
@@ -456,9 +418,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81qrAzzeSGL._AC_SY450_.jpg",
     model: "DXX46",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel Resistance X-Wing Fighter"
   },
   {
     id: 39,
@@ -467,9 +428,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/815UUIPm5yL.jpg",
     model: "DXX47",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Rebel, Resistance"
+    keywords: "Rebel Resistance X-Wing Fighter"
   },
   {
     id: 40,
@@ -478,9 +438,8 @@ export const starWarsShips = [
     src: "https://i5.walmartimages.ca/images/Enlarge/833/087/6000196833087.jpg",
     model: "DXX49",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order TIE Fighter"
   },
   {
     id: 41,
@@ -490,9 +449,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DXX51",
     model: "DXX51",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Resistance Fighter"
   },
   {
     id: 42,
@@ -502,9 +460,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/9/90/Tantive_IV_%28CGW61%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171015013320",
     model: "DXX52",
     pack: "Single",
-    type: "Capital Ship",
     special: "",
-    faction: ""
+    keywords: "Rebel Capital Ship"
   },
   {
     id: 43,
@@ -514,9 +471,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/9b0b8af5-4e60-4248-be62-f5137b63b74a_1.ed6a8a36f1e4bbd49f356825eed5f39e.jpeg",
     model: "DXX53",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel X-Wing Fighter"
   },
   {
     id: 44,
@@ -526,9 +482,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/3256e83b-b166-4e7c-aed7-be8be2132fbb_1.578ea2444babe7bdfeac9d3a152331c5.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
     model: "FPL64",
     pack: "Single",
-    type: "Walker",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Walker"
   },
   {
     id: 45,
@@ -538,9 +493,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DXX55",
     model: "DXX55",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 46,
@@ -550,9 +504,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/a/a1/Star_Destroyer_%28DXX57%29_01.jpeg/revision/latest?cb=20171206012224",
     model: "DXX57",
     pack: "Single",
-    type: "Capital Ship",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Capital Ship"
   },
   {
     id: 47,
@@ -561,9 +514,8 @@ export const starWarsShips = [
     src: "https://i.ebayimg.com/images/g/FYcAAOSw6sZeT3Q1/s-l640.jpg",
     model: "DXX59",
     pack: "Single",
-    type: "Shuttle",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Shuttle"
   },
   {
     id: 48,
@@ -573,9 +525,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71LTsTbJ6DL._AC_SY879_.jpg",
     model: "DXX60",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: ""
+    keywords: "Resistance Speeder"
   },
   {
     id: 49,
@@ -584,9 +535,8 @@ export const starWarsShips = [
     src: "https://i.ebayimg.com/images/g/LMwAAOSw7RteTixU/s-l640.jpg",
     model: "DXX63",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Resistance Fighter"
   },
   {
     id: 50,
@@ -596,9 +546,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/d5ba5080-183a-4e68-8047-b743a72a7ecf_1.e99bb9dfc6a285f92a812475c5dcd213.jpeg",
     model: "DXD99",
     pack: "Single",
-    type: "Walker",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Walker"
   },
   {
     id: 51,
@@ -607,9 +556,8 @@ export const starWarsShips = [
     src: "https://i.ebayimg.com/images/g/qsMAAOSwyuZdKaTy/s-l500.jpg",
     model: "DXD98",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 52,
@@ -619,9 +567,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/413guIDivAL._AC_SY400_.jpg",
     model: "DYK03",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Resistance X-Wing Fighter"
   },
   {
     id: 53,
@@ -630,9 +577,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/71O9lgReafL.jpg",
     model: "DNP19",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Rebel A-Wing Fighter"
   },
   {
     id: 54,
@@ -642,9 +588,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81Zbt4VlUuL._AC_SL1500_.jpg",
     model: "DXF00",
     pack: "Single",
-    type: "Shuttle",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Shuttle"
   },
   {
     id: 55,
@@ -654,9 +599,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=FBB04",
     model: "FBB04",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial First Order TIE Fighter"
   },
   {
     id: 56,
@@ -666,9 +610,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71KWrzmLyHL._AC_SX355_.jpg",
     model: "FBB05",
     pack: "Single",
-    type: "Walker",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order Walker"
   },
   {
     id: 57,
@@ -678,9 +621,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/3/34/FBB07_Resistance_A-wing_Fighter.jpg/revision/latest/scale-to-width-down/565?cb=20170905083804",
     model: "FBB07",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Rebel A-Wing Fighter"
   },
   {
     id: 58,
@@ -690,9 +632,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/81a8de5f-2b7c-40b9-82cd-6cbfc7a8ca25_1.79c8883d86fae1f25e70c118e6bb1457.jpeg",
     model: "FBB30",
     pack: "Single",
-    type: "Capital Ship",
     special: "",
-    faction: "Imperial, First Order"
+    keywords: "Imperial First Order Capital Ship"
   },
   {
     id: 59,
@@ -701,9 +642,8 @@ export const starWarsShips = [
     src: "https://live.staticflickr.com/4485/38138930471_29bd4e0a79_b.jpg",
     model: "FBB39",
     pack: "Single",
-    type: "Fighter, Y-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel Y-Wing Fighter"
   },
   {
     id: 60,
@@ -713,9 +653,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/91m4FUEmORL._SL1500_.jpg",
     model: "FBB43",
     pack: "Single",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 61,
@@ -725,9 +664,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71iOL8lRUlL._AC_SX466_.jpg",
     model: "FJD64",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: "Rebel, Resistance"
+    keywords: "Rebel Resistance Fighter"
   },
   {
     id: 62,
@@ -736,9 +674,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/717KKa88XVL.jpg",
     model: "DXD97",
     pack: "Single",
-    type: "Walker",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Walker"
   },
   {
     id: 63,
@@ -748,9 +685,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81SzD2PZHcL._AC_UL600_SR444,600_.jpg",
     model: "FGR18",
     pack: "Single",
-    type: "Shuttle",
     special: "",
-    faction: ""
+    keywords: "Imperial First Order Shuttle"
   },
   {
     id: 64,
@@ -760,9 +696,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/5a207f19-0cfb-4fea-b876-ba4afced90a0_1.b184f2476b700a91c647728e792b92fd.jpeg",
     model: "DMP60",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Fighter"
   },
   {
     id: 65,
@@ -772,9 +707,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71hRMYoVnnL._AC_UL600_SR600,600_.jpg",
     model: "DMP67",
     pack: "Single",
-    type: "Fighter, U-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel U-Wing Fighter"
   },
   {
     id: 66,
@@ -784,9 +718,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81w5CAv9p0L._AC_SX425_.jpg",
     model: "FJF20",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Speeder"
   },
   {
     id: 67,
@@ -795,9 +728,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/71PAzvN2V2L.jpg",
     model: "FND10",
     pack: "Single",
-    type: "Capital Ship",
     special: "40th Anniversary",
-    faction: "Imperial"
+    keywords: "Imperial Capital Ship"
   },
   {
     id: 68,
@@ -807,9 +739,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81QSeUHk%2B3L._AC_SX569_.jpg",
     model: "FPL65",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel Speeder"
   },
   {
     id: 69,
@@ -819,9 +750,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71abeDNV25L._AC_SX425_.jpg",
     model: "DYH43",
     pack: "2-Pack",
-    type: "Walker",
     special: "",
-    faction: "Rebel"
+    keywords: "Imperial Walker Rebel Speeder"
   },
   {
     id: 70,
@@ -831,9 +761,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DYH44",
     model: "DYH44",
     pack: "2-Pack",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Rebel TIE Fighter X-Wing"
   },
   {
     id: 71,
@@ -843,9 +772,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/41seIqFZlTL._AC_SY400_.jpg",
     model: "DXM38",
     pack: "2-Pack",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Rebel TIE Fighter X-Wing"
   },
   {
     id: 72,
@@ -855,9 +783,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7/DML96_01?$oslarge$&wid=412&hei=412&wid=1600&hei=1600",
     model: "DML96",
     pack: "2-Pack",
-    type: "TIE Fighter",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter Rebel Millenium Falcon Fighter"
   },
   {
     id: 73,
@@ -866,9 +793,8 @@ export const starWarsShips = [
     src: "https://i.ebayimg.com/images/g/RIMAAOSwfZxeTKht/s-l640.jpg",
     model: "FBX10",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: ""
+    keywords: "Speeder"
   },
   {
     id: 74,
@@ -878,9 +804,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81Id%2BovS2cL._AC_SY355_.jpg",
     model: "FBX12",
     pack: "Single",
-    type: "Capital Ship",
     special: "",
-    faction: ""
+    keywords: "Republic Capital Ship"
   },
   {
     id: 75,
@@ -890,9 +815,8 @@ export const starWarsShips = [
       "https://images.mattel.com/scene7//wcsstore/MattelCAS/FJF23_01?storeId=10151&SKU=FJF23",
     model: "FJF23",
     pack: "Single",
-    type: "Fighter",
     special: "",
-    faction: ""
+    keywords: "Rebel Millenium Falcon Fighter"
   },
   {
     id: 76,
@@ -901,9 +825,8 @@ export const starWarsShips = [
     src: "https://m.media-amazon.com/images/I/81k9v4Q4e2L.jpg",
     model: "FJF24",
     pack: "Single",
-    type: "Speeder",
     special: "",
-    faction: ""
+    keywords: "Rebel Speeder"
   },
   {
     id: 77,
@@ -912,9 +835,8 @@ export const starWarsShips = [
     src: "https://images.mattel.com/scene7/FJF25_01?$oslarge$&wid=549&hei=549",
     model: "FJF25",
     pack: "Single",
-    type: "Capital Ship",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Capital Ship"
   },
   {
     id: 78,
@@ -924,9 +846,8 @@ export const starWarsShips = [
       "https://images.bonanzastatic.com/afu/images/b6fb/ac3a/5b94_5975015127/2018_mattel_hot_wheels_star_wars_starships_solo_imperial_at_hauler_C.jpg",
     model: "FJF27",
     pack: "Single",
-    type: "Walker",
     special: "",
-    faction: "Imperial"
+    keywords: "Imperial Walker"
   },
   {
     id: 79,
@@ -936,9 +857,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/5ab4011e-bc29-4ca8-8fb6-1061af7ff6a2_1.3ccc2694dadf2574cac4f040bd73f47e.jpeg",
     model: "FJD40",
     pack: "Single",
-    type: "Fighter, B-Wing",
     special: "",
-    faction: "Rebel"
+    keywords: "Rebel B-Wing Fighter"
   },
   {
     id: 80,
@@ -948,9 +868,8 @@ export const starWarsShips = [
       "https://static.wikia.nocookie.net/hotwheels/images/0/0c/Concept_Landspeeder_%28FJF22%29_02.jpg/revision/latest/scale-to-width-down/650?cb=20200426192431",
     model: "FJF22",
     pack: "Single",
-    type: "Speeder",
     special: "Concept",
-    faction: ""
+    keywords: "Speeder"
   },
   {
     id: 81,
@@ -960,9 +879,8 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/fd7668d2-d4ee-4bbf-8439-780d642fe50d_1.18c5ae5992a00ea6f8c22cd5f2a2c637.jpeg",
     model: "FJD63",
     pack: "Single",
-    type: "Fighter",
     special: "Concept",
-    faction: ""
+    keywords: "Rebel Millenium Falcon Fighter"
   },
   {
     id: 82,
@@ -972,9 +890,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71XwzEfX6JL._AC_SL1500_.jpg",
     model: "FJF21",
     pack: "Single",
-    type: "Capital Ship",
     special: "Concept",
-    faction: "Imperial"
+    keywords: "Imperial Capital Ship"
   },
   {
     id: 83,
@@ -984,9 +901,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81MdMOhiPmL._AC_SY606_.jpg",
     model: "FBB10",
     pack: "Single",
-    type: "TIE Fighter",
     special: "Concept",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 84,
@@ -996,9 +912,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/712WgUE5l%2BL._AC_SL1500_.jpg",
     model: "FBB06",
     pack: "Single",
-    type: "Fighter, X-Wing",
     special: "Concept",
-    faction: "Rebel"
+    keywords: "Rebel X-wing Fighter"
   },
   {
     id: 85,
@@ -1008,9 +923,8 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81gkBJ7cfnL._AC_SY550_.jpg",
     model: "FCC22",
     pack: "Single",
-    type: "Walker",
     special: "Limited",
-    faction: ""
+    keywords: "Walker"
   },
   {
     id: 86,
@@ -1020,9 +934,8 @@ export const starWarsShips = [
       "https://s3-us-west-2.amazonaws.com/images.collecthw.com/59ed8fd1-4796-456b-93fc-a19564cc5464_large.png",
     model: "FJD61",
     pack: "Single",
-    type: "TIE Fighter",
     special: "Limited",
-    faction: "Imperial"
+    keywords: "Imperial TIE Fighter"
   },
   {
     id: 87,
@@ -1032,9 +945,8 @@ export const starWarsShips = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqQgmWesIfow8o9UvTyhMEMeiuOHlwfXa4g&usqp=CAU",
     model: "FJF19",
     pack: "Single",
-    type: "Walker",
     special: "Limited",
-    faction: ""
+    keywords: "Walker"
   }
 ];
 
