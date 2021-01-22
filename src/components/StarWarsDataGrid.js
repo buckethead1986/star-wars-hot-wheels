@@ -53,10 +53,14 @@ export default function DataGridDemo(props) {
     }
   });
 
+  const filteredShips = starWarsShips.filter(item =>
+    item.type.includes(props.selectedShipType)
+  );
+
   return (
     <div ref={gridWrapperRef}>
       <DataGrid
-        rows={starWarsShips}
+        rows={filteredShips}
         columns={columns}
         checkboxSelection
         autoHeight
