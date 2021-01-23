@@ -41,6 +41,7 @@ export default function DataGridDemo(props) {
     { field: "pack", headerName: "Pack Type", flex: 0.5 },
     { field: "pack-img", headerName: "Pack Image", flex: 0.5 },
     { field: "type", headerName: "Ship Type", flex: 0.5 }, //change 'type' to 'keywords'
+    { field: "Faction", headerName: "Faction", flex: 0.5 },
     { field: "special", headerName: "Extra", flex: 0.5 }
   ];
 
@@ -53,8 +54,10 @@ export default function DataGridDemo(props) {
     }
   });
 
-  const filteredShips = starWarsShips.filter(item =>
-    item.type.includes(props.selectedShipType)
+  const filteredShips = starWarsShips.filter(
+    item =>
+      item.type.includes(props.selectedShipType) ||
+      item.faction.includes(props.selectedShipType)
   );
 
   return (

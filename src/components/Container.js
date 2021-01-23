@@ -25,7 +25,7 @@ export default function Container() {
   const handleSelect = clickId => {
     setSelected(selected === clickId ? "" : clickId);
   };
-  // <GridItemsContainer filteredValue={filteredValue} value={value} />
+
   return (
     <div>
       <Drawer
