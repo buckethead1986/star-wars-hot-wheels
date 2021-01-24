@@ -2,7 +2,7 @@ import * as react from "react";
 import { useEffect, useState } from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { makeStyles } from "@material-ui/core/styles";
-import { starWarsShips } from "./StarWarsShips.js";
+import { starWarsShips } from "./StarWarsShips2.js";
 import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(theme => ({
@@ -56,8 +56,8 @@ export default function DataGridDemo(props) {
 
   const filteredShips = starWarsShips.filter(
     item =>
-      item.type.includes(props.selectedShipType) ||
-      item.faction.includes(props.selectedShipType)
+      item.type.includes(props.shipFilter) ||
+      item.faction.includes(props.shipFilter)
   );
 
   return (

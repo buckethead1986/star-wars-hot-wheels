@@ -66,7 +66,7 @@ export default function SearchBox(props) {
           <TextField
             classes={{ root: classes.root }}
             style={{
-              width: 300, //remove width parameter for searchbar inside drawer
+              //remove width parameter for searchbar inside drawer
               position: "relative"
             }}
             {...params}

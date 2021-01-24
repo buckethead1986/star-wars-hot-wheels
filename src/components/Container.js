@@ -3,25 +3,20 @@ import Drawer from "./Drawer.js";
 import GridItemsContainer from "./GridItemsContainer.js";
 
 export default function Container() {
-  const [value, setValue] = React.useState("");
+  const [searchbarValue, setSearchbarValue] = React.useState("");
   const [selected, setSelected] = React.useState("");
-  const [selectedShipType, setSelectedShipType] = React.useState("");
-  // const [filteredValue, setFilteredValue] = React.useState("");
+  const [shipFilter, setShipFilter] = React.useState("");
 
-  // const handleDrawerData = drawerData => {
-  //   setFilteredValue(drawerData !== undefined ? drawerData : "");
-  // };
   const handleSearchbarData = searchbarData => {
-    setValue(searchbarData !== undefined ? searchbarData : "");
+    setSearchbarValue(searchbarData !== undefined ? searchbarData : "");
   };
-  const handleSelectedShipType = selectedShipTypeData => {
-    console.log(selectedShipTypeData);
-    setSelectedShipType(
-      selectedShipTypeData !== undefined ? selectedShipTypeData : ""
-    );
+  const handleShipFilter = shipFilterData => {
+    console.log(shipFilterData);
+    setShipFilter(shipFilterData !== undefined ? shipFilterData : "");
   };
 
-  //toggles bigger paper view for selected ship
+  //toggles bigger paper view for selected ship. Only used with Paper display mode, not DataGrid
+  //Will need Hook added and passed down to child components to use
   const handleSelect = clickId => {
     setSelected(selected === clickId ? "" : clickId);
   };
@@ -29,12 +24,13 @@ export default function Container() {
   return (
     <div>
       <Drawer
-        handleSelectedShipType={handleSelectedShipType}
+        handleShipFilter={handleShipFilter}
         handleSearchbarData={handleSearchbarData}
-        handleSelect={handleSelect}
-        selectedShipType={selectedShipType}
-        value={value}
+        shipFilter={shipFilter}
+        searchbarValue={searchbarValue}
         selected={selected}
+        value={searchbarValue}
+        handleSelect={handleSelect}
       />
     </div>
   );

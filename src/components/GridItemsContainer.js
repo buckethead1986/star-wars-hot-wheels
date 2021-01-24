@@ -8,7 +8,7 @@ import Divider from "@material-ui/core/Divider";
 import StarWarsGridItem from "../UnusedComponents/StarWarsGridItem.js";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
 import LargeStarWarsGridItem from "../UnusedComponents/LargeStarWarsGridItem.js";
-import { starWarsShips } from "./StarWarsShips3.js";
+import { starWarsShips } from "./StarWarsShips2.js";
 import Paper from "@material-ui/core/Paper";
 
 //'paper' class only used for divider, remove in final
@@ -53,7 +53,7 @@ export default function SimpleContainer(props) {
   const makeShipTypeGridItems = (
     <Grid container>
       {starWarsShips
-        .filter(item => item.keywords.includes(props.selectedShipType))
+        .filter(item => item.type.includes(props.shipFilter))
         .map((ship, index) => (
           <Grid item xs={12} sm={6}>
             <StarWarsGridItem
@@ -93,7 +93,7 @@ export default function SimpleContainer(props) {
         >
           {makeShipTypeGridItems}
           <StarWarsDataGrid
-            selectedShipType={props.selectedShipType}
+            shipFilter={props.shipFilter}
             value={props.value}
             selected={props.selected}
             handleSelect={props.handleSelect}

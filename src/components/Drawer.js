@@ -86,7 +86,7 @@ const useStyles = makeStyles(theme => ({
 export default function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -118,7 +118,6 @@ export default function ResponsiveDrawer(props) {
           <Typography className={classes.title} variant="h6" noWrap>
             Hot Wheels Star Wars Wiki
           </Typography>
-          <Searchbar handleSearchbarData={props.handleSearchbarData} />
         </Toolbar>
       </AppBar>
       <Drawer
@@ -144,12 +143,12 @@ export default function ResponsiveDrawer(props) {
         {/*Fix margins for searchbar inside drawer */}
         <Divider />
         <DrawerList
-          handleSelectedShipType={props.handleSelectedShipType}
+          handleShipFilter={props.handleShipFilter}
           primary="Year"
           list={["2016", "2017", "2018", "2019", "2020"]}
         />
         <DrawerList
-          handleSelectedShipType={props.handleSelectedShipType}
+          handleShipFilter={props.handleShipFilter}
           primary="Ship Type"
           list={[
             "Capital Ship",
@@ -164,7 +163,7 @@ export default function ResponsiveDrawer(props) {
         />
         <Divider />
         <DrawerList
-          handleSelectedShipType={props.handleSelectedShipType}
+          handleShipFilter={props.handleShipFilter}
           primary="Faction"
           list={["Rebellion", "Empire", "Smuggler", "Bounty Hunter"]}
         />
@@ -179,7 +178,7 @@ export default function ResponsiveDrawer(props) {
 
         <Typography paragraph>Filler Text</Typography>
         <GridItemsContainer
-          selectedShipType={props.selectedShipType}
+          shipFilter={props.shipFilter}
           value={props.value}
           selected={props.selected}
           handleSelect={props.handleSelect}
