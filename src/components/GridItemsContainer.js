@@ -26,21 +26,16 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleContainer(props) {
   const classes = useStyles();
-  console.log(props);
 
   const makeSelectedGridItems = (
     <Grid container>
       {starWarsShips
         .filter(item =>
-          item.name.toLowerCase().includes(props.value.toLowerCase())
+          item.name.toLowerCase().includes(props.searchbarValue.toLowerCase())
         )
         .map((ship, index) => (
           <Grid item xs={12} sm={6}>
-            <StarWarsGridItem
-              ship={ship}
-              selected={props.selected}
-              handleSelect={props.handleSelect}
-            />
+            <StarWarsGridItem ship={ship} />
           </Grid>
         ))}
       <Grid item xs={12}>
@@ -56,11 +51,7 @@ export default function SimpleContainer(props) {
         .filter(item => item.type.includes(props.shipFilter))
         .map((ship, index) => (
           <Grid item xs={12} sm={6}>
-            <StarWarsGridItem
-              ship={ship}
-              selected={props.selected}
-              handleSelect={props.handleSelect}
-            />
+            <StarWarsGridItem ship={ship} />
           </Grid>
         ))}
       <Grid item xs={12}>
@@ -73,11 +64,7 @@ export default function SimpleContainer(props) {
     <Grid container>
       {starWarsShips.map((ship, index) => (
         <Grid item xs={12}>
-          <LargeStarWarsGridItem
-            ship={ship}
-            selected={props.selected}
-            handleSelect={props.handleSelect}
-          />
+          <LargeStarWarsGridItem ship={ship} />
         </Grid>
       ))}
     </Grid>
@@ -91,15 +78,12 @@ export default function SimpleContainer(props) {
           component="div"
           style={{ backgroundColor: "#cfe8fc", height: "100%" }}
         >
+          {makeSelectedGridItems}
           {makeShipTypeGridItems}
           <StarWarsDataGrid
             shipFilter={props.shipFilter}
-            value={props.value}
-            selected={props.selected}
-            handleSelect={props.handleSelect}
+            searchbarValue={props.searchbarValue}
           />
-
-          {makeSelectedGridItems}
         </Typography>
       </Container>
     </React.Fragment>

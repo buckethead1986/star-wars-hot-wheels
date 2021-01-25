@@ -19,10 +19,10 @@ const useStyles = makeStyles(theme => ({
     width: 128,
     height: 128
   },
-  bigImage: {
-    width: 256,
-    height: 256
-  },
+  // bigImage: {
+  //   width: 256,
+  //   height: 256
+  // },
   img: {
     margin: "auto",
     display: "block",
@@ -34,24 +34,24 @@ const useStyles = makeStyles(theme => ({
 export default function NestedGrid(props) {
   const classes = useStyles();
 
+  //requires prop of selected ship ID to use
+  const bigImageCreator = (
+    <ButtonBase
+      className={
+        props.selected === props.ship.id ? classes.bigImage : classes.image
+      }
+    >
+      <img className={classes.img} alt="complex" src={props.ship.src} />
+    </ButtonBase>
+  );
+
   return (
     <React.Fragment>
       <Grid>
-        <Paper
-          className={classes.paper}
-          onClick={() => {
-            props.handleSelect(props.ship.id);
-          }}
-        >
+        <Paper className={classes.paper}>
           <Grid container direction="row">
             <Grid item>
-              <ButtonBase
-                className={
-                  props.selected === props.ship.id
-                    ? classes.bigImage
-                    : classes.image
-                }
-              >
+              <ButtonBase className={classes.image}>
                 <img
                   className={classes.img}
                   alt="complex"

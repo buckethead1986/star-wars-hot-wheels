@@ -36,7 +36,7 @@ export default function LargeStarWarsGridItem(props) {
       <Paper
         className={classes.paper}
         onClick={() => {
-          props.handleSelect(props.ship.id);
+          console.log(props.ship.id);
         }}
       >
         <Grid container direction="row">

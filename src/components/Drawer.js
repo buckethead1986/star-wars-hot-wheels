@@ -155,8 +155,6 @@ export default function ResponsiveDrawer(props) {
             "Walker",
             "Speeder",
             "Fighter",
-            "Imperial",
-            "Rebel",
             "X-Wing",
             "TIE Fighter"
           ]}
@@ -165,7 +163,7 @@ export default function ResponsiveDrawer(props) {
         <DrawerList
           handleShipFilter={props.handleShipFilter}
           primary="Faction"
-          list={["Rebellion", "Empire", "Smuggler", "Bounty Hunter"]}
+          list={["Rebel", "Imperial", "Smuggler", "Bounty Hunter"]}
         />
       </Drawer>
 
@@ -179,9 +177,7 @@ export default function ResponsiveDrawer(props) {
         <Typography paragraph>Filler Text</Typography>
         <GridItemsContainer
           shipFilter={props.shipFilter}
-          value={props.value}
-          selected={props.selected}
-          handleSelect={props.handleSelect}
+          searchbarValue={props.searchbarValue}
         />
       </main>
     </div>
