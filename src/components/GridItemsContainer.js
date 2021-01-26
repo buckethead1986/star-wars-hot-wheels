@@ -48,7 +48,11 @@ export default function SimpleContainer(props) {
   const makeShipTypeGridItems = (
     <Grid container>
       {starWarsShips
-        .filter(item => item.type.includes(props.shipFilter))
+        .filter(
+          item =>
+            item.type.includes(props.shipFilter) ||
+            item.faction.includes(props.shipFilter)
+        )
         .map((ship, index) => (
           <Grid item xs={12} sm={6}>
             <StarWarsGridItem ship={ship} />
@@ -78,8 +82,8 @@ export default function SimpleContainer(props) {
           component="div"
           style={{ backgroundColor: "#cfe8fc", height: "100%" }}
         >
-          {makeSelectedGridItems}
           {makeShipTypeGridItems}
+          {makeSelectedGridItems}
           <StarWarsDataGrid
             shipFilter={props.shipFilter}
             searchbarValue={props.searchbarValue}
