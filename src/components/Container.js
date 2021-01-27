@@ -1,6 +1,5 @@
 import React from "react";
 import Drawer from "./Drawer.js";
-import GridItemsContainer from "./GridItemsContainer.js";
 
 export default function Container() {
   const [searchbarValue, setSearchbarValue] = React.useState("");

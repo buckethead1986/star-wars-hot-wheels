@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/Styles";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import Divider from "@material-ui/core/Divider";
 import StarWarsGridItem from "../UnusedComponents/StarWarsGridItem.js";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
 import LargeStarWarsGridItem from "../UnusedComponents/LargeStarWarsGridItem.js";
@@ -83,6 +82,9 @@ export default function SimpleContainer(props) {
           style={{ backgroundColor: "#cfe8fc", height: "100%" }}
         >
           {makeShipTypeGridItems}
+          <Grid item xs={12}>
+            <Paper className={classes.paper}>Divider</Paper>
+          </Grid>
           {makeSelectedGridItems}
           <StarWarsDataGrid
             shipFilter={props.shipFilter}

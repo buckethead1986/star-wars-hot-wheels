@@ -34,17 +34,6 @@ const useStyles = makeStyles(theme => ({
 export default function NestedGrid(props) {
   const classes = useStyles();
 
-  //requires prop of selected ship ID to use
-  const bigImageCreator = (
-    <ButtonBase
-      className={
-        props.selected === props.ship.id ? classes.bigImage : classes.image
-      }
-    >
-      <img className={classes.img} alt="complex" src={props.ship.src} />
-    </ButtonBase>
-  );
-
   return (
     <React.Fragment>
       <Grid>
