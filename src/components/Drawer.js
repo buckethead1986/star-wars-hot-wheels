@@ -140,7 +140,6 @@ export default function ResponsiveDrawer(props) {
         </div>
         <Divider />
         <Searchbar handleSearchbarData={props.handleSearchbarData} />
-        {/*Fix margins for searchbar inside drawer */}
         <Divider />
         <DrawerList
           handleShipFilter={props.handleShipFilter}
