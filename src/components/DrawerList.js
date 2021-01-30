@@ -29,6 +29,7 @@ export default function DrawerList(props) {
   };
 
   const handleToggle = (item, value) => () => {
+    console.log(item, value, "here");
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -49,7 +50,7 @@ export default function DrawerList(props) {
         return (
           <ListItem
             button
-            onClick={event => props.handleShipFilter(item)}
+            onClick={handleToggle(item, index)}
             key={item}
             className={classes.nested}
           >
@@ -57,14 +58,11 @@ export default function DrawerList(props) {
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
             <ListItemText primary={item} />
-            <ListItemSecondaryAction>
-              <Checkbox
-                edge="end"
-                onChange={handleToggle(item, index)}
-                checked={checked.indexOf(index) !== -1}
-                inputProps={{ "aria-labelledby": labelId }}
-              />
-            </ListItemSecondaryAction>
+            <Checkbox
+              edge="end"
+              checked={checked.indexOf(index) !== -1}
+              inputProps={{ "aria-labelledby": labelId }}
+            />
           </ListItem>
         );
       })}
