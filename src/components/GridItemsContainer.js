@@ -43,15 +43,16 @@ export default function SimpleContainer(props) {
     </Grid>
   );
 
-  //Needs to be split/modified to seleft by item.faction and item.type, or the array needs to be updated so type and faction are contained in one value
   const makeShipTypeGridItems = (
     <Grid container>
       {starWarsShips
-        .filter(
-          item =>
-            item.type.includes(props.shipFilter) ||
-            item.faction.includes(props.shipFilter)
-        )
+        .filter(item => {
+          if (props.shipFilter.currentFilters.length === 0) {
+            return item;
+          } else {
+            return props.shipFilter.currentFilters.some(f => f(item));
+          }
+        })
         .map((ship, index) => (
           <Grid item xs={12} sm={6}>
             <StarWarsGridItem ship={ship} />

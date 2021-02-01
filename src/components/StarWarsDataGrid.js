@@ -52,11 +52,13 @@ export default function DataGridDemo(props) {
     }
   });
 
-  const filteredShips = starWarsShips.filter(
-    item =>
-      item.type.includes(props.shipFilter) ||
-      item.faction.includes(props.shipFilter)
-  );
+  const filteredShips = starWarsShips.filter(item => {
+    if (props.shipFilter.currentFilters.length === 0) {
+      return item;
+    } else {
+      return props.shipFilter.currentFilters.some(f => f(item));
+    }
+  });
 
   return (
     <div ref={gridWrapperRef}>
