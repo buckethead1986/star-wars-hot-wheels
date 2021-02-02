@@ -29,7 +29,7 @@ export default function DrawerList(props) {
   };
 
   const handleToggle = (item, value) => () => {
-    console.log(item, value, "here");
+    console.log(item, value, "here", props.name);
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -40,7 +40,7 @@ export default function DrawerList(props) {
     }
 
     setChecked(newChecked);
-    props.handleShipFilter(item);
+    props.handleShipFilter(item, props.name);
   };
 
   const makeListItems = (

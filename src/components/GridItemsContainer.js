@@ -43,6 +43,17 @@ export default function SimpleContainer(props) {
     </Grid>
   );
 
+  // {starWarsShips
+  //   .filter(item => {
+  //     if (props.shipFilter.currentFilters.length === 0) {
+  //       return item;
+  //     } else {
+  // return (
+  //   props.shipFilter.currentFilters[0].some(f => f(item)) &&
+  //   props.shipFilter.currentFilters[1].some(f => f(item)) &&
+  //   props.shipFilter.currentFilters[2].some(f => f(item))
+  // );
+
   const makeShipTypeGridItems = (
     <Grid container>
       {starWarsShips
