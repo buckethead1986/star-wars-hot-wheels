@@ -24,24 +24,77 @@ export default function Container() {
     filterParameters2: {
       year: {
         "2016": false,
-        "2017": true,
+        "2017": false,
         "2018": false,
-        "2019": true,
+        "2019": false,
         "2020": false
       },
       type: {
-        "Capital Ship": true,
-        Walker: true,
-        Speeder: true,
+        "Capital Ship": false,
+        Walker: false,
+        Speeder: false,
         Fighter: false,
         "X-Wing": false,
         "TIE Fighter": false
       },
       faction: {
-        Imperial: true,
+        Imperial: false,
         Rebel: false,
         "Bounty Hunter": false,
-        Smuggler: true
+        Smuggler: false
+      }
+    },
+    filterParameters3: {
+      year: {
+        "2016": { selected: false, function: ship => ship.year === 2016 },
+        "2017": { selected: true, function: ship => ship.year === 2017 },
+        "2018": { selected: true, function: ship => ship.year === 2018 },
+        "2019": { selected: false, function: ship => ship.year === 2019 },
+        "2020": { selected: false, function: ship => ship.year === 2020 }
+      },
+      type: {
+        "Capital Ship": {
+          selected: false,
+          function: ship => ship.type.indexOf("Capital Ship") !== -1
+        },
+        Walker: {
+          selected: false,
+          function: ship => ship.type.indexOf("Walker") !== -1
+        },
+        Speeder: {
+          selected: false,
+          function: ship => ship.type.indexOf("Speeder") !== -1
+        },
+        Fighter: {
+          selected: false,
+          function: ship => ship.type.indexOf("Fighter") !== -1
+        },
+        "X-Wing": {
+          selected: false,
+          function: ship => ship.type.indexOf("X-Wing") !== -1
+        },
+        "TIE Fighter": {
+          selected: false,
+          function: ship => ship.type.indexOf("TIE Fighter") !== -1
+        }
+      },
+      faction: {
+        Imperial: {
+          selected: false,
+          function: ship => ship.faction.indexOf("Imperial") !== -1
+        },
+        Rebel: {
+          selected: true,
+          function: ship => ship.faction.indexOf("Rebel") !== -1
+        },
+        "Bounty Hunter": {
+          selected: false,
+          function: ship => ship.faction.indexOf("Bounty Hunter") !== -1
+        },
+        Smuggler: {
+          selected: false,
+          function: ship => ship.faction.indexOf("Smuggler") !== -1
+        }
       }
     },
     currentFilters: []
@@ -72,10 +125,15 @@ export default function Container() {
     let filterParametersCopy = { ...shipFilter.filterParameters };
     let filterParametersCopy2 = { ...shipFilter.filterParameters2 };
 
+    // if (shipFilterSelection !== undefined) {
+    //   filterParametersCopy[shipFilterSelection]
+    //     ? (filterParametersCopy[shipFilterSelection] = false)
+    //     : (filterParametersCopy[shipFilterSelection] = true);
+    // }
     if (shipFilterSelection !== undefined) {
-      filterParametersCopy[shipFilterSelection]
-        ? (filterParametersCopy[shipFilterSelection] = false)
-        : (filterParametersCopy[shipFilterSelection] = true);
+      filterParametersCopy2[shipFilterType][shipFilterSelection]
+        ? (filterParametersCopy2[shipFilterType][shipFilterSelection] = false)
+        : (filterParametersCopy2[shipFilterType][shipFilterSelection] = true);
     }
     //Creates array of filterFunctions of which filterParameters are currently 'true'.
     //replace with sequential .maps for year, type, faction.
@@ -104,10 +162,53 @@ export default function Container() {
     //     });
     // });
 
+    //------
+    //Same, but for:
+    // year: {
+    //  "2016": {selected: false, function: ship => ship.year === 2016},
+    // "2017": {selected: true,function: ship => ship.year === 2017},
+    //      }
+
+    // let filterParameters4Test = ['year', 'type', 'faction'].map(i => {
+    //   let obj = Object.values(filterParameters4[i])
+    //
+    //   let arr = []
+    //
+    //   obj.forEach(x => {
+    //     if(x.selected) {
+    //       arr.push(x.function) // change this to conditional based on 'i', with dynamic "ship => ship.type.indexOf("TIE Fighter") !== -1" functions based off variables
+    //     }
+    //   })
+    //   return arr
+    //     })
+
+    //not working. scope for 'year' doesnt pass 'value'
+    // const createFilterFunction = (yearTypeOrFaction, value) => {
+    //   if (yearTypeOrFaction === "year") {
+    //     let test = value;
+    //     console.log(value, test, test === "2016", test === 2016);
+    //     return (ship => ship.year === test)(test);
+    //   } else {
+    //     return (ship, value) => ship[yearTypeOrFaction].indexOf(value) !== -1;
+    //   }
+    // };
+    //--------
+
     //works, but very tediosu and repetitive.
     let yearFilters = Object.keys(filterParametersCopy2["year"])
       .filter(k => filterParametersCopy2["year"][k])
-      .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
+      .map(
+        el =>
+          // {
+          // console.log(
+          //   el,
+          //   filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")],
+          //   createFilterFunction("year", parseInt(el))
+          // );
+          // return createFilterFunction("year", parseInt(el));
+          // });
+          filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]
+      );
     let typeFilters = Object.keys(filterParametersCopy2["type"])
       .filter(k => filterParametersCopy2["type"][k])
       .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
@@ -126,7 +227,7 @@ export default function Container() {
     setShipFilter({
       ...shipFilter,
       filterParameters: filterParametersCopy,
-      currentFilters: newFilters
+      currentFilters: testFilters
     });
   };
 

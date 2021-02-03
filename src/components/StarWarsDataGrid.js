@@ -56,7 +56,17 @@ export default function DataGridDemo(props) {
     if (props.shipFilter.currentFilters.length === 0) {
       return item;
     } else {
-      return props.shipFilter.currentFilters.some(f => f(item));
+      return (
+        (props.shipFilter.currentFilters[0].length !== 0
+          ? props.shipFilter.currentFilters[0].some(f => f(item))
+          : item) &&
+        (props.shipFilter.currentFilters[1].length !== 0
+          ? props.shipFilter.currentFilters[1].some(f => f(item))
+          : item) &&
+        (props.shipFilter.currentFilters[2].length !== 0
+          ? props.shipFilter.currentFilters[2].some(f => f(item))
+          : item)
+      );
     }
   });
 

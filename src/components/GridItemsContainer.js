@@ -25,6 +25,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleContainer(props) {
   const classes = useStyles();
+  console.log(props.shipFilter.currentFilters);
 
   const makeSelectedGridItems = (
     <Grid container>
@@ -52,7 +53,20 @@ export default function SimpleContainer(props) {
   //   props.shipFilter.currentFilters[0].some(f => f(item)) &&
   //   props.shipFilter.currentFilters[1].some(f => f(item)) &&
   //   props.shipFilter.currentFilters[2].some(f => f(item))
-  // );
+  // )
+  // return (
+  //       (props.shipFilter.currentFilters[0].length !== 0
+  //     ? props.shipFilter.currentFilters[0].some(f => f(ship))
+  //     : ship)
+  //     &&
+  //       (props.shipFilter.currentFilters[1].length !== 0
+  //     ? props.shipFilter.currentFilters[1].some(f => f(ship))
+  //     : ship)
+  //      &&
+  //       (props.shipFilter.currentFilters[2].length !== 0
+  //     ? props.shipFilter.currentFilters[2].some(f => f(ship))
+  //     : ship)
+  //     )
 
   const makeShipTypeGridItems = (
     <Grid container>
@@ -61,7 +75,17 @@ export default function SimpleContainer(props) {
           if (props.shipFilter.currentFilters.length === 0) {
             return item;
           } else {
-            return props.shipFilter.currentFilters.some(f => f(item));
+            return (
+              (props.shipFilter.currentFilters[0].length !== 0
+                ? props.shipFilter.currentFilters[0].some(f => f(item))
+                : item) &&
+              (props.shipFilter.currentFilters[1].length !== 0
+                ? props.shipFilter.currentFilters[1].some(f => f(item))
+                : item) &&
+              (props.shipFilter.currentFilters[2].length !== 0
+                ? props.shipFilter.currentFilters[2].some(f => f(item))
+                : item)
+            );
           }
         })
         .map((ship, index) => (
