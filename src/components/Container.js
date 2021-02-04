@@ -4,23 +4,6 @@ import Drawer from "./Drawer.js";
 export default function Container() {
   const [searchbarValue, setSearchbarValue] = React.useState("");
   const [shipFilter, setShipFilter] = React.useState({
-    filterParameters: {
-      "2016": false,
-      "2017": false,
-      "2018": false,
-      "2019": false,
-      "2020": false,
-      "Capital Ship": false,
-      Walker: false,
-      Speeder: false,
-      Fighter: false,
-      "X-Wing": false,
-      "TIE Fighter": false,
-      Imperial: false,
-      Rebel: false,
-      "Bounty Hunter": false,
-      Smuggler: false
-    },
     filterParameters2: {
       year: {
         "2016": false,
@@ -47,8 +30,8 @@ export default function Container() {
     filterParameters3: {
       year: {
         "2016": { selected: false, function: ship => ship.year === 2016 },
-        "2017": { selected: true, function: ship => ship.year === 2017 },
-        "2018": { selected: true, function: ship => ship.year === 2018 },
+        "2017": { selected: false, function: ship => ship.year === 2017 },
+        "2018": { selected: false, function: ship => ship.year === 2018 },
         "2019": { selected: false, function: ship => ship.year === 2019 },
         "2020": { selected: false, function: ship => ship.year === 2020 }
       },
@@ -84,7 +67,7 @@ export default function Container() {
           function: ship => ship.faction.indexOf("Imperial") !== -1
         },
         Rebel: {
-          selected: true,
+          selected: false,
           function: ship => ship.faction.indexOf("Rebel") !== -1
         },
         "Bounty Hunter": {
@@ -99,7 +82,8 @@ export default function Container() {
     },
     currentFilters: []
   });
-  //make functions for repetitive code, and filters for 'rebel and imperial ships that are walkers'
+  //I spent a while making functions to produce these filterFunctions, but scope was an issue for the 'year' functions
+  //It ended up being simpler just to code them here separately for use
   const filterFunctions = {
     2016: ship => ship.year === 2016,
     2017: ship => ship.year === 2017,
@@ -122,112 +106,78 @@ export default function Container() {
     setSearchbarValue(searchbarData !== undefined ? searchbarData : "");
   };
   const handleShipFilter = (shipFilterSelection, shipFilterType) => {
-    let filterParametersCopy = { ...shipFilter.filterParameters };
     let filterParametersCopy2 = { ...shipFilter.filterParameters2 };
+    let filterParametersCopy3 = { ...shipFilter.filterParameters3 };
 
-    // if (shipFilterSelection !== undefined) {
-    //   filterParametersCopy[shipFilterSelection]
-    //     ? (filterParametersCopy[shipFilterSelection] = false)
-    //     : (filterParametersCopy[shipFilterSelection] = true);
-    // }
-    if (shipFilterSelection !== undefined) {
-      filterParametersCopy2[shipFilterType][shipFilterSelection]
-        ? (filterParametersCopy2[shipFilterType][shipFilterSelection] = false)
-        : (filterParametersCopy2[shipFilterType][shipFilterSelection] = true);
-    }
     //Creates array of filterFunctions of which filterParameters are currently 'true'.
     //replace with sequential .maps for year, type, faction.
-    let newFilters = Object.keys(filterParametersCopy)
-      .filter(k => filterParametersCopy[k])
-      .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
+    // let newFilters = Object.keys(filterParametersCopy)
+    //   .filter(k => filterParametersCopy[k])
+    //   .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
 
-    //makes "2016": false into {2016: false, filter: filterfunction}. Iterating through Object.entries(filterParameters["Year"]) for true filters, then immediately taking the filter function might be better
-    //     let testObject = Object.entries(filterParameters2["Ship Type"]).map(([key, value]) => {
-    //   return {[key]: [value], filter: filterFunctions[key.toLowerCase().replace(/[-\s]/g, '')]}
-    // })
-
-    //more concise version of tedious methods below. works on data structure like:
-    //year: {
-    //  "2016": [false, ship => ship.year === 2016],
-    //  "2017": [false, ship => ship.year === 2017]
-    //      }
-
-    //Iterates through filterParameters[year], [type], and [faction],
-    //filters for currently selected parameters, and returns array of filterFunctions
-    // let filters = ["year", "type", "faction"].map(value => {
-    //   return Object.keys(filterParameters3[value])
-    //     .filter(k => filterParameters3[value][k][0])
-    //     .map(j => {
-    //       return filterParameters3[value][j][1];
-    //     });
+    //may be better to have functions as a second key/vaue pair in filterParameters2
+    //Works for filterParameters2 structured this way, and uses an external filterFunctions const.
+    //faction: {
+    // Imperial: false
+    //}
+    // if (shipFilterSelection !== undefined) {
+    //   filterParametersCopy2[shipFilterType][shipFilterSelection]
+    //     ? (filterParametersCopy2[shipFilterType][shipFilterSelection] = false)
+    //     : (filterParametersCopy2[shipFilterType][shipFilterSelection] = true);
+    // }
+    // let testFilters2 = ["year", "type", "faction"].map(value => {
+    //   return Object.keys(filterParametersCopy2[value])
+    //     .filter(k => filterParametersCopy2[value][k])
+    //     .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
     // });
 
-    //------
-    //Same, but for:
-    // year: {
-    //  "2016": {selected: false, function: ship => ship.year === 2016},
-    // "2017": {selected: true,function: ship => ship.year === 2017},
-    //      }
-
-    // let filterParameters4Test = ['year', 'type', 'faction'].map(i => {
-    //   let obj = Object.values(filterParameters4[i])
-    //
-    //   let arr = []
-    //
-    //   obj.forEach(x => {
-    //     if(x.selected) {
-    //       arr.push(x.function) // change this to conditional based on 'i', with dynamic "ship => ship.type.indexOf("TIE Fighter") !== -1" functions based off variables
-    //     }
-    //   })
-    //   return arr
-    //     })
-
-    //not working. scope for 'year' doesnt pass 'value'
-    // const createFilterFunction = (yearTypeOrFaction, value) => {
-    //   if (yearTypeOrFaction === "year") {
-    //     let test = value;
-    //     console.log(value, test, test === "2016", test === 2016);
-    //     return (ship => ship.year === test)(test);
-    //   } else {
-    //     return (ship, value) => ship[yearTypeOrFaction].indexOf(value) !== -1;
+    //works for filterParameters2 structured this way. Doesn't require refgerence to filterFunctions and .toLowerCase().replace every time.
+    // faction: {
+    //   Imperial: {
+    //     selected: false,
+    //     function: ship => ship.faction.indexOf("Imperial") !== -1
     //   }
-    // };
-    //--------
+    //}
+    if (shipFilterSelection !== undefined) {
+      filterParametersCopy3[shipFilterType][shipFilterSelection].selected
+        ? (filterParametersCopy3[shipFilterType][
+            shipFilterSelection
+          ].selected = false)
+        : (filterParametersCopy3[shipFilterType][
+            shipFilterSelection
+          ].selected = true);
+    }
+    let filterParametersWithFilterFunctionIncluded = [
+      "year",
+      "type",
+      "faction"
+    ].map(value => {
+      let obj = Object.values(filterParametersCopy3[value]);
+      let arr = [];
+      obj.forEach(x => {
+        if (x.selected) {
+          arr.push(x.function);
+        }
+      });
+      return arr;
+    });
 
-    //works, but very tediosu and repetitive.
-    let yearFilters = Object.keys(filterParametersCopy2["year"])
-      .filter(k => filterParametersCopy2["year"][k])
-      .map(
-        el =>
-          // {
-          // console.log(
-          //   el,
-          //   filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")],
-          //   createFilterFunction("year", parseInt(el))
-          // );
-          // return createFilterFunction("year", parseInt(el));
-          // });
-          filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]
-      );
-    let typeFilters = Object.keys(filterParametersCopy2["type"])
-      .filter(k => filterParametersCopy2["type"][k])
-      .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
-    let factionFilters = Object.keys(filterParametersCopy2["faction"])
-      .filter(k => filterParametersCopy2["faction"][k])
-      .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
-    let testFilters = [yearFilters, typeFilters, factionFilters];
-    console.log(
-      "testFilters",
-      testFilters
-      // Object.keys(filterParametersCopy2["ShipType"])
-      //   .filter(k => filterParametersCopy2["ShipType"][k])
-      //   .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")])
-    );
+    //works, but very tedious and repetitive.
+    // let yearFilters = Object.keys(filterParametersCopy2["year"])
+    //   .filter(k => filterParametersCopy2["year"][k])
+    //   .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
+    // let typeFilters = Object.keys(filterParametersCopy2["type"])
+    //   .filter(k => filterParametersCopy2["type"][k])
+    //   .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
+    // let factionFilters = Object.keys(filterParametersCopy2["faction"])
+    //   .filter(k => filterParametersCopy2["faction"][k])
+    //   .map(el => filterFunctions[el.toLowerCase().replace(/[-\s]/g, "")]);
+    // let testFilters = [yearFilters, typeFilters, factionFilters];
 
     setShipFilter({
       ...shipFilter,
-      filterParameters: filterParametersCopy,
-      currentFilters: testFilters
+      filterParameters: filterParametersCopy3,
+      currentFilters: filterParametersWithFilterFunctionIncluded
     });
   };
 
