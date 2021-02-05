@@ -147,6 +147,7 @@ export default function ResponsiveDrawer(props) {
           name="year"
           list={["2016", "2017", "2018", "2019", "2020"]}
         />
+
         <DrawerList
           handleShipFilter={props.handleShipFilter}
           primary="Ship Type"
@@ -160,7 +161,7 @@ export default function ResponsiveDrawer(props) {
             "TIE Fighter"
           ]}
         />
-        <Divider />
+
         <DrawerList
           handleShipFilter={props.handleShipFilter}
           primary="Faction"

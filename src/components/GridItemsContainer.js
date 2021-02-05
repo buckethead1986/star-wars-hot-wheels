@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleContainer(props) {
   const classes = useStyles();
-  console.log(props.shipFilter.currentFilters);
+  console.log(props.shipFilter.filterArray);
 
   const makeSelectedGridItems = (
     <Grid container>
@@ -46,25 +46,25 @@ export default function SimpleContainer(props) {
 
   // {starWarsShips
   //   .filter(item => {
-  //     if (props.shipFilter.currentFilters.length === 0) {
+  //     if (props.shipFilter.filterArray.length === 0) {
   //       return item;
   //     } else {
   // return (
-  //   props.shipFilter.currentFilters[0].some(f => f(item)) &&
-  //   props.shipFilter.currentFilters[1].some(f => f(item)) &&
-  //   props.shipFilter.currentFilters[2].some(f => f(item))
+  //   props.shipFilter.filterArray[0].some(f => f(item)) &&
+  //   props.shipFilter.filterArray[1].some(f => f(item)) &&
+  //   props.shipFilter.filterArray[2].some(f => f(item))
   // )
   // return (
-  //       (props.shipFilter.currentFilters[0].length !== 0
-  //     ? props.shipFilter.currentFilters[0].some(f => f(ship))
+  //       (props.shipFilter.filterArray[0].length !== 0
+  //     ? props.shipFilter.filterArray[0].some(f => f(ship))
   //     : ship)
   //     &&
-  //       (props.shipFilter.currentFilters[1].length !== 0
-  //     ? props.shipFilter.currentFilters[1].some(f => f(ship))
+  //       (props.shipFilter.filterArray[1].length !== 0
+  //     ? props.shipFilter.filterArray[1].some(f => f(ship))
   //     : ship)
   //      &&
-  //       (props.shipFilter.currentFilters[2].length !== 0
-  //     ? props.shipFilter.currentFilters[2].some(f => f(ship))
+  //       (props.shipFilter.filterArray[2].length !== 0
+  //     ? props.shipFilter.filterArray[2].some(f => f(ship))
   //     : ship)
   //     )
 
@@ -72,18 +72,18 @@ export default function SimpleContainer(props) {
     <Grid container>
       {starWarsShips
         .filter(item => {
-          if (props.shipFilter.currentFilters.length === 0) {
+          if (props.shipFilter.filterArray.length === 0) {
             return item;
           } else {
             return (
-              (props.shipFilter.currentFilters[0].length !== 0
-                ? props.shipFilter.currentFilters[0].some(f => f(item))
+              (props.shipFilter.filterArray[0].length !== 0
+                ? props.shipFilter.filterArray[0].some(f => f(item))
                 : item) &&
-              (props.shipFilter.currentFilters[1].length !== 0
-                ? props.shipFilter.currentFilters[1].some(f => f(item))
+              (props.shipFilter.filterArray[1].length !== 0
+                ? props.shipFilter.filterArray[1].some(f => f(item))
                 : item) &&
-              (props.shipFilter.currentFilters[2].length !== 0
-                ? props.shipFilter.currentFilters[2].some(f => f(item))
+              (props.shipFilter.filterArray[2].length !== 0
+                ? props.shipFilter.filterArray[2].some(f => f(item))
                 : item)
             );
           }

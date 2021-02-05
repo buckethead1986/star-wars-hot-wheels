@@ -53,18 +53,18 @@ export default function DataGridDemo(props) {
   });
 
   const filteredShips = starWarsShips.filter(item => {
-    if (props.shipFilter.currentFilters.length === 0) {
+    if (props.shipFilter.filterArray.length === 0) {
       return item;
     } else {
       return (
-        (props.shipFilter.currentFilters[0].length !== 0
-          ? props.shipFilter.currentFilters[0].some(f => f(item))
+        (props.shipFilter.filterArray[0].length !== 0
+          ? props.shipFilter.filterArray[0].some(f => f(item))
           : item) &&
-        (props.shipFilter.currentFilters[1].length !== 0
-          ? props.shipFilter.currentFilters[1].some(f => f(item))
+        (props.shipFilter.filterArray[1].length !== 0
+          ? props.shipFilter.filterArray[1].some(f => f(item))
           : item) &&
-        (props.shipFilter.currentFilters[2].length !== 0
-          ? props.shipFilter.currentFilters[2].some(f => f(item))
+        (props.shipFilter.filterArray[2].length !== 0
+          ? props.shipFilter.filterArray[2].some(f => f(item))
           : item)
       );
     }
