@@ -1,7 +1,7 @@
 import * as react from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { makeStyles } from "@material-ui/core/styles";
-import { starWarsShips } from "./StarWarsShips2.js";
+// import { starWarsShips } from "./StarWarsShips2.js";
 
 const useStyles = makeStyles(theme => ({
   img: {
@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function DataGridDemo(props) {
+export default function StarWarsDataGrid(props) {
   const classes = useStyles();
 
   const columns = [
@@ -52,28 +52,28 @@ export default function DataGridDemo(props) {
     }
   });
 
-  const filteredShips = starWarsShips.filter(item => {
-    if (props.shipFilter.filterArray.length === 0) {
-      return item;
-    } else {
-      return (
-        (props.shipFilter.filterArray[0].length !== 0
-          ? props.shipFilter.filterArray[0].some(f => f(item))
-          : item) &&
-        (props.shipFilter.filterArray[1].length !== 0
-          ? props.shipFilter.filterArray[1].some(f => f(item))
-          : item) &&
-        (props.shipFilter.filterArray[2].length !== 0
-          ? props.shipFilter.filterArray[2].some(f => f(item))
-          : item)
-      );
-    }
-  });
+  // const filteredShips = starWarsShips.filter(item => {
+  //   if (props.shipFilter.filterArray.length === 0) {
+  //     return item;
+  //   } else {
+  //     return (
+  //       (props.shipFilter.filterArray[0].length !== 0
+  //         ? props.shipFilter.filterArray[0].some(f => f(item))
+  //         : item) &&
+  //       (props.shipFilter.filterArray[1].length !== 0
+  //         ? props.shipFilter.filterArray[1].some(f => f(item))
+  //         : item) &&
+  //       (props.shipFilter.filterArray[2].length !== 0
+  //         ? props.shipFilter.filterArray[2].some(f => f(item))
+  //         : item)
+  //     );
+  //   }
+  // });
 
   return (
     <div ref={gridWrapperRef}>
       <DataGrid
-        rows={filteredShips}
+        rows={props.filteredShips}
         columns={columns}
         checkboxSelection
         autoHeight

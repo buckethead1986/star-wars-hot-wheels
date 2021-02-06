@@ -6,7 +6,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import StarWarsGridItem from "../UnusedComponents/StarWarsGridItem.js";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
-import LargeStarWarsGridItem from "../UnusedComponents/LargeStarWarsGridItem.js";
+// import LargeStarWarsGridItem from "../UnusedComponents/LargeStarWarsGridItem.js";
 import { starWarsShips } from "./StarWarsShips2.js";
 import Paper from "@material-ui/core/Paper";
 
@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleContainer(props) {
   const classes = useStyles();
-  console.log(props.shipFilter.filterArray);
+  // console.log(props.shipFilter.filterArray);
 
   const makeSelectedGridItems = (
     <Grid container>
@@ -44,70 +44,46 @@ export default function SimpleContainer(props) {
     </Grid>
   );
 
-  // {starWarsShips
-  //   .filter(item => {
-  //     if (props.shipFilter.filterArray.length === 0) {
-  //       return item;
-  //     } else {
-  // return (
-  //   props.shipFilter.filterArray[0].some(f => f(item)) &&
-  //   props.shipFilter.filterArray[1].some(f => f(item)) &&
-  //   props.shipFilter.filterArray[2].some(f => f(item))
-  // )
-  // return (
-  //       (props.shipFilter.filterArray[0].length !== 0
-  //     ? props.shipFilter.filterArray[0].some(f => f(ship))
-  //     : ship)
-  //     &&
-  //       (props.shipFilter.filterArray[1].length !== 0
-  //     ? props.shipFilter.filterArray[1].some(f => f(ship))
-  //     : ship)
-  //      &&
-  //       (props.shipFilter.filterArray[2].length !== 0
-  //     ? props.shipFilter.filterArray[2].some(f => f(ship))
-  //     : ship)
-  //     )
+  const filteredShips = starWarsShips.filter(item => {
+    if (props.shipFilter.filterArray.length === 0) {
+      return item;
+    } else {
+      return (
+        (props.shipFilter.filterArray[0].length !== 0
+          ? props.shipFilter.filterArray[0].some(f => f(item))
+          : item) &&
+        (props.shipFilter.filterArray[1].length !== 0
+          ? props.shipFilter.filterArray[1].some(f => f(item))
+          : item) &&
+        (props.shipFilter.filterArray[2].length !== 0
+          ? props.shipFilter.filterArray[2].some(f => f(item))
+          : item)
+      );
+    }
+  });
 
   const makeShipTypeGridItems = (
     <Grid container>
-      {starWarsShips
-        .filter(item => {
-          if (props.shipFilter.filterArray.length === 0) {
-            return item;
-          } else {
-            return (
-              (props.shipFilter.filterArray[0].length !== 0
-                ? props.shipFilter.filterArray[0].some(f => f(item))
-                : item) &&
-              (props.shipFilter.filterArray[1].length !== 0
-                ? props.shipFilter.filterArray[1].some(f => f(item))
-                : item) &&
-              (props.shipFilter.filterArray[2].length !== 0
-                ? props.shipFilter.filterArray[2].some(f => f(item))
-                : item)
-            );
-          }
-        })
-        .map((ship, index) => (
-          <Grid item xs={12} sm={6}>
-            <StarWarsGridItem ship={ship} />
-          </Grid>
-        ))}
+      {filteredShips.map((ship, index) => (
+        <Grid item xs={12} sm={6}>
+          <StarWarsGridItem ship={ship} />
+        </Grid>
+      ))}
       <Grid item xs={12}>
         <Paper className={classes.paper}>Divider</Paper>
       </Grid>
     </Grid>
   );
 
-  const makeLargeStarWarsGridItems = (
-    <Grid container>
-      {starWarsShips.map((ship, index) => (
-        <Grid item xs={12}>
-          <LargeStarWarsGridItem ship={ship} />
-        </Grid>
-      ))}
-    </Grid>
-  );
+  // const makeLargeStarWarsGridItems = (
+  //   <Grid container>
+  //     {starWarsShips.map((ship, index) => (
+  //       <Grid item xs={12}>
+  //         <LargeStarWarsGridItem ship={ship} />
+  //       </Grid>
+  //     ))}
+  //   </Grid>
+  // );
 
   return (
     <React.Fragment>
@@ -123,6 +99,7 @@ export default function SimpleContainer(props) {
           </Grid>
           {makeSelectedGridItems}
           <StarWarsDataGrid
+            filteredShips={filteredShips}
             shipFilter={props.shipFilter}
             searchbarValue={props.searchbarValue}
           />

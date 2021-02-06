@@ -14,6 +14,19 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Searchbar from "./Searchbar.js";
 
+import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
+import ScheduleIcon from "@material-ui/icons/Schedule";
+// import TodayIcon from "@material-ui/icons/Today";
+
+import FlightIcon from "@material-ui/icons/Flight";
+// import LocalShippingIcon from "@material-ui/icons/LocalShipping";
+// import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+
+import CategoryIcon from "@material-ui/icons/Category";
+// import StyleIcon from "@material-ui/icons/Style";
+// import CommuteIcon from "@material-ui/icons/Commute";
+import GroupIcon from "@material-ui/icons/Group";
+
 import GridItemsContainer from "./GridItemsContainer.js";
 
 const drawerWidth = 240;
@@ -57,7 +70,7 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(2),
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
@@ -141,10 +154,12 @@ export default function ResponsiveDrawer(props) {
         <Divider />
         <Searchbar handleSearchbarData={props.handleSearchbarData} />
         <Divider />
+
         <DrawerList
           handleShipFilter={props.handleShipFilter}
           primary="Year"
           name="year"
+          icon={CalendarTodayIcon}
           list={["2016", "2017", "2018", "2019", "2020"]}
         />
 
@@ -152,13 +167,15 @@ export default function ResponsiveDrawer(props) {
           handleShipFilter={props.handleShipFilter}
           primary="Ship Type"
           name="type"
+          icon={FlightIcon}
           list={[
             "Capital Ship",
             "Walker",
             "Speeder",
             "Fighter",
             "X-Wing",
-            "TIE Fighter"
+            "TIE Fighter",
+            "Concept"
           ]}
         />
 
@@ -166,7 +183,15 @@ export default function ResponsiveDrawer(props) {
           handleShipFilter={props.handleShipFilter}
           primary="Faction"
           name="faction"
-          list={["Rebel", "Imperial", "Smuggler", "Bounty Hunter"]}
+          icon={CategoryIcon}
+          list={[
+            "Rebel",
+            "Imperial",
+            "Republic",
+            "Resistance",
+            "First Order",
+            "Unaffiliated"
+          ]}
         />
       </Drawer>
 

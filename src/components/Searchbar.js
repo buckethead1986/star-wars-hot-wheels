@@ -24,15 +24,15 @@ const useStyles = makeStyles(theme => ({
   focused: {}
 }));
 
+//tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
 const searchbarRegex = string => {
-  //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
   let lowerCaseString =
     string !== null || undefined ? string.toLowerCase() : "";
   let variable = lowerCaseString.substring(0, 1);
   let regexChecker = dynamicRegexCreator(lowerCaseString, variable);
+  //matches misspellings of AT-AT. Capital or lowercase 'AT's, with any character or no character in between
   const atst = /^at.?st/;
-  const atat = /^at.?at/; //simplified version of below with string set to lowercase
-  // const atat = /^[Aa][Tt].?[Aa][Tt]/ //matches misspellings of AT-AT. Capital or lowercase 'AT's, with any character or no character in between
+  const atat = /^at.?at/;
   if (regexChecker.test(lowerCaseString)) {
     let substring = variable + "-wing";
     return substring;

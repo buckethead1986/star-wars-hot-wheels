@@ -36,25 +36,45 @@ export default function Container() {
         "TIE Fighter": {
           selected: false,
           function: ship => ship.type.indexOf("TIE Fighter") !== -1
+        },
+        Concept: {
+          selected: false,
+          function: ship => ship.special.indexOf("Concept") !== -1
         }
       },
       faction: {
-        Imperial: {
-          selected: false,
-          function: ship => ship.faction.indexOf("Imperial") !== -1
-        },
         Rebel: {
           selected: false,
           function: ship => ship.faction.indexOf("Rebel") !== -1
         },
-        "Bounty Hunter": {
+        Imperial: {
           selected: false,
-          function: ship => ship.faction.indexOf("Bounty Hunter") !== -1
+          function: ship => ship.faction.indexOf("Imperial") !== -1
         },
-        Smuggler: {
+        Republic: {
           selected: false,
-          function: ship => ship.faction.indexOf("Smuggler") !== -1
+          function: ship => ship.faction.indexOf("Republic") !== -1
+        },
+        Resistance: {
+          selected: false,
+          function: ship => ship.faction.indexOf("Resistance") !== -1
+        },
+        "First Order": {
+          selected: false,
+          function: ship => ship.faction.indexOf("First Order") !== -1
+        },
+        Unaffiliated: {
+          selected: false,
+          function: ship => ship.faction === ""
         }
+        // "Bounty Hunter": {
+        //   selected: false,
+        //   function: ship => ship.faction.indexOf("Bounty Hunter") !== -1
+        // },
+        // Smuggler: {
+        //   selected: false,
+        //   function: ship => ship.faction.indexOf("Smuggler") !== -1
+        // }
       }
     },
     filterArray: []
