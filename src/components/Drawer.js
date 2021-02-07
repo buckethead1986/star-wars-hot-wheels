@@ -16,16 +16,10 @@ import Searchbar from "./Searchbar.js";
 
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import ScheduleIcon from "@material-ui/icons/Schedule";
-// import TodayIcon from "@material-ui/icons/Today";
 
 import FlightIcon from "@material-ui/icons/Flight";
-// import LocalShippingIcon from "@material-ui/icons/LocalShipping";
-// import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
 import CategoryIcon from "@material-ui/icons/Category";
-// import StyleIcon from "@material-ui/icons/Style";
-// import CommuteIcon from "@material-ui/icons/Commute";
-import GroupIcon from "@material-ui/icons/Group";
 
 import GridItemsContainer from "./GridItemsContainer.js";
 

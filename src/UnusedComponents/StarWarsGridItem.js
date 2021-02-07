@@ -19,10 +19,6 @@ const useStyles = makeStyles(theme => ({
     width: 128,
     height: 128
   },
-  // bigImage: {
-  //   width: 256,
-  //   height: 256
-  // },
   img: {
     margin: "auto",
     display: "block",

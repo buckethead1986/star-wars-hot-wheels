@@ -4,15 +4,13 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-// import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
+
 import Collapse from "@material-ui/core/Collapse";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
-// import InboxIcon from "@material-ui/icons/MoveToInbox";
-// import MailIcon from "@material-ui/icons/Mail";
+
 import Checkbox from "@material-ui/core/Checkbox";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
-// import CategoryIcon from "@material-ui/icons/Category";
 
 const useStyles = makeStyles(theme => ({
   nested: {
@@ -58,7 +56,6 @@ export default function DrawerList(props) {
             className={classes.nested}
           >
             <ListItemIcon>
-              {/* index % 2 === 0 ? <InboxIcon /> : <MailIcon /> */}
               <ArrowRightIcon fontSize="large" />
             </ListItemIcon>
             <ListItemText primary={item} />
