@@ -9,8 +9,8 @@ export default function Container() {
         "2016": { selected: false, function: ship => ship.year === 2016 },
         "2017": { selected: false, function: ship => ship.year === 2017 },
         "2018": { selected: false, function: ship => ship.year === 2018 },
-        "2019": { selected: false, function: ship => ship.year === 2019 },
-        "2020": { selected: false, function: ship => ship.year === 2020 }
+        "2019": { selected: false, function: ship => ship.year === 2019 }
+        // "2020": { selected: false, function: ship => ship.year === 2020 }
       },
       type: {
         "Capital Ship": {
@@ -35,11 +35,15 @@ export default function Container() {
         },
         "TIE Fighter": {
           selected: false,
-          function: ship => ship.type.indexOf("TIE Fighter") !== -1
+          function: ship => ship.type.indexOf("TIE") !== -1
         },
         Concept: {
           selected: false,
           function: ship => ship.special.indexOf("Concept") !== -1
+        },
+        Commemorative: {
+          selected: false,
+          function: ship => ship.special.indexOf("Commemorative") !== -1
         }
       },
       faction: {

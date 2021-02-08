@@ -112,7 +112,9 @@ export const starWarsShips = [
     name: "Star Destroyer",
     year: 2015,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171206012121",
+      "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20171206012121",
+    altsrc:
+      "https://s3-us-west-2.amazonaws.com/images.collecthw.com/14a5b77b-34a4-472c-9fb7-62720ae222f0_large.JPG",
     model: "CGW57",
     pack: "Single",
     special: "",
@@ -147,7 +149,7 @@ export const starWarsShips = [
     name: "Y-Wing Starfighter",
     year: 2015,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest/scale-to-width-down/340?cb=20150627084020",
+      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest?cb=20150627084020",
     model: "CGW59",
     pack: "Single",
     special: "",
@@ -381,7 +383,7 @@ export const starWarsShips = [
     name: "ARC-170 Starfighter",
     year: 2016,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest?cb=20171001004433",
+      "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest/scale-to-width-down/800?cb=20171001004433",
     model: "DMP65",
     pack: "Single",
     special: "",
@@ -417,7 +419,7 @@ export const starWarsShips = [
     name: "Speeder Bike",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/d/d4/Speeder_Bike_%28DMP66%29_01.jpeg/revision/latest/scale-to-width-down/450?cb=20180319001739",
+      "https://images-na.ssl-images-amazon.com/images/I/41-JCTABgUL._AC_.jpg",
     model: "DMP66",
     pack: "Single",
     special: "",
@@ -441,7 +443,7 @@ export const starWarsShips = [
     name: "Millenium Falcon",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/c/c1/DXX45_Millennium_Falcon.jpg/revision/latest/scale-to-width-down/565?cb=20170905084521",
+      "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DXX45",
     model: "DXX45",
     pack: "Single",
     special: "",
@@ -499,7 +501,8 @@ export const starWarsShips = [
     name: "Tantive IV",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/9/90/Tantive_IV_%28CGW61%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20171015013320",
+      "https://images-na.ssl-images-amazon.com/images/I/9177dmdHQnL._AC_SL1500_.jpg",
+    altsrc: "https://m.media-amazon.com/images/I/41aqbRVCs+L.jpg",
     model: "DXX52",
     pack: "Single",
     special: "",
@@ -547,7 +550,9 @@ export const starWarsShips = [
     name: "Star Destroyer",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/a/a1/Star_Destroyer_%28DXX57%29_01.jpeg/revision/latest?cb=20171206012224",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSnB4rEEayn2CFBxNGRNp2As78SAd_fIN-Bg&usqp=CAU",
+    altsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/0/0a/Star_Destroyer_%28DXX57%29_02.JPG/revision/latest/scale-to-width-down/1000?cb=20171018001136",
     model: "DXX57",
     pack: "Single",
     special: "",
@@ -627,7 +632,8 @@ export const starWarsShips = [
     id: 53,
     name: "A-Wing Fighter",
     year: 2017,
-    src: "https://m.media-amazon.com/images/I/71O9lgReafL.jpg",
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71O9lgReafL._AC_SL1500_.jpg",
     model: "DNP19",
     pack: "Single",
     special: "",
@@ -675,7 +681,9 @@ export const starWarsShips = [
     name: "A-Wing Fighter",
     year: 2017,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/3/34/FBB07_Resistance_A-wing_Fighter.jpg/revision/latest/scale-to-width-down/565?cb=20170905083804",
+      "https://images-na.ssl-images-amazon.com/images/I/414vOVbTjvL._AC_.jpg",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81UDAC-DEVL._AC_SL1500_.jpg",
     model: "FBB07",
     pack: "Single",
     special: "",
@@ -707,11 +715,11 @@ export const starWarsShips = [
   },
   {
     id: 60,
-    name: "Darth Vader's TIE Fighter",
+    name: "Darth Vader's TIE Advanced X1 Prototype",
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/91m4FUEmORL._SL1500_.jpg",
-    model: "FBB43",
+    model: "DXX56",
     pack: "Single",
     special: "",
     faction: "Imperial",
@@ -833,7 +841,7 @@ export const starWarsShips = [
     pack: "2-Pack",
     special: "",
     faction: "Rebel",
-    type: "TIE Fighter"
+    type: "TIE Fighter X-Wing"
   },
   {
     id: 71,
@@ -845,7 +853,7 @@ export const starWarsShips = [
     pack: "2-Pack",
     special: "",
     faction: "Rebel",
-    type: "TIE Fighter"
+    type: "TIE Fighter X-Wing"
   },
   {
     id: 72,
@@ -945,7 +953,9 @@ export const starWarsShips = [
     name: "Landspeeder",
     year: 2018,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/0/0c/Concept_Landspeeder_%28FJF22%29_02.jpg/revision/latest/scale-to-width-down/650?cb=20200426192431",
+      "https://images-na.ssl-images-amazon.com/images/I/71je-9hRZ1L._AC_SX466_.jpg",
+    alrtsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/71L7049RtXL._AC_SX679_.jpg",
     model: "FJF22",
     pack: "Single",
     special: "Concept",
@@ -1035,6 +1045,285 @@ export const starWarsShips = [
     special: "Limited",
     faction: "",
     type: "Walker"
+  },
+  {
+    id: 88,
+    name: "AT-ST Raider",
+    year: 2019,
+    src: "https://images-na.ssl-images-amazon.com/images/I/41e2o5%2BU4CL.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91FG7%2BuZhCL._SL1500_.jpg",
+    model: "FYT77",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    type: "Walker"
+  },
+  {
+    id: 89,
+    name: "Y-Wing Starfighter Gold Leader",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/91BwsqxXIOL._AC_SL1500_.jpg",
+    model: "FYT71",
+    pack: "Single",
+    special: "",
+    faction: "Resistance",
+    type: "Fighter"
+  },
+  {
+    id: 90,
+    name: "Resistance A-Wing Fighter",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81sNE0hweBL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81FeG2SghkL._AC_SL1500_.jpg",
+    model: "FYT74",
+    pack: "Single",
+    special: "",
+    faction: "Resistance",
+    type: "Fighter"
+  },
+  {
+    id: 91,
+    name: "TIE Fighter",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/819xOTcLUuL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/818wrhF53ML._AC_SL1500_.jpg",
+    model: "FBB40",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    type: "TIE Fighter"
+  },
+  {
+    id: 92,
+    name: "First Order TIE Fighter",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/812vXLSyPTL._AC_SL1400_.jpg",
+    model: "FBB28",
+    pack: "Single",
+    special: "",
+    faction: "First Order",
+    type: "TIE Fighter"
+  },
+  {
+    id: 93,
+    name: "Poe's X-Wing Fighter (Wings Opened)",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71LP6OoYwcL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81ygs46HdIL._AC_SL1500_.jpg",
+    model: "FYT75",
+    pack: "Single",
+    special: "",
+    faction: "Resistance",
+    type: "Fighter"
+  },
+  {
+    id: 94,
+    name: "Razor Crest",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/414dLuK7zvL._AC_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91cni16oOUL._AC_SL1500_.jpg",
+    model: "FYT70",
+    pack: "Single",
+    special: "",
+    faction: "",
+    type: "Fighter"
+  },
+  // {
+  //   id: 95,
+  //   name: "B-Wing Fighter",
+  //   year: 2019,
+  //   src: "",
+  //   model: "GJG30",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "Rebel",
+  //   type: "Fighter"
+  // },
+  // {
+  //   id: 96,
+  //   name: "Super Star Destroyer",
+  //   year: 2019,
+  //   src: "",
+  //   model: "GMH62",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "Imperial",
+  //   type: "Capital Ship"
+  // },
+  // {
+  //   id: 97,
+  //   name: "Darth Maul's Speeder",
+  //   year: 2019,
+  //   src: "",
+  //   model: "GMH63",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "Imperial",
+  //   type: "Fighter"
+  // },
+  // {
+  //   id: 98,
+  //   name: "Sith Infiltrator",
+  //   year: 2019,
+  //   src: "",
+  //   model: "GNF75",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "Imperial",
+  //   type: "Capital Ship"
+  // },
+  // {
+  //   id: 99,
+  //   name: "First Order Treadspeeder",
+  //   year: 2019,
+  //   src: "",
+  //   model: "FYT78",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "First Order",
+  //   type: "Walker Speeder"
+  // },
+  // {
+  //   id: 100,
+  //   name: "First Order AT-ST with BB-8",
+  //   year: 2019,
+  //   src: "",
+  //   model: "GGY71",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "First Order",
+  //   type: "Walker"
+  // },
+  {
+    id: 101,
+    name: "Naboo N-1 Starfighter",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71AXF4zUdSL._AC_SL1500_.jpg",
+    model: "FYT82",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "Republic",
+    type: "Fighter"
+  },
+  {
+    id: 102,
+    name: "Republic Attack Gunship",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81T40og3sOL._AC_SL1500_.jpg",
+    model: "FYT83",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "Republic",
+    type: "Fighter"
+  },
+  {
+    id: 103,
+    name: "Obi-Wan Kenobi's Jedi Starfighter",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71ctKRzWPsL._AC_SL1500_.jpg",
+    model: "FYT84",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "Republic",
+    type: "Fighter"
+  },
+  {
+    id: 104,
+    name: "Darth Vader's TIE Fighter",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81%2BAMN8-xDL._AC_SX522_.jpg",
+    altsrc: "https://m.media-amazon.com/images/I/81c-Y312LGL._AC_SL1500_.jpg",
+    model: "FYT85",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "Imperial",
+    type: "TIE Fighter"
+  },
+  {
+    id: 105,
+    name: "Boba Fett's Slave I",
+    year: 2019,
+    src: "https://m.media-amazon.com/images/I/51gsgf5VDZL._AC_SL1000_.jpg",
+    altsrc: "https://m.media-amazon.com/images/I/51zUkNcTieL._AC_SL1000_.jpg",
+    model: "FYT86",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "",
+    type: "Fighter"
+  },
+  {
+    id: 106,
+    name: "Speeder Bike",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/61HbXObh1GL._AC_SL1274_.jpg",
+    altsrc: "https://m.media-amazon.com/images/I/71ylIH8KI1L._AC_SL1500_.jpg",
+    model: "FYT87",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "Rebel",
+    type: "Speeder"
+  },
+  {
+    id: 107,
+    name: "Resistance X-Wing Fighter",
+    year: 2019,
+    src: "http://www.norton.co.uk/images/products/1593944623-67122100.jpg",
+    model: "FYT88",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "Resistance",
+    type: "Fighter"
+  },
+  {
+    id: 108,
+    name: "Kylo Ren's TIE Silencer",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71ZHKwyv6rL._AC_SX569_.jpg",
+    model: "FYT89",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "First Order",
+    type: "TIE Fighter"
+  },
+  {
+    id: 109,
+    name: "Millenium Falcon",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81no-HvR4SL._AC_SX679_.jpg",
+    model: "FYT90",
+    pack: "Single",
+    special: "Commemorative",
+    faction: "Rebel",
+    type: "Fighter"
+  },
+  {
+    id: 110,
+    name: "Death Star",
+    year: 2019,
+    src: "",
+    model: "",
+    pack: "",
+    special: "Commemorative",
+    faction: "Imperial",
+    type: "Capital Ship"
   }
 ];
 

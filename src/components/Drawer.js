@@ -154,7 +154,7 @@ export default function ResponsiveDrawer(props) {
           primary="Year"
           name="year"
           icon={CalendarTodayIcon}
-          list={["2016", "2017", "2018", "2019", "2020"]}
+          list={["2016", "2017", "2018", "2019"]}
         />
 
         <DrawerList
@@ -169,7 +169,8 @@ export default function ResponsiveDrawer(props) {
             "Fighter",
             "X-Wing",
             "TIE Fighter",
-            "Concept"
+            "Concept",
+            "Commemorative"
           ]}
         />
 
