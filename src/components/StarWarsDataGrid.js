@@ -52,24 +52,6 @@ export default function StarWarsDataGrid(props) {
     }
   });
 
-  // const filteredShips = starWarsShips.filter(item => {
-  //   if (props.shipFilter.filterArray.length === 0) {
-  //     return item;
-  //   } else {
-  //     return (
-  //       (props.shipFilter.filterArray[0].length !== 0
-  //         ? props.shipFilter.filterArray[0].some(f => f(item))
-  //         : item) &&
-  //       (props.shipFilter.filterArray[1].length !== 0
-  //         ? props.shipFilter.filterArray[1].some(f => f(item))
-  //         : item) &&
-  //       (props.shipFilter.filterArray[2].length !== 0
-  //         ? props.shipFilter.filterArray[2].some(f => f(item))
-  //         : item)
-  //     );
-  //   }
-  // });
-
   return (
     <div ref={gridWrapperRef}>
       <DataGrid

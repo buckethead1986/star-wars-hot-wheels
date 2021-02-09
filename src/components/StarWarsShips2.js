@@ -323,6 +323,8 @@ export const starWarsShips = [
     name: "Sith Infiltrator",
     year: 2016,
     src:
+      "https://images-na.ssl-images-amazon.com/images/I/712fv42-U6L._SL1500_.jpg",
+    altsrc:
       "https://i5.walmartimages.com/asr/619b57b3-d16d-4325-afea-55df179a7021_1.1776049a29223b536a49f89805356d75.jpeg",
     model: "CGW72",
     pack: "Single",
@@ -929,7 +931,9 @@ export const starWarsShips = [
     name: "Imperial AT-Hauler",
     year: 2018,
     src:
-      "https://images.bonanzastatic.com/afu/images/b6fb/ac3a/5b94_5975015127/2018_mattel_hot_wheels_star_wars_starships_solo_imperial_at_hauler_C.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/81fh7rAMNhL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81NHjvcBpeL._AC_SL1500_.jpg",
     model: "FJF27",
     pack: "Single",
     special: "",
@@ -941,12 +945,16 @@ export const starWarsShips = [
     name: "B-Wing Fighter",
     year: 2018,
     src:
-      "https://i5.walmartimages.com/asr/5ab4011e-bc29-4ca8-8fb6-1061af7ff6a2_1.3ccc2694dadf2574cac4f040bd73f47e.jpeg",
-    model: "FJD40",
+      "https://i5.walmartimages.com/asr/0dba7094-eb0f-4e2f-b928-f2a2b1ea8865_1.122cb0e48424f9451526bb7a91a4ee66.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/71VG53PxXVL._SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81Nhs47cwLL._SL1500_.jpg",
+    model: "FJD60",
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "B-Wing Fighter"
+    type: "Fighter"
   },
   {
     id: 80,
@@ -1139,72 +1147,89 @@ export const starWarsShips = [
     faction: "",
     type: "Fighter"
   },
-  // {
-  //   id: 95,
-  //   name: "B-Wing Fighter",
-  //   year: 2019,
-  //   src: "",
-  //   model: "GJG30",
-  //   pack: "Single",
-  //   special: "",
-  //   faction: "Rebel",
-  //   type: "Fighter"
-  // },
-  // {
-  //   id: 96,
-  //   name: "Super Star Destroyer",
-  //   year: 2019,
-  //   src: "",
-  //   model: "GMH62",
-  //   pack: "Single",
-  //   special: "",
-  //   faction: "Imperial",
-  //   type: "Capital Ship"
-  // },
-  // {
-  //   id: 97,
-  //   name: "Darth Maul's Speeder",
-  //   year: 2019,
-  //   src: "",
-  //   model: "GMH63",
-  //   pack: "Single",
-  //   special: "",
-  //   faction: "Imperial",
-  //   type: "Fighter"
-  // },
-  // {
-  //   id: 98,
-  //   name: "Sith Infiltrator",
-  //   year: 2019,
-  //   src: "",
-  //   model: "GNF75",
-  //   pack: "Single",
-  //   special: "",
-  //   faction: "Imperial",
-  //   type: "Capital Ship"
-  // },
-  // {
-  //   id: 99,
-  //   name: "First Order Treadspeeder",
-  //   year: 2019,
-  //   src: "",
-  //   model: "FYT78",
-  //   pack: "Single",
-  //   special: "",
-  //   faction: "First Order",
-  //   type: "Walker Speeder"
-  // },
-  // {
-  //   id: 100,
-  //   name: "First Order AT-ST with BB-8",
-  //   year: 2019,
-  //   src: "",
-  //   model: "GGY71",
-  //   pack: "Single",
-  //   special: "",
-  //   faction: "First Order",
-  //   type: "Walker"
-  // },
+  {
+    id: 95,
+    name: "B-Wing Fighter",
+    year: 2019,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/61cqkJ6KzKL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91btvF7WS6L._AC_SL1500_.jpg",
+    model: "GJC30",
+    pack: "Single",
+    special: "",
+    faction: "Rebel",
+    type: "Fighter"
+  },
+  {
+    id: 96,
+    name: "Super Star Destroyer",
+    year: 2019,
+    src: "https://m.media-amazon.com/images/I/51BCWDa17YL.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/71-WX1ALbdL._AC_SL1000_.jpg",
+    model: "GMH62",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    type: "Capital Ship"
+  },
+  {
+    id: 97,
+    name: "Darth Maul's Speeder",
+    year: 2019,
+    src:
+      "https://i5.walmartimages.com/asr/9fc133a3-32f1-4f24-b08e-275b5b60d641_1.db7f5ad5dfce0620321184c77ccde5d5.jpeg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91pYrXVCFiL._AC_SL1500_.jpg",
+    model: "GMH63",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    type: "Fighter"
+  },
+  {
+    id: 98,
+    name: "Sith Infiltrator",
+    year: 2019,
+    src:
+      "https://i5.walmartimages.com/asr/60548b8d-e4ba-4145-8df2-3fa0b825f4af_1.231488d428ee7745132cc08628fc4205.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    packsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/SithInfiltrator-GNF75-Front.jpg",
+    model: "GNF75",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    type: "Capital Ship"
+  },
+  {
+    id: 99,
+    name: "First Order Treadspeeder",
+    year: 2019,
+    src:
+      "https://i5.walmartimages.com/asr/cb6c9224-6ff9-429d-b495-173eb8e54219_1.3062e2b1711faf56e0ab329a54dc0ac4.jpeg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91Pqzoq5JRL._AC_SL1500_.jpg",
+    model: "FYT78",
+    pack: "Single",
+    special: "",
+    faction: "First Order",
+    type: "Walker Speeder"
+  },
+  {
+    id: 100,
+    name: "First Order AT-ST with BB-8",
+    year: 2019,
+    src:
+      "https://static.wikia.nocookie.net/hotwheels/images/9/95/First_Order_AT-ST_%28GGY71%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20200422183217",
+    packsrc:
+      "https://s3-us-west-2.amazonaws.com/images.collecthw.com/f1299bd2-1ff5-478e-9e02-bbc5cc2f0e64_large.png",
+    model: "GGY71",
+    pack: "Single",
+    special: "",
+    faction: "First Order",
+    type: "Walker"
+  },
   {
     id: 101,
     name: "Naboo N-1 Starfighter",

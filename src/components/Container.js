@@ -71,14 +71,6 @@ export default function Container() {
           selected: false,
           function: ship => ship.faction === ""
         }
-        // "Bounty Hunter": {
-        //   selected: false,
-        //   function: ship => ship.faction.indexOf("Bounty Hunter") !== -1
-        // },
-        // Smuggler: {
-        //   selected: false,
-        //   function: ship => ship.faction.indexOf("Smuggler") !== -1
-        // }
       }
     },
     filterArray: []
