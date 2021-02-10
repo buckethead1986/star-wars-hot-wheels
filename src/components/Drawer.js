@@ -167,6 +167,7 @@ export default function ResponsiveDrawer(props) {
             "Walker",
             "Speeder",
             "Fighter",
+            "Shuttle",
             "X-Wing",
             "TIE Fighter",
             "Concept",

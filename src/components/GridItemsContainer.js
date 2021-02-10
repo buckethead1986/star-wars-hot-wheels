@@ -44,6 +44,8 @@ export default function SimpleContainer(props) {
     </Grid>
   );
 
+  //filters starWarsShips by year, type, and faction.
+  //e.g. all Rebel Capital Ships, or Imperial ships from 2016 and 2017 that are also Walkers or TIE Fighters.
   const filteredShips = starWarsShips.filter(item => {
     if (props.shipFilter.filterArray.length === 0) {
       return item;
@@ -98,11 +100,7 @@ export default function SimpleContainer(props) {
             <Paper className={classes.paper}>Divider</Paper>
           </Grid>
           {makeSelectedGridItems}
-          <StarWarsDataGrid
-            filteredShips={filteredShips}
-            shipFilter={props.shipFilter}
-            searchbarValue={props.searchbarValue}
-          />
+          <StarWarsDataGrid filteredShips={filteredShips} />
         </Typography>
       </Container>
     </React.Fragment>

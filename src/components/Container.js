@@ -4,6 +4,7 @@ import Drawer from "./Drawer.js";
 export default function Container() {
   const [searchbarValue, setSearchbarValue] = React.useState("");
   const [shipFilter, setShipFilter] = React.useState({
+    //state containing toggles for selected filters from drawer.js, and functions to filter StarWarsShips.js with when 'selected' is true
     filterParameters: {
       year: {
         "2016": { selected: false, function: ship => ship.year === 2016 },
@@ -29,13 +30,17 @@ export default function Container() {
           selected: false,
           function: ship => ship.type.indexOf("Fighter") !== -1
         },
+        Shuttle: {
+          selected: false,
+          function: ship => ship.type.indexOf("Shuttle") !== -1
+        },
         "X-Wing": {
           selected: false,
-          function: ship => ship.type.indexOf("X-Wing") !== -1
+          function: ship => ship.class.indexOf("X-Wing") !== -1
         },
         "TIE Fighter": {
           selected: false,
-          function: ship => ship.type.indexOf("TIE") !== -1
+          function: ship => ship.class.indexOf("TIE") !== -1
         },
         Concept: {
           selected: false,
@@ -69,7 +74,7 @@ export default function Container() {
         },
         Unaffiliated: {
           selected: false,
-          function: ship => ship.faction === ""
+          function: ship => ship.faction.indexOf("Unaffiliated") !== -1
         }
       }
     },

@@ -1,4 +1,3 @@
-//Remove faction, change type to 'Imperial, First Order, TIE Fighter', 'Rebel X-Wing Fighter' etc. Allowx filter by 'Imperial' && 'Walker' && etc
 export const starWarsShips = [
   {
     id: 0,
@@ -8,8 +7,9 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71Cueb-pu6L._AC_SY450_.jpg",
     model: "CGW65",
     pack: "Single",
-    special: "Eta-2 Actis Class Interceptor",
-    faction: "",
+    special: "",
+    faction: "Republic",
+    class: "Eta-2 Actis",
     type: "Fighter"
   },
   {
@@ -21,7 +21,8 @@ export const starWarsShips = [
     model: "CKJ63",
     pack: "Single",
     special: "",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "Firespray",
     type: "Fighter"
   },
   {
@@ -34,7 +35,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 3,
@@ -45,19 +47,21 @@ export const starWarsShips = [
     model: "CGW71",
     pack: "Single",
     special: "",
-    faction: "",
-    type: ""
+    faction: "Unaffiliated",
+    class: "Droid",
+    type: "Fighter"
   },
   {
     id: 4,
-    name: "Ghost",
+    name: "The Ghost",
     year: 2015,
     src:
       "https://cdn10.bigcommerce.com/s-r8yraidg/products/9900/images/9430/ghost__57736.1430445600.1280.1280.jpg?c=2",
     model: "CGW62",
     pack: "Single",
     special: "",
-    faction: "Rebel Resistance",
+    faction: "Resistance",
+    class: "",
     type: "Fighter"
   },
   {
@@ -70,7 +74,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "Millenium Falcon Fighter"
+    class: "YT-1300",
+    type: "Fighter"
   },
   {
     id: 6,
@@ -82,6 +87,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Republic",
+    class: "",
     type: "Fighter"
   },
   {
@@ -93,6 +99,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Republic",
+    class: "",
     type: "Fighter"
   },
   {
@@ -105,6 +112,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
+    class: "",
     type: "Speeder"
   },
   {
@@ -119,6 +127,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -130,7 +139,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 11,
@@ -142,7 +152,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "X-Wing Fighter"
+    class: "X-Wing",
+    type: "Fighter"
   },
   {
     id: 12,
@@ -154,7 +165,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "Y-Wing Fighter"
+    class: "Y-Wing",
+    type: "Fighter"
   },
   {
     id: 13,
@@ -166,6 +178,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Resistance",
+    class: "",
     type: "Fighter"
   },
   {
@@ -178,7 +191,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "Millenium Falcon Fighter"
+    class: "YT-1300",
+    type: "Fighter"
   },
   {
     id: 15,
@@ -188,8 +202,9 @@ export const starWarsShips = [
     model: "DJJ63",
     pack: "Single",
     special: "",
-    faction: "Rebel Resistance",
-    type: "X-Wing Fighter"
+    faction: "Resistance",
+    class: "X-Wing",
+    type: "Fighter"
   },
   {
     id: 16,
@@ -200,8 +215,9 @@ export const starWarsShips = [
     model: "CKJ68",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
-    type: ""
+    faction: "First Order",
+    class: "",
+    type: "Shuttle"
   },
   {
     id: 17,
@@ -211,8 +227,9 @@ export const starWarsShips = [
     model: "CKJ67",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
-    type: "TIE Fighter"
+    faction: "First Order",
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 18,
@@ -223,8 +240,9 @@ export const starWarsShips = [
     model: "DJJ61",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
-    type: "TIE Fighter"
+    faction: "First Order",
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 19,
@@ -234,8 +252,9 @@ export const starWarsShips = [
     model: "CKJ71",
     pack: "Single",
     special: "",
-    faction: "Rebel Resistance",
-    type: "X-Wing Fighter"
+    faction: "Resistance",
+    class: "X-Wing",
+    type: "Fighter"
   },
   {
     id: 20,
@@ -245,7 +264,8 @@ export const starWarsShips = [
     model: "CGW93",
     pack: "2-Pack",
     special: "",
-    faction: "Rebel",
+    faction: "Rebel, Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -256,8 +276,9 @@ export const starWarsShips = [
     model: "CKJ81",
     pack: "2-Pack",
     special: "",
-    faction: "Imperial First Order Resistance",
-    type: "X-Wing Fighter"
+    faction: "First Order Resistance",
+    class: "X-Wing, Shuttle",
+    type: "Fighter, Shuttle"
   },
   {
     id: 22,
@@ -267,7 +288,8 @@ export const starWarsShips = [
     model: "CKJ69",
     pack: "Single",
     special: "",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "",
     type: "Speeder"
   },
   {
@@ -279,7 +301,8 @@ export const starWarsShips = [
     model: "CKJ70",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
+    faction: "First Order",
+    class: "",
     type: "Speeder"
   },
   {
@@ -291,7 +314,8 @@ export const starWarsShips = [
     model: "CKJ72",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
+    faction: "First Order",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -303,7 +327,8 @@ export const starWarsShips = [
     model: "CGW60",
     pack: "Single",
     special: "",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "",
     type: "Speeder"
   },
   {
@@ -315,7 +340,8 @@ export const starWarsShips = [
     model: "DNP18",
     pack: "Single",
     special: "Modified Eta-2 Actis Class Interceptor",
-    faction: "",
+    faction: "Republic",
+    class: "Eta-2 Actis",
     type: "Fighter"
   },
   {
@@ -330,6 +356,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Fighter"
   },
   {
@@ -342,6 +369,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -354,6 +382,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Republic",
+    class: "",
     type: "Fighter"
   },
   {
@@ -366,7 +395,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: ""
+    class: "",
+    type: "Shuttle"
   },
   {
     id: 31,
@@ -378,7 +408,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 32,
@@ -390,6 +421,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Republic",
+    class: "",
     type: "Fighter"
   },
   {
@@ -401,8 +433,8 @@ export const starWarsShips = [
     model: "DML94",
     pack: "2-Pack",
     special: "",
-    faction: "Rebel",
-    type: "Walker Speeder"
+    faction: "Imperial, Rebel",
+    type: "Walker, Speeder"
   },
   {
     id: 34,
@@ -413,7 +445,8 @@ export const starWarsShips = [
     model: "CGW92",
     pack: "2-Pack",
     special: "",
-    faction: "",
+    faction: "Republic, Unaffiliated",
+    class: "Firespray, Eta-2 Actis",
     type: "Fighter"
   },
   {
@@ -425,7 +458,8 @@ export const starWarsShips = [
     model: "DMP66",
     pack: "Single",
     special: "",
-    faction: "",
+    faction: "Rebel, Imperial",
+    class: "",
     type: "Speeder"
   },
   {
@@ -438,6 +472,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Resistance",
+    class: "",
     type: "Speeder"
   },
   {
@@ -450,7 +485,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "Millenium Falcon Fighter"
+    class: "YT-1300",
+    type: "Fighter"
   },
   {
     id: 38,
@@ -461,8 +497,9 @@ export const starWarsShips = [
     model: "DXX46",
     pack: "Single",
     special: "",
-    faction: "Rebel Resistance",
-    type: "X-Wing Fighter"
+    faction: "Resistance",
+    class: "X-Wing",
+    type: "Fighter"
   },
   {
     id: 39,
@@ -472,8 +509,9 @@ export const starWarsShips = [
     model: "DXX47",
     pack: "Single",
     special: "",
-    faction: "Rebel Resistance",
-    type: "X-Wing Fighter"
+    faction: "Resistance",
+    class: "X-Wing",
+    type: "Fighter"
   },
   {
     id: 40,
@@ -483,8 +521,9 @@ export const starWarsShips = [
     model: "DXX49",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
-    type: "TIE Fighter"
+    faction: "First Order",
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 41,
@@ -496,6 +535,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Resistance",
+    class: "",
     type: "Fighter"
   },
   {
@@ -509,6 +549,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -521,7 +562,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "X-Wing Fighter"
+    class: "X-Wing",
+    type: "Fighter"
   },
   {
     id: 44,
@@ -533,6 +575,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Walker"
   },
   {
@@ -545,7 +588,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 46,
@@ -559,6 +603,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -570,7 +615,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: ""
+    class: "",
+    type: "Shuttle"
   },
   {
     id: 48,
@@ -581,7 +627,8 @@ export const starWarsShips = [
     model: "DXX60",
     pack: "Single",
     special: "",
-    faction: "Resistance",
+    faction: "Unaffiliated",
+    class: "",
     type: "Speeder"
   },
   {
@@ -593,6 +640,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Resistance",
+    class: "",
     type: "Fighter"
   },
   {
@@ -605,6 +653,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Walker"
   },
   {
@@ -616,7 +665,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 52,
@@ -628,7 +678,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Resistance",
-    type: "X-Wing Fighter"
+    class: "X-Wing",
+    type: "Fighter"
   },
   {
     id: 53,
@@ -640,7 +691,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "A-Wing Fighter"
+    class: "A-Wing",
+    type: "Fighter"
   },
   {
     id: 54,
@@ -652,7 +704,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: ""
+    class: "",
+    type: "Shuttle"
   },
   {
     id: 55,
@@ -663,8 +716,9 @@ export const starWarsShips = [
     model: "FBB04",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
-    type: "TIE Fighter"
+    faction: "First Order",
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 56,
@@ -675,7 +729,8 @@ export const starWarsShips = [
     model: "FBB05",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
+    faction: "First Order",
+    class: "",
     type: "Walker"
   },
   {
@@ -690,7 +745,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "A-Wing Fighter"
+    class: "A-Wing",
+    type: "Fighter"
   },
   {
     id: 58,
@@ -701,7 +757,8 @@ export const starWarsShips = [
     model: "FBB30",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
+    faction: "First Order",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -713,7 +770,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "Y-Wing Fighter"
+    class: "Y-Wing",
+    type: "Fighter"
   },
   {
     id: 60,
@@ -725,7 +783,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 61,
@@ -736,7 +795,8 @@ export const starWarsShips = [
     model: "FJD64",
     pack: "Single",
     special: "",
-    faction: "Rebel Resistance",
+    faction: "Resistance",
+    class: "",
     type: "Fighter"
   },
   {
@@ -748,6 +808,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Walker"
   },
   {
@@ -759,8 +820,9 @@ export const starWarsShips = [
     model: "FGR18",
     pack: "Single",
     special: "",
-    faction: "Imperial First Order",
-    type: ""
+    faction: "First Order",
+    class: "",
+    type: "Shuttle"
   },
   {
     id: 64,
@@ -771,7 +833,8 @@ export const starWarsShips = [
     model: "DMP60",
     pack: "Single",
     special: "",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "",
     type: "Fighter"
   },
   {
@@ -784,7 +847,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
-    type: "U-Wing Fighter"
+    class: "U-Wing",
+    type: "Fighter"
   },
   {
     id: 66,
@@ -796,6 +860,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Speeder"
   },
   {
@@ -807,6 +872,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "40th Anniversary",
     faction: "Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -819,6 +885,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
+    class: "",
     type: "Speeder"
   },
   {
@@ -830,8 +897,9 @@ export const starWarsShips = [
     model: "DYH43",
     pack: "2-Pack",
     special: "",
-    faction: "Rebel",
-    type: "Walker Speeder"
+    faction: "Imperial, Rebel",
+    class: "",
+    type: "Walker, Speeder"
   },
   {
     id: 70,
@@ -842,8 +910,9 @@ export const starWarsShips = [
     model: "DYH44",
     pack: "2-Pack",
     special: "",
-    faction: "Rebel",
-    type: "TIE Fighter X-Wing"
+    faction: "Imperial, Rebel",
+    class: "TIE, X-Wing",
+    type: "Fighter"
   },
   {
     id: 71,
@@ -854,8 +923,9 @@ export const starWarsShips = [
     model: "DXM38",
     pack: "2-Pack",
     special: "",
-    faction: "Rebel",
-    type: "TIE Fighter X-Wing"
+    faction: "Imperial, Rebel",
+    class: "TIE, X-Wing",
+    type: "Fighter"
   },
   {
     id: 72,
@@ -866,8 +936,9 @@ export const starWarsShips = [
     model: "DML96",
     pack: "2-Pack",
     special: "",
-    faction: "Rebel",
-    type: "Millenium Falcon Fighter"
+    faction: "Imperial, Rebel",
+    class: "TIE, YT-1300",
+    type: "Fighter"
   },
   {
     id: 73,
@@ -877,7 +948,8 @@ export const starWarsShips = [
     model: "FBX10",
     pack: "Single",
     special: "",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "Droid",
     type: "Speeder"
   },
   {
@@ -890,6 +962,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Republic",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -901,8 +974,9 @@ export const starWarsShips = [
     model: "FJF23",
     pack: "Single",
     special: "",
-    faction: "Rebel",
-    type: "Millenium Falcon Fighter"
+    faction: "Unaffiliated",
+    class: "YT-1300",
+    type: "Fighter"
   },
   {
     id: 76,
@@ -912,7 +986,8 @@ export const starWarsShips = [
     model: "FJF24",
     pack: "Single",
     special: "",
-    faction: "Rebel",
+    faction: "Unaffiliated",
+    class: "",
     type: "Speeder"
   },
   {
@@ -924,6 +999,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -938,7 +1014,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "Walker"
+    class: "",
+    type: "Walker, Shuttle"
   },
   {
     id: 79,
@@ -954,6 +1031,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
+    class: "B-Wing",
     type: "Fighter"
   },
   {
@@ -967,7 +1045,8 @@ export const starWarsShips = [
     model: "FJF22",
     pack: "Single",
     special: "Concept",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "",
     type: "Speeder"
   },
   {
@@ -980,7 +1059,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "Concept",
     faction: "Rebel",
-    type: "Millenium Falcon Fighter"
+    class: "YT-1300",
+    type: "Fighter"
   },
   {
     id: 82,
@@ -992,6 +1072,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Concept",
     faction: "Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -1004,7 +1085,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "Concept",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 84,
@@ -1016,6 +1098,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Concept",
     faction: "Rebel",
+    class: "X-Wing",
     type: "Fighter"
   },
   {
@@ -1027,7 +1110,8 @@ export const starWarsShips = [
     model: "FCC22",
     pack: "Single",
     special: "Limited",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "",
     type: "Walker"
   },
   {
@@ -1040,7 +1124,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "Limited",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 87,
@@ -1051,7 +1136,8 @@ export const starWarsShips = [
     model: "FJF19",
     pack: "Single",
     special: "Limited",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "",
     type: "Walker"
   },
   {
@@ -1065,6 +1151,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Walker"
   },
   {
@@ -1076,7 +1163,8 @@ export const starWarsShips = [
     model: "FYT71",
     pack: "Single",
     special: "",
-    faction: "Resistance",
+    faction: "Rebel",
+    class: "Y-Wing",
     type: "Fighter"
   },
   {
@@ -1091,6 +1179,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Resistance",
+    class: "A-Wing",
     type: "Fighter"
   },
   {
@@ -1105,7 +1194,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 92,
@@ -1117,7 +1207,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "First Order",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 93,
@@ -1131,6 +1222,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Resistance",
+    class: "X-Wing",
     type: "Fighter"
   },
   {
@@ -1144,7 +1236,8 @@ export const starWarsShips = [
     model: "FYT70",
     pack: "Single",
     special: "",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "",
     type: "Fighter"
   },
   {
@@ -1159,6 +1252,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Rebel",
+    class: "B-Wing",
     type: "Fighter"
   },
   {
@@ -1172,6 +1266,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {
@@ -1186,7 +1281,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "Fighter"
+    class: "",
+    type: "Speeder"
   },
   {
     id: 98,
@@ -1200,7 +1296,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "Imperial",
-    type: "Capital Ship"
+    class: "",
+    type: "Fighter"
   },
   {
     id: 99,
@@ -1214,7 +1311,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "First Order",
-    type: "Walker Speeder"
+    class: "",
+    type: "Walker, Speeder"
   },
   {
     id: 100,
@@ -1228,6 +1326,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "",
     faction: "First Order",
+    class: "",
     type: "Walker"
   },
   {
@@ -1240,6 +1339,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "Republic",
+    class: "",
     type: "Fighter"
   },
   {
@@ -1252,6 +1352,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "Republic",
+    class: "",
     type: "Fighter"
   },
   {
@@ -1264,6 +1365,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "Republic",
+    class: "Eta-2 Actis",
     type: "Fighter"
   },
   {
@@ -1277,7 +1379,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "Imperial",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 105,
@@ -1288,7 +1391,8 @@ export const starWarsShips = [
     model: "FYT86",
     pack: "Single",
     special: "Commemorative",
-    faction: "",
+    faction: "Unaffiliated",
+    class: "Firespray",
     type: "Fighter"
   },
   {
@@ -1302,6 +1406,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "Rebel",
+    class: "",
     type: "Speeder"
   },
   {
@@ -1313,6 +1418,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "Resistance",
+    class: "X-Wing",
     type: "Fighter"
   },
   {
@@ -1325,7 +1431,8 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "First Order",
-    type: "TIE Fighter"
+    class: "TIE",
+    type: "Fighter"
   },
   {
     id: 109,
@@ -1337,6 +1444,7 @@ export const starWarsShips = [
     pack: "Single",
     special: "Commemorative",
     faction: "Rebel",
+    class: "YT-1300",
     type: "Fighter"
   },
   {
@@ -1348,6 +1456,7 @@ export const starWarsShips = [
     pack: "",
     special: "Commemorative",
     faction: "Imperial",
+    class: "",
     type: "Capital Ship"
   }
 ];
