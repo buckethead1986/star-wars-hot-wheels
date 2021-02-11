@@ -8,20 +8,17 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Searchbar from "./Searchbar.js";
+import GridItemsContainer from "./GridItemsContainer.js";
 
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
-import ScheduleIcon from "@material-ui/icons/Schedule";
-
+// import ScheduleIcon from "@material-ui/icons/Schedule";
 import FlightIcon from "@material-ui/icons/Flight";
-
 import CategoryIcon from "@material-ui/icons/Category";
-
-import GridItemsContainer from "./GridItemsContainer.js";
+import MenuIcon from "@material-ui/icons/Menu";
+import IconButton from "@material-ui/core/IconButton";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 const drawerWidth = 240;
 

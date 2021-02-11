@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function DrawerList(props) {
   const classes = useStyles();
-  const theme = useTheme();
+  // const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const [checked, setChecked] = React.useState([]);
 

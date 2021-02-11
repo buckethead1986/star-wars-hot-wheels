@@ -25,7 +25,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleContainer(props) {
   const classes = useStyles();
-  // console.log(props.shipFilter.filterArray);
 
   const makeSelectedGridItems = (
     <Grid container>

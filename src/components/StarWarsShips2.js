@@ -1461,4 +1461,4 @@ export const starWarsShips = [
   }
 ];
 
-export default { starWarsShips };
+// export default { starWarsShips };
