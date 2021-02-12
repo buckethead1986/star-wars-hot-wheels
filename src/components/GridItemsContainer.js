@@ -6,7 +6,6 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import StarWarsGridItem from "../UnusedComponents/StarWarsGridItem.js";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
-// import LargeStarWarsGridItem from "../UnusedComponents/LargeStarWarsGridItem.js";
 import { starWarsShips } from "./StarWarsShips2.js";
 import Paper from "@material-ui/core/Paper";
 
@@ -75,16 +74,6 @@ export default function SimpleContainer(props) {
       </Grid>
     </Grid>
   );
-
-  // const makeLargeStarWarsGridItems = (
-  //   <Grid container>
-  //     {starWarsShips.map((ship, index) => (
-  //       <Grid item xs={12}>
-  //         <LargeStarWarsGridItem ship={ship} />
-  //       </Grid>
-  //     ))}
-  //   </Grid>
-  // );
 
   return (
     <React.Fragment>
