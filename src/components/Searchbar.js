@@ -1,9 +1,8 @@
-/* eslint-disable no-use-before-define */
 import React from "react";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import { starWarsShips } from "./StarWarsShips.js";
+import { starWarsShips } from "./StarWarsShips2.js";
 
 const useStyles = makeStyles(theme => ({
   root: {

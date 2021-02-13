@@ -14,7 +14,7 @@ import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
 const useStyles = makeStyles(theme => ({
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingLeft: theme.spacing(3),
     paddingTop: theme.spacing(0),
     paddingBottom: theme.spacing(0)
   }

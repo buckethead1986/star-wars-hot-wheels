@@ -117,6 +117,7 @@ export default function Container() {
       filterParameters: filterParametersCopy,
       filterArray: filterFunctionsArray
     });
+    setSearchbarValue("");
   };
 
   return (
