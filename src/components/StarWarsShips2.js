@@ -50,6 +50,9 @@ export const starWarsShips = [
     year: 2015,
     src:
       "https://cdn10.bigcommerce.com/s-r8yraidg/products/9900/images/9430/ghost__57736.1430445600.1280.1280.jpg?c=2",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/61zRvVC-6OL._AC_.jpg",
     model: "CGW62",
     pack: "Single",
     special: "",
@@ -63,6 +66,9 @@ export const starWarsShips = [
     year: 2015,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81ZBEb-ptsL._AC_SY606_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91Jgl6oXmcL._AC_SL1500_.jpg",
     model: "CKJ63",
     pack: "Single",
     special: "",
@@ -365,13 +371,13 @@ export const starWarsShips = [
     name: "Resistance X-Wing Fighter",
     year: 2016,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/e/e0/Resistance_X-Wing_Fighter_%28CLJ71%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20170930013150",
+      "https://images-na.ssl-images-amazon.com/images/I/81rj1WYq8XL._AC_SL1500_.jpg",
     packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/7/70/Resistance_X-Wing_Fighter_%28CKJ71%29_02.JPG/revision/latest/scale-to-width-down/1000?cb=20170930013315",
-    model: "CLJ71",
+      "https://images-na.ssl-images-amazon.com/images/I/A1Zc42mpTIL._AC_SL1500_.jpg",
+    model: "CKJ71",
     pack: "Single",
     special: "Wings Closed",
-    faction: "Rebel",
+    faction: "Resistance",
     class: "X-Wing",
     type: "Fighter"
   },
@@ -480,7 +486,7 @@ export const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71FHI9f6z1L._AC_SL1500_.jpg",
     packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/9/99/First_Order_Snowspeeder_%28CKJ70%29_02.JPG/revision/latest/scale-to-width-down/1000?cb=20171015013903",
+      "https://z5c3v4a8.stackpathcdn.com/images/thumbnails/450/450/detailed/66/detailed_image_14827.jpg",
     model: "CKJ70",
     pack: "Single",
     special: "",
@@ -521,46 +527,199 @@ export const starWarsShips = [
     class: "",
     type: "Fighter"
   },
-
   {
-    id: 11,
-    name: "X-Wing Starfighter",
-    year: 2015,
+    id: 3,
+    name: "Vulture Droid",
+    year: 2016,
     src:
-      "https://images-na.ssl-images-amazon.com/images/I/41paoWmpNgL._AC_SY400_.jpg",
-    model: "CKR61",
+      "https://www.imaginationhobby.com/images/detailed/66/detailed_image_14772.jpg",
+    packsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/c/c4/Vulture_Droid_%28DRX11%29_02.jpg/revision/latest/top-crop/width/150/height/150?cb=20171210005345",
+    model: "DRX11",
     pack: "Single",
     special: "",
-    faction: "Rebel",
-    class: "X-Wing",
-    type: "Fighter"
-  },
-  {
-    id: 12,
-    name: "Y-Wing Starfighter",
-    year: 2015,
-    src:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest?cb=20150627084020",
-    model: "CGW59",
-    pack: "Single",
-    special: "",
-    faction: "Rebel",
-    class: "Y-Wing",
+    faction: "Unaffiliated",
+    class: "Droid",
     type: "Fighter"
   },
 
+  {
+    id: 30,
+    name: "Imperial Shuttle",
+    year: 2016,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/811XAD77CJL._AC_SL1500_.jpg",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81ilGKMi9vL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/913GhjvBGbL._AC_SL1500_.jpg",
+    model: "DMP62",
+    pack: "Single",
+    special: "Wings fold down",
+    faction: "Imperial",
+    class: "",
+    type: "Shuttle"
+  },
+  {
+    id: 28,
+    name: "Tantive IV",
+    year: 2016,
+    src:
+      "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=CGW61",
+    altsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/9/90/Tantive_IV_%28CGW61%29_01.jpg/revision/latest/scale-to-width-down/800?cb=20171015013320",
+    packsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/1/14/Tantive_IV_%28CGW61%29_02.jpg/revision/latest/scale-to-width-down/800?cb=20171015013221",
+    model: "CGW61",
+    pack: "Single",
+    special: "",
+    faction: "Rebel",
+    class: "",
+    type: "Capital Ship"
+  },
   {
     id: 19,
-    name: "Resistance X-Wing Fighter",
-    year: 2015,
-    src: "https://media.mattel.com/root/Images/MainImage/ckj71_r.jpg",
-    model: "CKJ71",
+    name: "Star Destroyer",
+    year: 2016,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71v4VRpTIyL._AC_SL1500_.jpg",
+    altsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/4/4b/Star_Destroyer_%28CGW57%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20171206012121",
+    packsrc:
+      "https://s3-us-west-2.amazonaws.com/images.collecthw.com/14a5b77b-34a4-472c-9fb7-62720ae222f0_large.JPG",
+    model: "CGW57",
     pack: "Single",
     special: "",
-    faction: "Resistance",
+    faction: "Imperial",
+    class: "Imperial",
+    type: "Capital Ship"
+  },
+  {
+    id: 25,
+    name: "Jabba's Sail Barge",
+    year: 2016,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71AmhNxo6hL._AC_SL1500_.jpg",
+    packsrc:
+      "https://s3-us-west-2.amazonaws.com/images.collecthw.com/299dbe45-77ba-4813-93b5-cad880ee9f3d_large.JPG",
+    backsrc:
+      "https://thumbs.worthpoint.com/zoom/images2/1/1017/02/hot-wheels-star-wars-khetanna-jabbas_1_5618caba766b5acc68702bb717b900ad.jpg",
+    model: "CGW60",
+    pack: "Single",
+    special: "",
+    faction: "Unaffiliated",
+    class: "",
+    type: "Speeder"
+  },
+  {
+    id: 26,
+    name: "Yoda's Jedi Starfighter",
+    year: 2016,
+    src:
+      "https://images.mattel.com/scene7/DNP18_01?$oslarge$&wid=412&hei=412&wid=1600&hei=1600",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81TsjjXK1qL._AC_SL1500_.jpg",
+    packsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/9/95/Yodas_Jedi_Starfighter_%28DNP18%29_%28pack%29.jpg/revision/latest/scale-to-width-down/1000?cb=20170911000531",
+    model: "DNP18",
+    pack: "Single",
+    special: "Modified Eta-2 Actis Class Interceptor",
+    faction: "Republic",
+    class: "Eta-2 Actis",
+    type: "Fighter"
+  },
+  {
+    id: 26,
+    name: "X-Wing Fighter Red Three",
+    year: 2016,
+    src:
+      "https://static.wikia.nocookie.net/hotwheels/images/8/8e/X-Wing_Fighter_Red_Three_%28DRX12%29_01.jpg/revision/latest/scale-to-width-down/800?cb=20171001004729",
+    altsrc: "https://images.mattel.com/scene7/DRX12_01-1?$oslarge$",
+    packsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/f/fd/X-Wing_Fighter_Red_Three_%28DRX12%29_02.jpg/revision/latest/scale-to-width-down/800?cb=20171001004754",
+    altpacksrc: "https://images.mattel.com/scene7/DRX12_04?$oslarge$",
+    model: "DRX12",
+    pack: "Single",
+    special: "Wings Closed",
+    faction: "Rebel",
     class: "X-Wing",
     type: "Fighter"
   },
+  {
+    id: 31,
+    name: "Inquisitor's TIE Advanced Prototype",
+    year: 2016,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71L-7dnwMCL._AC_SL1500_.jpg",
+    altsrc:
+      "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DMP64",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/912oT-ZsiTL._AC_SL1500_.jpg",
+    model: "DMP64",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    class: "TIE",
+    type: "Fighter"
+  },
+  {
+    id: 32,
+    name: "ARC-170 Starfighter",
+    year: 2016,
+    src:
+      "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest/scale-to-width-down/800?cb=20171001004433",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/71cIU4tPw-L._SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91e5-FQOWhL._SL1500_.jpg",
+    model: "DMP65",
+    pack: "Single",
+    special: "",
+    faction: "Republic",
+    class: "",
+    type: "Fighter"
+  },
+
+  // {
+  //   id: 11,
+  //   name: "X-Wing Starfighter",
+  //   year: 2015,
+  //   src:
+  //     "https://images-na.ssl-images-amazon.com/images/I/41paoWmpNgL._AC_SY400_.jpg",
+  //   model: "CKR61",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "Rebel",
+  //   class: "X-Wing",
+  //   type: "Fighter"
+  // },
+  // {
+  //   id: 12,
+  //   name: "Y-Wing Starfighter",
+  //   year: 2015,
+  //   src:
+  //     "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest?cb=20150627084020",
+  //   model: "CGW59",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "Rebel",
+  //   class: "Y-Wing",
+  //   type: "Fighter"
+  // },
+
+  // {
+  //   id: 19,
+  //   name: "Resistance X-Wing Fighter",
+  //   year: 2015,
+  //   src: "https://media.mattel.com/root/Images/MainImage/ckj71_r.jpg",
+  //   packsrc: "",
+  //   model: "CKJ71",
+  //   pack: "Single",
+  //   special: "",
+  //   faction: "Resistance",
+  //   class: "X-Wing",
+  //   type: "Fighter"
+  // },
   {
     id: 20,
     name: "Mon Calamari Cruiser vs Star Destroyer",
@@ -586,86 +745,6 @@ export const starWarsShips = [
     type: "Fighter, Shuttle"
   },
 
-  {
-    id: 25,
-    name: "Jabba's Sail Barge",
-    year: 2016,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/71AmhNxo6hL._AC_SL1500_.jpg",
-    model: "CGW60",
-    pack: "Single",
-    special: "",
-    faction: "Unaffiliated",
-    class: "",
-    type: "Speeder"
-  },
-  {
-    id: 26,
-    name: "Yoda's Jedi Starfighter",
-    year: 2016,
-    src:
-      "https://images.mattel.com/scene7/DNP18_01?$oslarge$&wid=412&hei=412&wid=1600&hei=1600",
-    model: "DNP18",
-    pack: "Single",
-    special: "Modified Eta-2 Actis Class Interceptor",
-    faction: "Republic",
-    class: "Eta-2 Actis",
-    type: "Fighter"
-  },
-
-  {
-    id: 28,
-    name: "Tantive IV",
-    year: 2016,
-    src:
-      "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=CGW61",
-    model: "CGW61",
-    pack: "Single",
-    special: "",
-    faction: "Rebel",
-    class: "",
-    type: "Capital Ship"
-  },
-
-  {
-    id: 30,
-    name: "Imperial Shuttle",
-    year: 2016,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/71YfkGawszL._AC_SY741_.jpg",
-    model: "DMP62",
-    pack: "Single",
-    special: "",
-    faction: "Imperial",
-    class: "",
-    type: "Shuttle"
-  },
-  {
-    id: 31,
-    name: "Inquisitor's TIE Fighter",
-    year: 2016,
-    src:
-      "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DMP64",
-    model: "DMP64",
-    pack: "Single",
-    special: "",
-    faction: "Imperial",
-    class: "TIE",
-    type: "Fighter"
-  },
-  {
-    id: 32,
-    name: "ARC-170 Starfighter",
-    year: 2016,
-    src:
-      "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest/scale-to-width-down/800?cb=20171001004433",
-    model: "DMP65",
-    pack: "Single",
-    special: "",
-    faction: "Republic",
-    class: "",
-    type: "Fighter"
-  },
   {
     id: 33,
     name: "AT-AT vs Rebel Snowspeeder",
@@ -787,6 +866,8 @@ export const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/9177dmdHQnL._AC_SL1500_.jpg",
     altsrc: "https://m.media-amazon.com/images/I/41aqbRVCs+L.jpg",
+    packsrc:
+      "https://static.wikia.nocookie.net/hotwheels/images/6/62/Tantive_IV_%28DXX52%29_02.JPG/revision/latest/scale-to-width-down/1000?cb=20171018003551",
     model: "DXX52",
     pack: "Single",
     special: "",

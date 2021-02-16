@@ -13,6 +13,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function StarWarsDataGrid(props) {
   const classes = useStyles();
+  console.log(props);
 
   const columns = [
     {
@@ -23,19 +24,27 @@ export default function StarWarsDataGrid(props) {
         <img className={classes.img} alt="complex" src={params.value} />
       )
     },
-    // {
-    //   field: "packsrc",
-    //   headerName: "Pack Image",
-    //   width: 128,
-    //   renderCell: params => (
-    //     <img className={classes.img} alt="complex" src={params.value} />
-    //   )
-    // },
     {
-      field: "id",
-      headerName: "ID",
-      flex: 0.3
+      field: "packsrc",
+      headerName: "Pack Image",
+      width: 128,
+      renderCell: params => (
+        // params.value.length !== 0 ? (
+        <img
+          className={classes.img}
+          alt={params.getValue("name")}
+          src={params.value}
+        />
+      )
+      // ) : (
+      //   ""
+      // )
     },
+    // {
+    //   field: "id",
+    //   headerName: "ID",
+    //   flex: 0.3
+    // },
     { field: "name", headerName: "Name", flex: 1.5 },
     { field: "year", headerName: "Year", flex: 0.3 },
     { field: "model", headerName: "Model", flex: 0.5 },

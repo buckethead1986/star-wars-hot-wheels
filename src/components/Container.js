@@ -7,6 +7,7 @@ export default function Container() {
     //state containing toggles for selected filters from drawer.js, and functions to filter StarWarsShips.js with when 'selected' is true
     filterParameters: {
       year: {
+        "2015": { selected: false, function: ship => ship.year === 2015 },
         "2016": { selected: false, function: ship => ship.year === 2016 },
         "2017": { selected: false, function: ship => ship.year === 2017 },
         "2018": { selected: false, function: ship => ship.year === 2018 },
