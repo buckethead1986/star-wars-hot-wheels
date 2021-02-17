@@ -872,6 +872,8 @@ const starWarsShips = [
     name: "The Phantom",
     year: 2017,
     src: "https://i.ebayimg.com/images/g/LMwAAOSw7RteTixU/s-l640.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DXX63",
     pack: "Single",
     special: "",
@@ -885,6 +887,7 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71fn-PtdgoL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
       "https://s3-us-west-2.amazonaws.com/images.collecthw.com/6df53223-e9dd-4189-b77f-9f752273704f_large.JPG",
     model: "DXX66",
@@ -900,6 +903,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://i5.walmartimages.com/asr/d5ba5080-183a-4e68-8047-b743a72a7ecf_1.e99bb9dfc6a285f92a812475c5dcd213.jpeg",
+    altsrc: "",
+    packsrc: "",
     model: "DXD99",
     pack: "Single",
     special: "",
@@ -912,6 +917,8 @@ const starWarsShips = [
     name: "TIE Striker",
     year: 2017,
     src: "https://i.ebayimg.com/images/g/qsMAAOSwyuZdKaTy/s-l500.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DXD98",
     pack: "Single",
     special: "",
@@ -925,6 +932,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/413guIDivAL._AC_SY400_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DYK03",
     pack: "Single",
     special: "",
@@ -938,6 +947,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71O9lgReafL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DNP19",
     pack: "Single",
     special: "",
@@ -951,6 +962,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81Zbt4VlUuL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DXF00",
     pack: "Single",
     special: "",
@@ -964,6 +977,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=FBB04",
+    altsrc: "",
+    packsrc: "",
     model: "FBB04",
     pack: "Single",
     special: "",
@@ -977,6 +992,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71KWrzmLyHL._AC_SX355_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FBB05",
     pack: "Single",
     special: "",
@@ -992,6 +1009,7 @@ const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/414vOVbTjvL._AC_.jpg",
     altsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81UDAC-DEVL._AC_SL1500_.jpg",
+    packsrc: "",
     model: "FBB07",
     pack: "Single",
     special: "",
@@ -1005,6 +1023,7 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71Mql1DxSrL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81pSyvspliL._AC_SL1500_.jpg",
     model: "FBB12",
@@ -1021,6 +1040,7 @@ const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/51EiAEHAuQL._AC_.jpg",
     altsrc: "https://service.mattel.com/us/img/prod/110/FBB13_C_17_01.jpg",
+    packsrc: "",
     model: "FBB13",
     pack: "Single",
     special: "",
@@ -1034,6 +1054,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://i5.walmartimages.com/asr/81a8de5f-2b7c-40b9-82cd-6cbfc7a8ca25_1.79c8883d86fae1f25e70c118e6bb1457.jpeg",
+    altsrc: "",
+    packsrc: "",
     model: "FBB30",
     pack: "Single",
     special: "",
@@ -1046,6 +1068,8 @@ const starWarsShips = [
     name: "Y-Wing Fighter",
     year: 2017,
     src: "https://live.staticflickr.com/4485/38138930471_29bd4e0a79_b.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FBB39",
     pack: "Single",
     special: "",
@@ -1059,6 +1083,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/91m4FUEmORL._SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DXX56",
     pack: "Single",
     special: "",
@@ -1072,6 +1098,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71iOL8lRUlL._AC_SX466_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FJD64",
     pack: "Single",
     special: "",
@@ -1084,6 +1112,8 @@ const starWarsShips = [
     name: "Imperial AT-ACT Cargo Walker",
     year: 2017,
     src: "https://m.media-amazon.com/images/I/717KKa88XVL.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DXD97",
     pack: "Single",
     special: "",
@@ -1097,6 +1127,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81SzD2PZHcL._AC_UL600_SR444,600_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FGR18",
     pack: "Single",
     special: "",
@@ -1110,6 +1142,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://i5.walmartimages.com/asr/5a207f19-0cfb-4fea-b876-ba4afced90a0_1.b184f2476b700a91c647728e792b92fd.jpeg",
+    altsrc: "",
+    packsrc: "",
     model: "DMP60",
     pack: "Single",
     special: "",
@@ -1123,6 +1157,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71hRMYoVnnL._AC_UL600_SR600,600_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DMP67",
     pack: "Single",
     special: "",
@@ -1136,6 +1172,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81w5CAv9p0L._AC_SX425_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FJF20",
     pack: "Single",
     special: "",
@@ -1148,6 +1186,8 @@ const starWarsShips = [
     name: "Star Destroyer",
     year: 2017,
     src: "https://m.media-amazon.com/images/I/71PAzvN2V2L.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FND10",
     pack: "Single",
     special: "40th Anniversary",
@@ -1161,6 +1201,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81QSeUHk%2B3L._AC_SX569_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FPL65",
     pack: "Single",
     special: "",
@@ -1174,6 +1216,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71abeDNV25L._AC_SX425_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DYH43",
     pack: "2-Pack",
     special: "",
@@ -1187,6 +1231,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=DYH44",
+    altsrc: "",
+    packsrc: "",
     model: "DYH44",
     pack: "2-Pack",
     special: "",
@@ -1200,6 +1246,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/41seIqFZlTL._AC_SY400_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "DXM38",
     pack: "2-Pack",
     special: "",
@@ -1213,6 +1261,8 @@ const starWarsShips = [
     year: 2017,
     src:
       "https://images.mattel.com/scene7/DML96_01?$oslarge$&wid=412&hei=412&wid=1600&hei=1600",
+    altsrc: "",
+    packsrc: "",
     model: "DML96",
     pack: "2-Pack",
     special: "",
@@ -1225,6 +1275,8 @@ const starWarsShips = [
     name: "AAT Battle Tank",
     year: 2018,
     src: "https://i.ebayimg.com/images/g/RIMAAOSwfZxeTKht/s-l640.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FBX10",
     pack: "Single",
     special: "",
@@ -1238,6 +1290,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81Id%2BovS2cL._AC_SY355_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FBX12",
     pack: "Single",
     special: "",
@@ -1251,6 +1305,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images.mattel.com/scene7//wcsstore/MattelCAS/FJF23_01?storeId=10151&SKU=FJF23",
+    altsrc: "",
+    packsrc: "",
     model: "FJF23",
     pack: "Single",
     special: "",
@@ -1263,6 +1319,8 @@ const starWarsShips = [
     name: "Han Solo's Speeder",
     year: 2018,
     src: "https://m.media-amazon.com/images/I/81k9v4Q4e2L.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FJF24",
     pack: "Single",
     special: "",
@@ -1275,6 +1333,8 @@ const starWarsShips = [
     name: "Imperial Arrestor Cruiser",
     year: 2018,
     src: "https://images.mattel.com/scene7/FJF25_01?$oslarge$&wid=549&hei=549",
+    altsrc: "",
+    packsrc: "",
     model: "FJF25",
     pack: "Single",
     special: "",
@@ -1288,6 +1348,7 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81fh7rAMNhL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81NHjvcBpeL._AC_SL1500_.jpg",
     model: "FJF27",
@@ -1320,8 +1381,9 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71je-9hRZ1L._AC_SX466_.jpg",
-    alrtsrc:
+    altsrc:
       "https://images-na.ssl-images-amazon.com/images/I/71L7049RtXL._AC_SX679_.jpg",
+    packsrc: "",
     model: "FJF22",
     pack: "Single",
     special: "Concept",
@@ -1335,6 +1397,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://i5.walmartimages.com/asr/fd7668d2-d4ee-4bbf-8439-780d642fe50d_1.18c5ae5992a00ea6f8c22cd5f2a2c637.jpeg",
+    altsrc: "",
+    packsrc: "",
     model: "FJD63",
     pack: "Single",
     special: "Concept",
@@ -1348,6 +1412,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71XwzEfX6JL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FJF21",
     pack: "Single",
     special: "Concept",
@@ -1361,6 +1427,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81MdMOhiPmL._AC_SY606_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FBB10",
     pack: "Single",
     special: "Concept",
@@ -1374,6 +1442,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/712WgUE5l%2BL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FBB06",
     pack: "Single",
     special: "Concept",
@@ -1387,6 +1457,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81gkBJ7cfnL._AC_SY550_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FCC22",
     pack: "Single",
     special: "Limited",
@@ -1400,6 +1472,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://s3-us-west-2.amazonaws.com/images.collecthw.com/59ed8fd1-4796-456b-93fc-a19564cc5464_large.png",
+    altsrc: "",
+    packsrc: "",
     model: "FJD61",
     pack: "Single",
     special: "Limited",
@@ -1413,6 +1487,8 @@ const starWarsShips = [
     year: 2018,
     src:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqQgmWesIfow8o9UvTyhMEMeiuOHlwfXa4g&usqp=CAU",
+    altsrc: "",
+    packsrc: "",
     model: "FJF19",
     pack: "Single",
     special: "Limited",
@@ -1425,6 +1501,7 @@ const starWarsShips = [
     name: "AT-ST Raider",
     year: 2019,
     src: "https://images-na.ssl-images-amazon.com/images/I/41e2o5%2BU4CL.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91FG7%2BuZhCL._SL1500_.jpg",
     model: "FYT77",
@@ -1440,6 +1517,8 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/91BwsqxXIOL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FYT71",
     pack: "Single",
     special: "",
@@ -1453,6 +1532,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81sNE0hweBL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81FeG2SghkL._AC_SL1500_.jpg",
     model: "FYT74",
@@ -1468,6 +1548,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/819xOTcLUuL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/818wrhF53ML._AC_SL1500_.jpg",
     model: "FBB40",
@@ -1483,6 +1564,8 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/812vXLSyPTL._AC_SL1400_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FBB28",
     pack: "Single",
     special: "",
@@ -1496,6 +1579,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71LP6OoYwcL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81ygs46HdIL._AC_SL1500_.jpg",
     model: "FYT75",
@@ -1511,6 +1595,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/414dLuK7zvL._AC_.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91cni16oOUL._AC_SL1500_.jpg",
     model: "FYT70",
@@ -1526,6 +1611,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/61cqkJ6KzKL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91btvF7WS6L._AC_SL1500_.jpg",
     model: "GJC30",
@@ -1540,6 +1626,7 @@ const starWarsShips = [
     name: "Super Star Destroyer",
     year: 2019,
     src: "https://m.media-amazon.com/images/I/51BCWDa17YL.jpg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/71-WX1ALbdL._AC_SL1000_.jpg",
     model: "GMH62",
@@ -1555,6 +1642,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://i5.walmartimages.com/asr/9fc133a3-32f1-4f24-b08e-275b5b60d641_1.db7f5ad5dfce0620321184c77ccde5d5.jpeg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91pYrXVCFiL._AC_SL1500_.jpg",
     model: "GMH63",
@@ -1570,6 +1658,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://i5.walmartimages.com/asr/60548b8d-e4ba-4145-8df2-3fa0b825f4af_1.231488d428ee7745132cc08628fc4205.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    altsrc: "",
     packsrc:
       "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/SithInfiltrator-GNF75-Front.jpg",
     model: "GNF75",
@@ -1585,6 +1674,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://i5.walmartimages.com/asr/cb6c9224-6ff9-429d-b495-173eb8e54219_1.3062e2b1711faf56e0ab329a54dc0ac4.jpeg",
+    altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91Pqzoq5JRL._AC_SL1500_.jpg",
     model: "FYT78",
@@ -1600,6 +1690,7 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://static.wikia.nocookie.net/hotwheels/images/9/95/First_Order_AT-ST_%28GGY71%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20200422183217",
+    altsrc: "",
     packsrc:
       "https://s3-us-west-2.amazonaws.com/images.collecthw.com/f1299bd2-1ff5-478e-9e02-bbc5cc2f0e64_large.png",
     model: "GGY71",
@@ -1615,6 +1706,8 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71AXF4zUdSL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FYT82",
     pack: "Single",
     special: "Commemorative",
@@ -1628,6 +1721,8 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81T40og3sOL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FYT83",
     pack: "Single",
     special: "Commemorative",
@@ -1641,6 +1736,8 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71ctKRzWPsL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FYT84",
     pack: "Single",
     special: "Commemorative",
@@ -1655,6 +1752,7 @@ const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81%2BAMN8-xDL._AC_SX522_.jpg",
     altsrc: "https://m.media-amazon.com/images/I/81c-Y312LGL._AC_SL1500_.jpg",
+    packsrc: "",
     model: "FYT85",
     pack: "Single",
     special: "Commemorative",
@@ -1668,6 +1766,7 @@ const starWarsShips = [
     year: 2019,
     src: "https://m.media-amazon.com/images/I/51gsgf5VDZL._AC_SL1000_.jpg",
     altsrc: "https://m.media-amazon.com/images/I/51zUkNcTieL._AC_SL1000_.jpg",
+    packsrc: "",
     model: "FYT86",
     pack: "Single",
     special: "Commemorative",
@@ -1682,6 +1781,7 @@ const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/61HbXObh1GL._AC_SL1274_.jpg",
     altsrc: "https://m.media-amazon.com/images/I/71ylIH8KI1L._AC_SL1500_.jpg",
+    packsrc: "",
     model: "FYT87",
     pack: "Single",
     special: "Commemorative",
@@ -1694,6 +1794,8 @@ const starWarsShips = [
     name: "Resistance X-Wing Fighter",
     year: 2019,
     src: "http://www.norton.co.uk/images/products/1593944623-67122100.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FYT88",
     pack: "Single",
     special: "Commemorative",
@@ -1707,6 +1809,8 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71ZHKwyv6rL._AC_SX569_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FYT89",
     pack: "Single",
     special: "Commemorative",
@@ -1720,6 +1824,8 @@ const starWarsShips = [
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81no-HvR4SL._AC_SX679_.jpg",
+    altsrc: "",
+    packsrc: "",
     model: "FYT90",
     pack: "Single",
     special: "Commemorative",
@@ -1732,6 +1838,8 @@ const starWarsShips = [
     name: "Death Star",
     year: 2019,
     src: "",
+    altsrc: "",
+    packsrc: "",
     model: "",
     pack: "",
     special: "Commemorative",

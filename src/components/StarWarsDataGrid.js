@@ -13,7 +13,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function StarWarsDataGrid(props) {
   const classes = useStyles();
-  console.log(props);
 
   const columns = [
     {
@@ -46,8 +45,8 @@ export default function StarWarsDataGrid(props) {
     //   flex: 0.3
     // },
     { field: "name", headerName: "Name", flex: 1.5 },
-    { field: "year", headerName: "Year", flex: 0.3 },
-    { field: "model", headerName: "Model", flex: 0.5 },
+    { field: "year", headerName: "Year", flex: 0.4 },
+    { field: "model", headerName: "Model", flex: 0.4 },
     { field: "class", headerName: "Class", flex: 0.5 },
     { field: "type", headerName: "Ship Type", flex: 0.5 },
     { field: "faction", headerName: "Faction", flex: 0.5 },
