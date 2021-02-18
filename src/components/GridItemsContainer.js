@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 // import Grid from "@material-ui/core/Grid";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
 import StarWarsPaperGrid from "./StarWarsPaperGrid.js";
-import { starWarsShips } from "./StarWarsShips2.js";
+import { starWarsShips } from "./StarWarsShips3.js";
 
 export default function GridItemsContainer(props) {
   //filters starWarsShips by year, type, and faction, or by searchbarValue if it was most recently used

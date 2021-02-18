@@ -20,7 +20,11 @@ export default function StarWarsDataGrid(props) {
       headerName: "Image",
       width: 128,
       renderCell: params => (
-        <img className={classes.img} alt="complex" src={params.value} />
+        <img
+          className={classes.img}
+          alt={params.getValue("name")}
+          src={params.value}
+        />
       )
     },
     {
@@ -28,16 +32,12 @@ export default function StarWarsDataGrid(props) {
       headerName: "Pack Image",
       width: 128,
       renderCell: params => (
-        // params.value.length !== 0 ? (
         <img
           className={classes.img}
           alt={params.getValue("name")}
-          src={params.value}
+          src={params.value.length !== 0 ? params.value : ""}
         />
       )
-      // ) : (
-      //   ""
-      // )
     },
     // {
     //   field: "id",
