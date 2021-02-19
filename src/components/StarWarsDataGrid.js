@@ -39,11 +39,7 @@ export default function StarWarsDataGrid(props) {
         />
       )
     },
-    // {
-    //   field: "id",
-    //   headerName: "ID",
-    //   flex: 0.3
-    // },
+
     { field: "name", headerName: "Name", flex: 1.5 },
     { field: "year", headerName: "Year", flex: 0.4 },
     { field: "model", headerName: "Model", flex: 0.4 },
