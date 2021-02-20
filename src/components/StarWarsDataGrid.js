@@ -1,30 +1,39 @@
 import * as react from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { makeStyles } from "@material-ui/core/styles";
+import ClickableImage from "./ClickableImage.js";
 
-const useStyles = makeStyles(theme => ({
-  img: {
-    margin: "auto",
-    display: "block",
-    maxWidth: "100%",
-    maxHeight: "100%"
-  }
-}));
+// const useStyles = makeStyles(theme => ({
+// img: {
+//   margin: "auto",
+//   display: "block",
+//   maxWidth: "100%",
+//   maxHeight: "100%"
+// }
+// }));
 
 export default function StarWarsDataGrid(props) {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   const columns = [
+    // {
+    //   field: "src",
+    //   headerName: "Image",
+    //   width: 128,
+    //   renderCell: params => (
+    //     <img
+    //       className={classes.img}
+    //       alt={params.getValue("name")}
+    //       src={params.value}
+    //     />
+    //   )
+    // },
     {
       field: "src",
       headerName: "Image",
       width: 128,
       renderCell: params => (
-        <img
-          className={classes.img}
-          alt={params.getValue("name")}
-          src={params.value}
-        />
+        <ClickableImage src={params.value} alt={params.getValue("name")} />
       )
     },
     {
@@ -32,10 +41,9 @@ export default function StarWarsDataGrid(props) {
       headerName: "Pack Image",
       width: 128,
       renderCell: params => (
-        <img
-          className={classes.img}
-          alt={params.getValue("name")}
+        <ClickableImage
           src={params.value.length !== 0 ? params.value : ""}
+          alt={params.getValue("name")}
         />
       )
     },

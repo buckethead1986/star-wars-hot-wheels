@@ -145,7 +145,6 @@ export const starWarsShips = [
       "https://i5.walmartimages.com/asr/72eaa31b-609e-4ad7-94d8-8aaa81cfa70a.ef22fc09ebf0efc248a315e4f19ee470.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
     backsrc:
       "https://3.bp.blogspot.com/-33RefsLc0PE/VcZh5u_s_YI/AAAAAAAAfb0/VXy1JotXCWw/s1600/IMG_0020.JPG",
-    backsrc: "",
     model: "CGW71",
     pack: "Single",
     special: "",
@@ -2041,5 +2040,3 @@ export const starWarsShips = [
     type: "Capital Ship"
   }
 ];
-
-// export default { starWarsShips };
