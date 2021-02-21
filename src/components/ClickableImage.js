@@ -23,29 +23,6 @@ const useStyles = makeStyles({
   }
 });
 
-// function SimpleDialog(props) {
-//   const classes = useStyles();
-//   const { onClose, open } = props;
-//
-//   const handleClose = () => {
-//     onClose();
-//   };
-//
-//   // const handleListItemClick = value => {
-//   //   onClose(value);
-//   // };
-//
-//   return (
-//     <Dialog onClose={handleClose} open={open}>
-//       <img
-//         className={clsx(classes.img, classes.largeImage)}
-//         src={props.src}
-//         alt={props.alt}
-//       />
-//     </Dialog>
-//   );
-// }
-
 // SimpleDialog.propTypes = {
 //   onClose: PropTypes.func.isRequired,
 //   open: PropTypes.bool.isRequired
@@ -55,7 +32,6 @@ const useStyles = makeStyles({
 export default function ClickableImage(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  // const [selectedValue, setSelectedValue] = React.useState(emails[1]);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -63,7 +39,6 @@ export default function ClickableImage(props) {
 
   const handleClose = value => {
     setOpen(false);
-    // setSelectedValue(value);
   };
 
   return (

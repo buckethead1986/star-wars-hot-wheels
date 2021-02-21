@@ -1,6 +1,7 @@
 import * as react from "react";
 import { DataGrid } from "@material-ui/data-grid";
-import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+// import { makeStyles } from "@material-ui/core/styles";
 import ClickableImage from "./ClickableImage.js";
 
 // const useStyles = makeStyles(theme => ({
@@ -48,7 +49,18 @@ export default function StarWarsDataGrid(props) {
       )
     },
 
-    { field: "name", headerName: "Name", flex: 1.5 },
+    // { field: "name", headerName: "Name", flex: 1.5 },
+    {
+      field: "name",
+      headerName: "Name",
+      flex: 1.5,
+      renderCell: params => (
+        <div>
+          <Typography>{params.value}</Typography>
+          {/*<Typography color="textSecondary">{params.value.title}</Typography>*/}
+        </div>
+      )
+    },
     { field: "year", headerName: "Year", flex: 0.4 },
     { field: "model", headerName: "Model", flex: 0.4 },
     { field: "class", headerName: "Class", flex: 0.5 },
