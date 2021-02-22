@@ -8,9 +8,9 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91MnlAaDkaL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc: "https://i.ebayimg.com/images/g/E1sAAOSw0h1dRgj4/s-l1600.jpg",
     model: "CGW56",
-    assortment: "",
+    assortment: "CGW52",
     pack: "Single",
     special: "",
     faction: "Rebel",
@@ -737,12 +737,14 @@ export const starWarsShips = [
     name: "Imperial Shuttle",
     year: 2016,
     src:
-      "https://images-na.ssl-images-amazon.com/images/I/71YfkGawszL._AC_SY741_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/811XAD77CJL._AC_SL1500_.jpg",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/913GhjvBGbL._AC_SL1500_.jpg",
+    backsrc:
+      "https://mercari-images.global.ssl.fastly.net/photos/m92801900923_2.jpg?1604873140",
     model: "DMP62",
-    assortment: "",
+    assortment: "CGW52",
     pack: "Single",
     special: "",
     faction: "Imperial",
@@ -834,23 +836,7 @@ export const starWarsShips = [
     class: "",
     type: "Speeder"
   },
-  {
-    id: 47,
-    name: "Poe's Ski Speeder",
-    year: 2017,
-    src:
-      "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=FJD65",
-    altsrc: "",
-    packsrc: "",
-    backsrc: "",
-    model: "FJD65",
-    assortment: "",
-    pack: "Single",
-    special: "",
-    faction: "Resistance",
-    class: "",
-    type: "Speeder"
-  },
+
   {
     id: 48,
     name: "Millenium Falcon",
@@ -1045,11 +1031,13 @@ export const starWarsShips = [
     name: "Imperial Shuttle (Rogue One)",
     year: 2017,
     src: "https://i.ebayimg.com/images/g/FYcAAOSw6sZeT3Q1/s-l640.jpg",
-    altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/71YfkGawszL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/51Pi8w3wYYL._AC_.jpg",
+    backsrc: "https://i.ebayimg.com/images/g/I3cAAOSw5-lbe4Oy/s-l1600.jpg",
     model: "DXX59",
-    assortment: "",
+    assortment: "DXD96",
     pack: "Single",
     special: "",
     faction: "Imperial",
@@ -1197,11 +1185,14 @@ export const starWarsShips = [
     year: 2017,
     src:
       "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=FBB04",
-    altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81fh6xeBGNL._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91oXHnN6WpL._AC_SL1500_.jpg",
+    backsrc:
+      "https://i5.walmartimages.com/asr/bacd138f-bf8d-4b5b-b288-47e05cfc59e5_1.6611388716dcd51ab152937f09c37495.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
     model: "FBB04",
-    assortment: "",
+    assortment: "FBB03",
     pack: "Single",
     special: "",
     faction: "First Order",
@@ -1221,6 +1212,7 @@ export const starWarsShips = [
     backsrc:
       "https://thumbs.worthpoint.com/zoom/images6/1/0120/09/hot-wheels-starships-lot-heavy_1_9578c59a4a4784de3b0df5114334f9c0.jpg",
     model: "FBB05",
+    assortment: "FBB03",
     pack: "Single",
     special: "",
     faction: "First Order",
@@ -1235,10 +1227,12 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/414vOVbTjvL._AC_.jpg",
     altsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81UDAC-DEVL._AC_SL1500_.jpg",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81eztROxJ9L._AC_SL1500_.jpg",
+    backsrc:
+      "https://i5.walmartimages.com/asr/b3a4755c-e910-45b6-bd23-00b52f7cc9ca_1.71c2d8d042fa152cf5c6790c0ee66f5a.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
     model: "FBB07",
-    assortment: "",
+    assortment: "FBB03",
     pack: "Single",
     special: "",
     faction: "Rebel",
@@ -1254,9 +1248,9 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81pSyvspliL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc: "https://i.ebayimg.com/images/g/wBoAAOSwtlpanD-X/s-l1600.jpg",
     model: "FBB12",
-    assortment: "",
+    assortment: "FBB03",
     pack: "Single",
     special: "",
     faction: "Unaffiliated",
@@ -1299,11 +1293,33 @@ export const starWarsShips = [
   },
   {
     id: 73,
+    name: "Y-Wing Fighter Gold Leader",
+    year: 2016,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71ttIcdK98L._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91IfT6eNUHL._AC_SL1500_.jpg",
+    backsrc:
+      "https://aquariusagetoys.com/2472-thickbox_default/hot-wheels-star-wars-starship-resistance-bomber-mattel-fjd64.jpg",
+    model: "DXX54",
+    assortment: "DXD96",
+    pack: "Single",
+    special: "",
+    faction: "Rebel",
+    class: "Y-Wing",
+    type: "Fighter"
+  },
+  {
+    id: 73,
     name: "Y-Wing Fighter",
     year: 2017,
-    src: "https://live.staticflickr.com/4485/38138930471_29bd4e0a79_b.jpg",
-    altsrc: "",
-    packsrc: "",
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71vYz-lHmiL._AC_SL1500_.jpg",
+    altsrc:
+      "https://i5.walmartimages.com/asr/0fa6674e-38f5-422e-8698-c4b1eb6fd2f2_1.ed54c17cc8ed6d3585c3265f4fe70796.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91ufyHFtJvL._AC_SL1500_.jpg",
     backsrc: "",
     model: "FBB39",
     assortment: "",
@@ -1337,10 +1353,12 @@ export const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71iOL8lRUlL._AC_SX466_.jpg",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91mAh9eZmlL._AC_SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91N3G8LI80L._AC_SL1500_.jpg",
     model: "FJD64",
-    assortment: "",
+    assortment: "FBB03",
     pack: "Single",
     special: "",
     faction: "Resistance",
@@ -1370,10 +1388,12 @@ export const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81SzD2PZHcL._AC_UL600_SR444,600_.jpg",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/71y01ztM%2B0L._AC_SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/817TodtAONL._AC_SL1500_.jpg",
     model: "FGR18",
-    assortment: "",
+    assortment: "FBB03",
     pack: "Single",
     special: "",
     faction: "First Order",
@@ -1415,21 +1435,137 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
+    id: 82,
+    name: "Rebel Snowspeeder",
+    year: 2017,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81QSeUHk%2B3L._AC_SX569_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81oJGcGa05L._AC_SL1500_.jpg",
+    backsrc:
+      "https://d2h1pu99sxkfvn.cloudfront.net/b0/11151835/433060415_v4WdgztI5u/P0.jpg",
+    model: "FPL65",
+    assortment: "FBB03",
+    pack: "Single",
+    special: "",
+    faction: "Rebel",
+    class: "",
+    type: "Speeder"
+  },
+  {
     id: 80,
     name: "Imperial Combat Assault Hovertank",
     year: 2017,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/81w5CAv9p0L._AC_SX425_.jpg",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/8142kMmna6L._SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91t1G3cXPCL._AC_SL1500_.jpg",
     model: "FJF20",
-    assortment: "",
+    assortment: "FBB03",
     pack: "Single",
     special: "",
     faction: "Imperial",
     class: "",
     type: "Speeder"
+  },
+  {
+    id: 81,
+    name: "Star Destroyer",
+    year: 2017,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71nyZNLkFgL._AC_SL1500_.jpg",
+    altsrc: "https://m.media-amazon.com/images/I/71PAzvN2V2L.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81BzIMpR03L._AC_SL1500_.jpg",
+    backsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/StarDestroyer-FBB41-Back.jpg",
+    model: "FBB41",
+    assortment: "FBB03",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    class: "",
+    type: "Capital Ship"
+  },
+  {
+    id: 41,
+    name: "Imperial Shuttle",
+    year: 2017,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81exIA8sdyL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/8175mVqaRcL._AC_SL1500_.jpg",
+    backsrc:
+      "https://4.bp.blogspot.com/-2FgP5NsvEYg/XIcat7qNi7I/AAAAAAAAgQk/O9E4oAqbdukOyG0OkriXz3JwLj_KyG3kACLcBGAs/s1600/6.png",
+    model: "FBB46",
+    assortment: "FBB03",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    class: "",
+    type: "Shuttle"
+  },
+  {
+    id: 47,
+    name: "Poe's Ski Speeder",
+    year: 2017,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71yDHBUmAJL._AC_SL1500_.jpg",
+    altsrc:
+      "https://images.mattel.com/scene7/?$ossmallindex$&storeId=10151&SKU=FJD65",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/9114rxodW-L._AC_SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/910YsKoaVXL._AC_SL1500_.jpg",
+    model: "FJD65",
+    assortment: "FBB03",
+    pack: "Single",
+    special: "",
+    faction: "Resistance",
+    class: "",
+    type: "Speeder"
+  },
+  {
+    id: 105,
+    name: "TIE Fighter",
+    year: 2016,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/819xOTcLUuL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/818wrhF53ML._AC_SL1500_.jpg",
+    backsrc:
+      "https://d2h1pu99sxkfvn.cloudfront.net/b0/11151835/433012399_iRvKgT4H1n/P0.jpg",
+    model: "FBB40",
+    assortment: "FBB03",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    class: "TIE",
+    type: "Fighter"
+  },
+  {
+    id: 41,
+    name: "Imperial Shuttle",
+    year: 2017,
+    src:
+      "https://i5.walmartimages.com/asr/694230fa-ba6a-4bb7-a40c-1350afbaa0c8_1.6d4343b3ea086cc2dc74395f73d33c9e.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    altsrc: "",
+    packsrc:
+      "https://i5.walmartimages.com/asr/31323aba-83ac-492e-811c-fa94e68b72ff_1.bf89412b024355d6dcaba4d3a8e52207.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    backsrc: "",
+    model: "FTT56",
+    assortment: "",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    class: "",
+    type: "Shuttle"
   },
   {
     id: 81,
@@ -1447,23 +1583,7 @@ export const starWarsShips = [
     class: "",
     type: "Capital Ship"
   },
-  {
-    id: 82,
-    name: "Rebel Snowspeeder",
-    year: 2017,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/81QSeUHk%2B3L._AC_SX569_.jpg",
-    altsrc: "",
-    packsrc: "",
-    backsrc: "",
-    model: "FPL65",
-    assortment: "",
-    pack: "Single",
-    special: "",
-    faction: "Rebel",
-    class: "",
-    type: "Speeder"
-  },
+
   {
     id: 83,
     name: "AT-AT vs Rebel Snowspeeder",
@@ -1583,6 +1703,25 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
+    id: 41,
+    name: "Imperial Shuttle",
+    year: 2019,
+    src:
+      "https://i5.walmartimages.com/asr/752b2866-8d5f-4110-9738-98689600c243_1.8403387212ce60186467e213b90d2905.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91zps%2BhRL4L._AC_SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/911%2BvxZ70TL._AC_SL1500_.jpg",
+    model: "GGY74",
+    assortment: "FYT65",
+    pack: "Single",
+    special: "",
+    faction: "Imperial",
+    class: "",
+    type: "Shuttle"
+  },
+  {
     id: 90,
     name: "Han Solo's Speeder",
     year: 2018,
@@ -1623,9 +1762,9 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81NHjvcBpeL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc: "https://i.ebayimg.com/images/g/8-EAAOSwCf5ek493/s-l1600.jpg",
     model: "FJF27",
-    assortment: "",
+    assortment: "FJD59",
     pack: "Single",
     special: "",
     faction: "Imperial",
@@ -1810,14 +1949,35 @@ export const starWarsShips = [
     name: "Y-Wing Starfighter Gold Leader",
     year: 2019,
     src:
-      "https://images-na.ssl-images-amazon.com/images/I/91BwsqxXIOL._AC_SL1500_.jpg",
+      "https://i5.walmartimages.com/asr/4563a5f6-f077-48af-b03c-c3d4bade1f61_1.c4992d957070263669f8ea7e8f2c771f.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91BwsqxXIOL._AC_SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91z1RQQtrEL._AC_SL1500_.jpg",
     model: "FYT71",
-    assortment: "",
+    assortment: "FYT65",
     pack: "Single",
     special: "",
+    faction: "Rebel",
+    class: "Y-Wing",
+    type: "Fighter"
+  },
+  {
+    id: 103,
+    name: "Y-Wing Starfighter Gold Leader",
+    year: 2019,
+    altsrc:
+      "https://i5.walmartimages.com/asr/4563a5f6-f077-48af-b03c-c3d4bade1f61_1.c4992d957070263669f8ea7e8f2c771f.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    altsrc: "",
+    packsrc:
+      "https://s3-us-west-2.amazonaws.com/images.collecthw.com/c29bf7f0-e2dd-4962-9ff8-06f54b8c6587_large.png",
+    backsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/ResistanceYWingFighter-WC-FYT71-Back.jpg",
+    model: "FYT71",
+    assortment: "FYT65",
+    pack: "Single",
+    special: "White Card Variant",
     faction: "Rebel",
     class: "Y-Wing",
     type: "Fighter"
@@ -1840,24 +2000,7 @@ export const starWarsShips = [
     class: "A-Wing",
     type: "Fighter"
   },
-  {
-    id: 105,
-    name: "TIE Fighter",
-    year: 2019,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/819xOTcLUuL._AC_SL1500_.jpg",
-    altsrc: "",
-    packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/818wrhF53ML._AC_SL1500_.jpg",
-    backsrc: "",
-    model: "FBB40",
-    assortment: "",
-    pack: "Single",
-    special: "",
-    faction: "Imperial",
-    class: "TIE",
-    type: "Fighter"
-  },
+
   {
     id: 106,
     name: "First Order TIE Fighter",
