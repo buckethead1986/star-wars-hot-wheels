@@ -17,22 +17,24 @@ export const starWarsShips = [
     class: "TIE",
     type: "Fighter"
   },
+
   {
     id: 5,
-    name: "Blast Attack First Order Special Forces TIE Fighter",
+    name: "Blast Attack Resistance X-Wing Fighter",
     year: 2015,
     src:
-      "https://images-na.ssl-images-amazon.com/images/I/81pJ3nGbYGL._AC_SL1500_.jpg",
-    altsrc: "",
+      "https://images-na.ssl-images-amazon.com/images/I/81ImmwK6bzL._AC_SL1500_.jpg",
+    altsrc:
+      "https://i5.walmartimages.com/asr/08e255ed-c974-4235-8cf5-18077641727d_1.c8a04c0b9e1d1965e524755171c073f6.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
     packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/91Y98HbanCL._AC_SL1500_.jpg",
-    backsrc: "https://i.ebayimg.com/images/g/rAAAAOSwzq5fpglb/s-l1600.jpg",
-    model: "CMP60",
+      "https://images-na.ssl-images-amazon.com/images/I/91CGXOgmhUL._AC_SL1500_.jpg",
+    backsrc: "https://i.ebayimg.com/images/g/togAAOSwNxtey~Ys/s-l1600.jpg",
+    model: "CMP55",
     assortment: "CMP54",
     packSize: 1,
     special: "Includes Deluxe Flight Navigator With Firing Blaster Cannon!",
-    faction: "Imperial",
-    class: "TIE",
+    faction: "Resistance",
+    class: "X-Wing",
     type: "Fighter"
   },
   {
@@ -55,15 +57,54 @@ export const starWarsShips = [
   },
   {
     id: 5,
+    name: "Blast Attack Ghost",
+    year: 2015,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/91nKTOMcAGL._AC_SL1500_.jpg",
+    altsrc:
+      "https://i5.walmartimages.com/asr/17093a77-18b5-41b9-80e0-861b4c3ca5b3_1.3681fc80bfff8b9487fa6eb4265152ce.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91nKTOMcAGL._AC_SL1500_.jpg",
+    backsrc:
+      "https://www.ethanproductions.com/actionfigures-newDB/images/887961162554-back.jpg",
+    model: "CMP57",
+    assortment: "CMP54",
+    packSize: 1,
+    special: "Includes Deluxe Flight Navigator With Firing Blaster Cannon!",
+    faction: "Resistance",
+    class: "",
+    type: "Fighter"
+  },
+  {
+    id: 5,
+    name: "Blast Attack Republic Gunship",
+    year: 2015,
+    src:
+      "https://www.ethanproductions.com/actionfigures-newDB/images/887961162578.jpg",
+    altsrc: "",
+    packsrc:
+      "https://www.ethanproductions.com/actionfigures-newDB/images/887961162578.jpg",
+    backsrc:
+      "https://www.ethanproductions.com/actionfigures-newDB/images/887961162578-back.jpg",
+    model: "CMP58",
+    assortment: "CMP54",
+    packSize: 1,
+    special: "Includes Deluxe Flight Navigator With Firing Blaster Cannon!",
+    faction: "Republic",
+    class: "",
+    type: "Fighter"
+  },
+  {
+    id: 5,
     name: "Blast Attack Millenium Falcon",
     year: 2015,
     src:
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/AEUT_1_20171207647347916.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/81PF968BTqL._AC_SL1500_.jpg",
     altsrc: "https://images.mattel.com/scene7/CMP56_01?$oslarge$",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81vr7COHACL._AC_SL1500_.jpg",
-    backsrc: "",
-    model: "CMP56",
+    backsrc: "https://cf.shopee.com.my/file/36c66e995fc2ef88df38fa5cabdc9913",
+    model: "CMP59",
     assortment: "CMP54",
     packSize: 1,
     special: "Includes Deluxe Flight Navigator With Firing Blaster Cannon!",
@@ -73,22 +114,23 @@ export const starWarsShips = [
   },
   {
     id: 5,
-    name: "Blast Attack Resistance X-Wing",
+    name: "Blast Attack First Order Special Forces TIE Fighter",
     year: 2015,
     src:
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/AEUT_1_20171207647347916.jpg",
-    altsrc: "https://images.mattel.com/scene7/CMP56_01?$oslarge$",
+      "https://images-na.ssl-images-amazon.com/images/I/81pJ3nGbYGL._AC_SL1500_.jpg",
+    altsrc: "",
     packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/81fRyG77oaL._AC_SL1500_.jpg",
-    backsrc: "",
-    model: "CMP56",
+      "https://images-na.ssl-images-amazon.com/images/I/91Y98HbanCL._AC_SL1500_.jpg",
+    backsrc: "https://i.ebayimg.com/images/g/rAAAAOSwzq5fpglb/s-l1600.jpg",
+    model: "CMP60",
     assortment: "CMP54",
     packSize: 1,
     special: "Includes Deluxe Flight Navigator With Firing Blaster Cannon!",
-    faction: "Resistance",
-    class: "X-Wing",
+    faction: "Imperial",
+    class: "TIE",
     type: "Fighter"
   },
+
   {
     id: 5,
     name: "Blast Attack First Order Star Destroyer",
@@ -108,6 +150,45 @@ export const starWarsShips = [
     class: "",
     type: "Capital Ship"
   },
+
+  {
+    id: 4,
+    name: "Boba Fett's Slave I",
+    year: 2015,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81ZBEb-ptsL._AC_SY606_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91Jgl6oXmcL._AC_SL1500_.jpg",
+    backsrc:
+      "https://d2j6dbq0eux0bg.cloudfront.net/images/7492483/351011421.jpg",
+    model: "CKJ63",
+    assortment: "CGW52",
+    packSize: 1,
+    special: "",
+    faction: "Unaffiliated",
+    class: "Firespray",
+    type: "Fighter"
+  },
+  {
+    id: 5,
+    name: "TIE Fighter",
+    year: 2015,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81zRvVnwgZL._AC_SL1500_.jpg",
+    altsrc: "https://m.media-amazon.com/images/I/81zRvVnwgZL.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91ngqvodqSL._AC_SL1500_.jpg",
+    backsrc:
+      "https://babynet.pl/images/STATEK%20KOSMICZNY%20CGW53%20as.%20CGW52-12.jpg",
+    model: "CGW53",
+    assortment: "CGW52",
+    packSize: 1,
+    special: "",
+    faction: "Imperial",
+    class: "TIE",
+    type: "Fighter"
+  },
   {
     id: 0,
     name: "Millenium Falcon",
@@ -125,24 +206,6 @@ export const starWarsShips = [
     faction: "Rebel",
     class: "YT-1300",
     type: "Fighter"
-  },
-  {
-    id: 1,
-    name: "Rebel Snowspeeder",
-    year: 2015,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/81gn3HZ9Z1L._AC_SL1500_.jpg",
-    altsrc: "",
-    packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/91NYAQ7DaxL._AC_SL1500_.jpg",
-    backsrc: "",
-    model: "CGW63",
-    assortment: "",
-    packSize: 1,
-    special: "",
-    faction: "Rebel",
-    class: "",
-    type: "Speeder"
   },
   {
     id: 2,
@@ -180,44 +243,24 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 4,
-    name: "Boba Fett's Slave I",
+    id: 1,
+    name: "Rebel Snowspeeder",
     year: 2015,
     src:
-      "https://images-na.ssl-images-amazon.com/images/I/81ZBEb-ptsL._AC_SY606_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/81gn3HZ9Z1L._AC_SL1500_.jpg",
     altsrc: "",
     packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/91Jgl6oXmcL._AC_SL1500_.jpg",
-    backsrc:
-      "https://d2j6dbq0eux0bg.cloudfront.net/images/7492483/351011421.jpg",
-    model: "CKJ63",
-    assortment: "CGW52",
+      "https://images-na.ssl-images-amazon.com/images/I/91NYAQ7DaxL._AC_SL1500_.jpg",
+    backsrc: "",
+    model: "CGW63",
+    assortment: "",
     packSize: 1,
     special: "",
-    faction: "Unaffiliated",
-    class: "Firespray",
-    type: "Fighter"
+    faction: "Rebel",
+    class: "",
+    type: "Speeder"
   },
 
-  {
-    id: 5,
-    name: "TIE Fighter",
-    year: 2015,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/81zRvVnwgZL._AC_SL1500_.jpg",
-    altsrc: "https://m.media-amazon.com/images/I/81zRvVnwgZL.jpg",
-    packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/91ngqvodqSL._AC_SL1500_.jpg",
-    backsrc:
-      "https://babynet.pl/images/STATEK%20KOSMICZNY%20CGW53%20as.%20CGW52-12.jpg",
-    model: "CGW53",
-    assortment: "CGW52",
-    packSize: 1,
-    special: "",
-    faction: "Imperial",
-    class: "TIE",
-    type: "Fighter"
-  },
   {
     id: 6,
     name: "X-Wing Fighter Red Five",
@@ -232,25 +275,6 @@ export const starWarsShips = [
     assortment: "",
     packSize: 1,
     special: "",
-    faction: "Rebel",
-    class: "X-Wing",
-    type: "Fighter"
-  },
-  {
-    id: 7,
-    name: "X-Wing Fighter Red Three",
-    year: 2015,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/71bLtsFDpFL._AC_SL1500_.jpg",
-    altsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/6176MhVpbFL._AC_SL1000_.jpg",
-    packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/916ydlp6LTL._AC_SL1500_.jpg",
-    backsrc: "",
-    model: "CKR61",
-    assortment: "",
-    packSize: 1,
-    special: "Wings Closed",
     faction: "Rebel",
     class: "X-Wing",
     type: "Fighter"
@@ -273,6 +297,26 @@ export const starWarsShips = [
     class: "Droid",
     type: "Fighter"
   },
+  {
+    id: 7,
+    name: "X-Wing Fighter Red Three",
+    year: 2015,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71bLtsFDpFL._AC_SL1500_.jpg",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/6176MhVpbFL._AC_SL1000_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/916ydlp6LTL._AC_SL1500_.jpg",
+    backsrc: "",
+    model: "CKR61",
+    assortment: "",
+    packSize: 1,
+    special: "Wings Closed",
+    faction: "Rebel",
+    class: "X-Wing",
+    type: "Fighter"
+  },
+
   {
     id: 9,
     name: "Star Destroyer",

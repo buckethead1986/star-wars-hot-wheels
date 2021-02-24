@@ -195,7 +195,32 @@ export default function ResponsiveDrawer(props) {
       >
         <div className={classes.drawerHeader} />
 
-        <Typography paragraph>Filler Text</Typography>
+        <Typography>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          suscipit nisl at placerat tincidunt. Morbi tempus nibh sit amet enim
+          porttitor vestibulum. Ut semper mattis nibh. Sed maximus sapien in
+          massa hendrerit blandit. Sed eget eleifend sapien. Ut ac enim in
+          tellus aliquam ornare sit amet non nibh. Suspendisse iaculis sem
+          velit, et varius nibh condimentum at. Orci varius natoque penatibus et
+          magnis dis parturient montes, nascetur ridiculus mus. Vestibulum
+          condimentum placerat eros at porta. Vestibulum sed porta purus. Aenean
+          quis sapien mi. Mauris ut porta velit. Suspendisse massa lectus,
+          vestibulum ac laoreet mattis, dictum a justo. Fusce a magna vel justo
+          maximus commodo nec in diam. Praesent non semper augue. Aliquam
+          ullamcorper tellus eu purus dictum, a vulputate quam congue. In
+          posuere lectus eget enim ultricies facilisis. Ut nisi felis, consequat
+          non leo ut, vehicula euismod dolor. Fusce ac euismod orci. Sed a augue
+          quam. Aliquam ut enim nec lorem auctor volutpat. Pellentesque
+          fermentum neque non faucibus dignissim. Donec ac lectus viverra,
+          malesuada mi eget, mattis neque. Nam blandit velit in rhoncus mattis.
+          Quisque id dui eu elit finibus vestibulum vel et purus. Proin lacinia
+          lobortis neque a sollicitudin. Interdum et malesuada fames ac ante
+          ipsum primis in faucibus. Quisque sit amet lorem non est vehicula
+          condimentum. Vestibulum nec malesuada metus. Quisque ac tincidunt
+          nulla. Praesent at enim sit amet velit facilisis pulvinar. Sed aliquet
+          tincidunt nulla sagittis consectetur. Cras hendrerit metus sit amet
+          neque blandit gravida. Aliquam gravida iaculis erat vitae interdum.
+        </Typography>
         <GridItemsContainer
           shipFilter={props.shipFilter}
           searchbarValue={props.searchbarValue}

@@ -48,6 +48,17 @@ export default function StarWarsDataGrid(props) {
         />
       )
     },
+    {
+      field: "backsrc",
+      headerName: "Reverse Image",
+      width: 128,
+      renderCell: params => (
+        <ClickableImage
+          src={params.value.length !== 0 ? params.value : ""}
+          alt={params.getValue("name")}
+        />
+      )
+    },
 
     // { field: "name", headerName: "Name", flex: 1.5 },
     {
@@ -63,7 +74,7 @@ export default function StarWarsDataGrid(props) {
     },
     { field: "year", headerName: "Year", flex: 0.4 },
     { field: "model", headerName: "Model", flex: 0.4 },
-    { field: "class", headerName: "Class", flex: 0.5 },
+    { field: "class", headerName: "Class", flex: 0.4 },
     { field: "type", headerName: "Ship Type", flex: 0.5 },
     { field: "faction", headerName: "Faction", flex: 0.5 },
     { field: "special", headerName: "Extra", flex: 0.5 }
@@ -82,6 +93,8 @@ export default function StarWarsDataGrid(props) {
   return (
     <div ref={gridWrapperRef}>
       <DataGrid
+        pageSize={25}
+        rowsPerPageOptions={[25, 50, 75, 100]}
         rows={props.filteredShips}
         columns={columns}
         autoHeight
