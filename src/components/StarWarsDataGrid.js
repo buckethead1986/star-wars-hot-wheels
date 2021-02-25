@@ -1,20 +1,31 @@
 import * as react from "react";
 import { DataGrid } from "@material-ui/data-grid";
+// import clsx from "clsx";
 import Typography from "@material-ui/core/Typography";
-// import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ClickableImage from "./ClickableImage.js";
 
+const useStyles = makeStyles({
+  wrapTextInCell: {
+    "& div.MuiDataGrid-cell": {
+      whiteSpace: "normal"
+      // lineHeight: "20px",
+      // overflow: "visible"
+    }
+  }
+});
+
 // const useStyles = makeStyles(theme => ({
-// img: {
-//   margin: "auto",
-//   display: "block",
-//   maxWidth: "100%",
-//   maxHeight: "100%"
+// root: {
+//   "& div.react-grid-Container": {
+//     color: "red",
+//     // color: theme.palette.text.color
+//   }
 // }
 // }));
 
 export default function StarWarsDataGrid(props) {
-  // const classes = useStyles();
+  const classes = useStyles();
 
   const columns = [
     // {
@@ -29,6 +40,20 @@ export default function StarWarsDataGrid(props) {
     //     />
     //   )
     // },
+
+    // { field: "name", headerName: "Name", width: 200 },
+    {
+      field: "name",
+      headerName: "Name",
+      flex: 1,
+      renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
+    },
+    { field: "year", headerName: "Year", flex: 0.4 },
+    { field: "model", headerName: "Model", flex: 0.4 },
+    { field: "class", headerName: "Class", flex: 0.4 },
+    { field: "type", headerName: "Ship Type", flex: 0.5 },
+    { field: "faction", headerName: "Faction", flex: 0.5 },
+    { field: "special", headerName: "Extra", flex: 0.5 },
     {
       field: "src",
       headerName: "Image",
@@ -58,26 +83,7 @@ export default function StarWarsDataGrid(props) {
           alt={params.getValue("name")}
         />
       )
-    },
-
-    // { field: "name", headerName: "Name", flex: 1.5 },
-    {
-      field: "name",
-      headerName: "Name",
-      flex: 1.5,
-      renderCell: params => (
-        <div>
-          <Typography>{params.value}</Typography>
-          {/*<Typography color="textSecondary">{params.value.title}</Typography>*/}
-        </div>
-      )
-    },
-    { field: "year", headerName: "Year", flex: 0.4 },
-    { field: "model", headerName: "Model", flex: 0.4 },
-    { field: "class", headerName: "Class", flex: 0.4 },
-    { field: "type", headerName: "Ship Type", flex: 0.5 },
-    { field: "faction", headerName: "Faction", flex: 0.5 },
-    { field: "special", headerName: "Extra", flex: 0.5 }
+    }
   ];
 
   //default height for DataGrid is 0. This is a workaround I found to enable content to load below the grid
@@ -91,7 +97,7 @@ export default function StarWarsDataGrid(props) {
   });
 
   return (
-    <div ref={gridWrapperRef}>
+    <div ref={gridWrapperRef} className={classes.wrapTextInCell}>
       <DataGrid
         pageSize={25}
         rowsPerPageOptions={[25, 50, 75, 100]}

@@ -677,7 +677,7 @@ export const starWarsShips = [
     model: "DMP63",
     assortment: "",
     packSize: 1,
-    special: "Wings CLosed",
+    special: "Wings Closed",
     faction: "Resistance",
     class: "X-Wing",
     type: "Fighter"
@@ -1942,13 +1942,52 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71VG53PxXVL._SL1500_.jpg",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81Nhs47cwLL._SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://www.worthpoint.com/worthopedia/2018-hotwheels-star-wars-starships-1981340644",
     model: "FJD60",
-    assortment: "",
+    assortment: "FJD59",
     packSize: 1,
     special: "",
     faction: "Rebel",
     class: "B-Wing",
+    type: "Fighter"
+  },
+  {
+    id: 93,
+    name: "First Order AT-ST",
+    year: 2018,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71EjzkmglUL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/814VfL%2B59GL._AC_SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91ZHTxv1cJL._AC_SL1500_.jpg",
+    model: "FBB08",
+    assortment: "FJD59",
+    packSize: 1,
+    special: "",
+    faction: "First Order",
+    class: "AT-ST",
+    type: "Walker"
+  },
+  {
+    id: 93,
+    name: "Jango Fett's Slave I",
+    year: 2018,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/61k%2BmmaH-iL._SL1058_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81i1uxaOXWL._SL1500_.jpg",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91wxuJNT3NL._SL1500_.jpg",
+    model: "GFH23",
+    assortment: "FJD59",
+    packSize: 1,
+    special: "",
+    faction: "Unaffiliated",
+    class: "Firespray",
     type: "Fighter"
   },
   {
@@ -2147,7 +2186,7 @@ export const starWarsShips = [
     id: 103,
     name: "Y-Wing Starfighter Gold Leader",
     year: 2019,
-    altsrc:
+    src:
       "https://i5.walmartimages.com/asr/4563a5f6-f077-48af-b03c-c3d4bade1f61_1.c4992d957070263669f8ea7e8f2c771f.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
     altsrc: "",
     packsrc:
@@ -2243,9 +2282,10 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91btvF7WS6L._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91BkQiNkftL._AC_SL1500_.jpg",
     model: "GJC30",
-    assortment: "",
+    assortment: "FYT65",
     packSize: 1,
     special: "",
     faction: "Rebel",
