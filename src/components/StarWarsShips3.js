@@ -1,3 +1,68 @@
+// CGN30 X-Wing Assault Galactic Battle playset - X-Wing Fighter (Red 5 wings open)
+// CGN34 Hoth Echo Base Battle playset - Rebel Snowspeeder (Luke Skywalker's white/grey)
+// CGN35 Rebels Transport Attack playset (Gozanti Cruiser) - Ghost
+// CGN36 Battle Of Geonosis playset (Homing Spider Droid/Trade Federation Battleship core) - Republic Attack Gunship (red)
+// CGN73 Death Star Play Case
+// CGW53 TIE Fighter (blue)
+// CGW54 Slave I (Jango)
+// CGW55 X-Wing (Red 2) (wings open)
+// CGW56 Millennium Falcon (OT)
+// CGW57 Star Destroyer
+// CGW58 Republic Gunship (red)
+// CGW59 Y-Wing (Gold Leader)
+// CGW60 Jabba's Barge
+// CGW61 Tantive IV
+// CGW62 Ghost
+// CGW63 Snowspeeder (white/orange)
+// CGW64 AT-AT
+// CGW65 Jedi Starfighter (Episode III blue)
+// CGW66 Rebels TIE Fighter
+// CGW67 X-Wing (Red 5) (wings open)
+// CGW68 Snowspeeder
+// CGW69 TIE Advanced x1
+// CGW70 Naboo N-1 Starfighter
+// CGW71 Vulture Droid
+// CGW72 Sith Infiltrator
+// CGW90 Rebels TIE Fighter vs Ghost
+// CGW91 X-Wing (Red 2 wings open) vs TIE Fighter (white)
+// CGW92 Jedi Starfighter (Episode II) vs Slave I (Jango)
+// CGW93 Star Destroyer vs Mon Calamari Cruiser
+// CGW94 Jedi Interceptor (Obi-Wan's) vs Droid Tri-Fighter
+// CGW95 FO TIE vs Millennium Falcon (TFA)
+// CKJ61 Y-Wing (Gold Leader)
+// CKJ63 Slave I (Boba)
+// CKJ64 Y-Wing
+// CKJ65 Phantom
+// CKJ66 Millennium Falcon (TFA)
+// CKJ67 FOSF TIE Fighter
+// CKJ68 Kylo Ren's Command Shuttle
+// CKJ69 Rey's Speeder
+// CKJ70 FO Snowspeeder
+// CKJ71 Resistance X-Wing (wings closed)
+// CKJ72 FO Star Destroyer
+// CKJ81 FO Transporter vs Resistance X-Wing (wings open)
+// CKR61 X-Wing (Red 3) (wings closed)
+// CMP54 Blast Attack FO TIE Fighter (battle damaged)
+// CMP55 Blast Attack Resistance X-Wing Fighter (wings open) (battle damaged)
+// CMP56 Blast Attack FO TIE Fighter (battle damaged)
+// CMP57 Blast Attack Ghost (battle damaged)
+// CMP58 Blast Attack Naboo N-1 Starfighter (battle damaged)
+// CMP59 Blast Attack Millennium Falcon (TFA) (battle damaged)
+// CMT37 TIE Fighter Blast-Out Battle - FOSF TIE Fighter
+// DJJ61 FO TIE Fighter
+// DJJ63 Poe's X-Wing (wings open)
+// DLP58 Ghost vs Rebels TIE Fighter
+// DMB24 Escape From Jakku playset - Millennium Falcon (TFA)
+// DMP61 Republic Gunship (alt deco)
+// DMP62 Imperial Shuttle
+// DMP63 Poe's X-Wing (closed wings)
+// DRX05 Snowspeeder (white/orange)
+// DRX06 Slave I (Boba)
+// DRX07 Ghost
+// DRX08 X-Wing (Red 5)
+// DRX09 TIE Fighter (Grey)
+// DRX10 Y-Wing (Gold Leader)
+
 export const starWarsShips = [
   {
     id: 5,
@@ -216,9 +281,10 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/913nI3iHk0L._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://avatars.mds.yandex.net/get-mpic/1749547/img_id4144242026551641163/13hq",
     model: "CGW59",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Rebel",
@@ -232,13 +298,33 @@ export const starWarsShips = [
     src:
       "https://cdn10.bigcommerce.com/s-r8yraidg/products/9900/images/9430/ghost__57736.1430445600.1280.1280.jpg?c=2",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91bGmY2vX6L._AC_SL1500_.jpg",
+    backsrc: "https://i.ebayimg.com/images/g/XY4AAOSwOU9bxats/s-l500.jpg",
     model: "CGW62",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Resistance",
+    class: "",
+    type: "Fighter"
+  },
+  {
+    id: 3,
+    name: "First Order TIE Fighter vs Millenium Falcon",
+    year: 2015,
+    src:
+      "https://i5.walmartimages.com/asr/0b423c84-8807-4b4f-b715-77138a795d7c_1.ad88b9c0179588f0b008d849618eac12.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91m-vbwl7eL._AC_SL1500_.jpg",
+    backsrc:
+      "https://d9nvuahg4xykp.cloudfront.net/2125709432365036278/8429074127174923123.jpg",
+    model: "CGW95",
+    assortment: "CGW90",
+    packSize: 2,
+    special: "",
+    faction: "Imperial, Rebel",
     class: "",
     type: "Fighter"
   },
@@ -261,24 +347,24 @@ export const starWarsShips = [
     type: "Speeder"
   },
 
-  {
-    id: 6,
-    name: "X-Wing Fighter Red Five",
-    year: 2015,
-    src:
-      "https://images-na.ssl-images-amazon.com/images/I/71VffUNvD7L._AC_SL1500_.jpg",
-    altsrc: "",
-    packsrc:
-      "https://images-na.ssl-images-amazon.com/images/I/91P8MznnokL._AC_SL1500_.jpg",
-    backsrc: "",
-    model: "CGW67",
-    assortment: "",
-    packSize: 1,
-    special: "",
-    faction: "Rebel",
-    class: "X-Wing",
-    type: "Fighter"
-  },
+  // {
+  //   id: 6,
+  //   name: "X-Wing Fighter Red Five",
+  //   year: 2015,
+  //   src:
+  //     "https://images-na.ssl-images-amazon.com/images/I/71VffUNvD7L._AC_SL1500_.jpg",
+  //   altsrc: "",
+  //   packsrc:
+  //     "https://images-na.ssl-images-amazon.com/images/I/91P8MznnokL._AC_SL1500_.jpg",
+  //   backsrc: "",
+  //   model: "CGW67",
+  //   assortment: "",
+  //   packSize: 1,
+  //   special: "",
+  //   faction: "Rebel",
+  //   class: "X-Wing",
+  //   type: "Fighter"
+  // },
   {
     id: 8,
     name: "Vulture Droid",
@@ -299,7 +385,7 @@ export const starWarsShips = [
   },
   {
     id: 7,
-    name: "X-Wing Fighter Red Three",
+    name: "X-Wing Fighter Red 3",
     year: 2015,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71bLtsFDpFL._AC_SL1500_.jpg",
@@ -307,9 +393,9 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/6176MhVpbFL._AC_SL1000_.jpg",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/916ydlp6LTL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc: "https://i.ebayimg.com/images/g/gF8AAOSwcxVaoJYa/s-l1600.jpg",
     model: "CKR61",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "Wings Closed",
     faction: "Rebel",
@@ -339,7 +425,7 @@ export const starWarsShips = [
   {
     id: 10,
     name: "Millenium Falcon",
-    year: 2016,
+    year: 2015,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/51fwRo9PH9L._AC_SY400_.jpg",
     altsrc:
@@ -350,7 +436,7 @@ export const starWarsShips = [
     model: "CKJ66",
     assortment: "",
     packSize: 1,
-    special: "",
+    special: "Square Dish",
     faction: "Rebel",
     class: "YT-1300",
     type: "Fighter"
@@ -376,15 +462,16 @@ export const starWarsShips = [
   {
     id: 12,
     name: "Obi-Wan Kenobi's Jedi Starfighter",
-    year: 2016,
+    year: 2015,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71Cueb-pu6L._AC_SY450_.jpg",
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/A1wKwrHgMaL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/ObiWanKenobisJediStarfighter-CGW65-Back.jpg",
     model: "CGW65",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Republic",
@@ -393,19 +480,37 @@ export const starWarsShips = [
   },
   {
     id: 13,
-    name: "X-Wing Fighter Red Five",
-    year: 2016,
+    name: "X-Wing Fighter Red 5",
+    year: 2015,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71VffUNvD7L._AC_SL1500_.jpg",
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91P8MznnokL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://action-figure-playground.nl/files/9269/webshopartikelen/1055770/hot-wheels-star-wars-vehicles-xwing-fighter-03.jpg",
     model: "CGW67",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
-    faction: "Republic",
+    faction: "Rebel",
+    class: "X-Wing",
+    type: "Fighter"
+  },
+  {
+    id: 13,
+    name: "X-Wing Fighter Red Five",
+    year: 2016,
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71xOWPnSrlL._AC_SL1500_.jpg",
+    altsrc: "",
+    packsrc: "https://i.ebayimg.com/images/g/gcQAAOSwEiNgJbJQ/s-l1600.jpg",
+    backsrc: "https://i.ebayimg.com/images/g/G4AAAOSwXIpgJbJX/s-l1600.jpg",
+    model: "DRX08",
+    assortment: "CGW52",
+    packSize: 1,
+    special: "",
+    faction: "Rebel",
     class: "X-Wing",
     type: "Fighter"
   },
@@ -437,9 +542,11 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81SHpm4L2DL._AC_SL1500_.jpg",
     packsrc:
       "https://www.imaginationhobby.com/images/detailed/66/detailed_image_14777.jpg",
-    backsrc: "",
+    backsrc: "https://live.staticflickr.com/5476/31094604375_a61a5aef9a_b.jpg",
+    altbacksrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/NabooN1Starfighter-CGW70-Back.jpg",
     model: "CGW70",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Republic",
@@ -449,15 +556,15 @@ export const starWarsShips = [
   {
     id: 16,
     name: "Poe's X-Wing Fighter",
-    year: 2016,
+    year: 2015,
     src: "https://i.ebayimg.com/images/g/nfQAAOSwTZpeTPC6/s-l640.jpg",
     altsrc:
       "https://images-na.ssl-images-amazon.com/images/I/81eDmiErpYL._AC_SL1500_.jpg",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91Lb3bSMkrL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc: "https://live.staticflickr.com/4325/35904435792_ded3fa55ff_b.jpg",
     model: "DJJ63",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "Wings Open",
     faction: "Resistance",
@@ -474,9 +581,10 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/91OJ7HLVmzL._AC_SL1500_.jpg",
     packsrc:
       "https://static.wikia.nocookie.net/hotwheels/images/4/45/First_Order_Tie_Fighter_Pack_DJJ61.jpg/revision/latest/top-crop/width/220/height/220?cb=20170820031914",
-    backsrc: "",
+    backsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/FirstOrderTIEFighter-DJJ61-Back.jpg",
     model: "DJJ61",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "First Order",
@@ -492,9 +600,9 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://i5.walmartimages.ca/images/Enlarge/346/831/999999-887961346831.jpg",
-    backsrc: "",
+    backsrc: "https://i.ebayimg.com/images/g/FMAAAOSwmc9eVG9B/s-l1600.jpg",
     model: "DRX05",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Rebel",
@@ -510,9 +618,10 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://static.wikia.nocookie.net/hotwheels/images/b/b5/Phantom_%28CKJ65%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20170902001312",
-    backsrc: "",
+    backsrc:
+      "https://4.bp.blogspot.com/-FpClHnYzyWM/Vj1M2AzqrtI/AAAAAAAAnf8/Y9Ll8y1Il0Q/s1600/IMG_2283.JPG",
     model: "CKJ65",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Resistance",
@@ -808,35 +917,39 @@ export const starWarsShips = [
   // },
   {
     id: 36,
-    name: "Mon Calamari Cruiser vs Star Destroyer",
+    name: "Star Destroyer vs Mon Calamari Cruiser",
     year: 2015,
-    src: "https://i.ebayimg.com/images/g/2dEAAOSw-CpX~81Z/s-l600.jpg",
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/71JX9vRSpQL._SL1500_.jpg",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91KzmpefgGL._SL1500_.jpg",
+    backsrc: "https://pbs.twimg.com/media/DuN5GrsW0AEEzF_.jpg:large",
     model: "CGW93",
-    assortment: "",
+    assortment: "CGW90",
     packSize: 2,
     special: "",
-    faction: "Rebel, Imperial",
+    faction: "Imperial, Rebel",
     class: "",
     type: "Capital Ship"
   },
   {
     id: 37,
-    name: "Resistance X-Wing Fighter vs First Order Transporter",
+    name: "First Order Transporter vs Resistance X-Wing Fighter",
     year: 2015,
-    src: "https://m.media-amazon.com/images/I/81NMUlHmTYL.jpg",
-    altsrc: "",
-    packsrc: "",
+    src:
+      "https://images-na.ssl-images-amazon.com/images/I/81NMUlHmTYL._AC_SL1500_.jpg",
+    altsrc: "https://m.media-amazon.com/images/I/81NMUlHmTYL.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91NPSPhoZuL._AC_SL1500_.jpg",
     backsrc: "",
     model: "CKJ81",
-    assortment: "",
+    assortment: "CGW90",
     packSize: 2,
     special: "",
     faction: "First Order Resistance",
-    class: "X-Wing, Shuttle",
-    type: "Fighter, Shuttle"
+    class: "Shuttle, X-Wing",
+    type: "Shuttle, Fighter"
   },
   {
     id: 38,
