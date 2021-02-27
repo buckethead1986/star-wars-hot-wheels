@@ -638,9 +638,10 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71%2BvbwKGM8L._AC_SL1500_.jpg",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/A1C%2BanuOYmL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/Phantom-CKJ68-Back.jpg",
     model: "CKJ68",
-    assortment: "",
+    assortment: "CGW62",
     packSize: 1,
     special: "",
     faction: "First Order",
@@ -656,9 +657,9 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/910KOMKgdBL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc: "https://live.staticflickr.com/5517/30980684531_9854912ea5_b.jpg",
     model: "CGW69",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Imperial",
@@ -674,9 +675,10 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81cFbVHMHGL._AC_SL1500_.jpg",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91gdsiRbZ-L._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://3.bp.blogspot.com/-tWiyrXZit_U/VnGcDrZtbiI/AAAAAAAAs1c/7bCroRMmFoM/s640/IMG_3472.JPG",
     model: "CGW58",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Republic",
