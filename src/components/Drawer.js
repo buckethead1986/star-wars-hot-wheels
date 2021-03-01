@@ -10,9 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import Searchbar from "./Searchbar.js";
 import GridItemsContainer from "./GridItemsContainer.js";
-
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
-// import ScheduleIcon from "@material-ui/icons/Schedule";
 import FlightIcon from "@material-ui/icons/Flight";
 import CategoryIcon from "@material-ui/icons/Category";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -75,9 +73,6 @@ const useStyles = makeStyles(theme => ({
     }),
     marginLeft: 0
   },
-  // nested: {
-  //   paddingLeft: theme.spacing(4)
-  // },
   title: {
     flexGrow: 1,
     display: "none",
@@ -120,7 +115,7 @@ export default function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Hot Wheels Star Wars Wiki
+            Hot Wheels Star Wars Starships Wiki
           </Typography>
         </Toolbar>
       </AppBar>
@@ -195,7 +190,6 @@ export default function ResponsiveDrawer(props) {
       >
         <div className={classes.drawerHeader} />
 
-        <Typography>Filler Text</Typography>
         <GridItemsContainer
           shipFilter={props.shipFilter}
           searchbarValue={props.searchbarValue}

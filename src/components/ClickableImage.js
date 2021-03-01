@@ -1,5 +1,4 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Button from "@material-ui/core/Button";
@@ -23,17 +22,11 @@ const useStyles = makeStyles({
   }
 });
 
-// SimpleDialog.propTypes = {
-//   onClose: PropTypes.func.isRequired,
-//   open: PropTypes.bool.isRequired
-//   // selectedValue: PropTypes.string.isRequired
-// };
-
 export default function ClickableImage(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = () => {
+  const handleOpen = () => {
     setOpen(true);
   };
 
@@ -43,7 +36,7 @@ export default function ClickableImage(props) {
 
   return (
     <div>
-      <Button className={classes.root} onClick={handleClickOpen}>
+      <Button className={classes.root} onClick={handleOpen}>
         <img
           className={clsx(classes.img, classes.smallImage)}
           src={props.src}

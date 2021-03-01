@@ -28,23 +28,10 @@ export default function StarWarsDataGrid(props) {
   const classes = useStyles();
 
   const columns = [
-    // {
-    //   field: "src",
-    //   headerName: "Image",
-    //   width: 128,
-    //   renderCell: params => (
-    //     <img
-    //       className={classes.img}
-    //       alt={params.getValue("name")}
-    //       src={params.value}
-    //     />
-    //   )
-    // },
-
-    // { field: "name", headerName: "Name", width: 200 },
     {
       field: "name",
       headerName: "Name",
+      disableColumnHide: "true",
       flex: 1,
       renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
     },
