@@ -346,25 +346,6 @@ export const starWarsShips = [
     class: "",
     type: "Speeder"
   },
-
-  // {
-  //   id: 6,
-  //   name: "X-Wing Fighter Red Five",
-  //   year: 2015,
-  //   src:
-  //     "https://images-na.ssl-images-amazon.com/images/I/71VffUNvD7L._AC_SL1500_.jpg",
-  //   altsrc: "",
-  //   packsrc:
-  //     "https://images-na.ssl-images-amazon.com/images/I/91P8MznnokL._AC_SL1500_.jpg",
-  //   backsrc: "",
-  //   model: "CGW67",
-  //   assortment: "",
-  //   packSize: 1,
-  //   special: "",
-  //   faction: "Rebel",
-  //   class: "X-Wing",
-  //   type: "Fighter"
-  // },
   {
     id: 8,
     name: "Vulture Droid",
@@ -867,56 +848,6 @@ export const starWarsShips = [
     class: "",
     type: "Fighter"
   },
-  // {
-  //   id: 33,
-  //   name: "X-Wing Starfighter",
-  //   year: 2015,
-  //   src:
-  //     "https://images-na.ssl-images-amazon.com/images/I/41paoWmpNgL._AC_SY400_.jpg",
-  //   altsrc: "",
-  //   packsrc: "",
-  //   backsrc: "",
-  //   model: "CKR61",
-  //   assortment: "",
-  //   packSize: 1,
-  //   special: "Wings Closed",
-  //   faction: "Rebel",
-  //   class: "X-Wing",
-  //   type: "Fighter"
-  // },
-  // {
-  //   id: 34,
-  //   name: "Y-Wing Starfighter",
-  //   year: 2015,
-  //   src:
-  //     "https://static.wikia.nocookie.net/hotwheels/images/4/40/Y-Wing_Starfighter.jpg/revision/latest?cb=20150627084020",
-  //   altsrc: "",
-  //   packsrc: "",
-  //   backsrc: "",
-  //   model: "CGW59",
-  //   assortment: "",
-  //   packSize: 1,
-  //   special: "",
-  //   faction: "Rebel",
-  //   class: "Y-Wing",
-  //   type: "Fighter"
-  // },
-  // {
-  //   id: 35,
-  //   name: "Resistance X-Wing Fighter",
-  //   year: 2015,
-  //   src: "https://media.mattel.com/root/Images/MainImage/ckj71_r.jpg",
-  //   altsrc: "",
-  //   packsrc: "",
-  //   backsrc: "",
-  //   model: "CKJ71",
-  //   assortment: "",
-  //   packSize: 1,
-  //   special: "Wings Closed",
-  //   faction: "Resistance",
-  //   class: "X-Wing",
-  //   type: "Fighter"
-  // },
   {
     id: 36,
     name: "Star Destroyer vs Mon Calamari Cruiser",

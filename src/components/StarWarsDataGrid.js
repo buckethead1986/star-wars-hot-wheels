@@ -31,7 +31,6 @@ export default function StarWarsDataGrid(props) {
     {
       field: "name",
       headerName: "Name",
-      disableColumnHide: "true",
       flex: 1,
       renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
     },
@@ -40,7 +39,7 @@ export default function StarWarsDataGrid(props) {
     { field: "class", headerName: "Class", flex: 0.4 },
     { field: "type", headerName: "Ship Type", flex: 0.5 },
     { field: "faction", headerName: "Faction", flex: 0.5 },
-    { field: "special", headerName: "Extra", flex: 0.5 },
+    { field: "special", filterable: "false", headerName: "Extra", flex: 0.5 },
     {
       field: "src",
       headerName: "Image",
@@ -86,6 +85,7 @@ export default function StarWarsDataGrid(props) {
   return (
     <div ref={gridWrapperRef} className={classes.wrapTextInCell}>
       <DataGrid
+        disableColumnMenu
         pageSize={25}
         rowsPerPageOptions={[25, 50, 75, 100]}
         rows={props.filteredShips}
