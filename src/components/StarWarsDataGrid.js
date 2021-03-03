@@ -53,10 +53,7 @@ export default function StarWarsDataGrid(props) {
       headerName: "Pack Image",
       width: 128,
       renderCell: params => (
-        <ClickableImage
-          src={params.value.length !== 0 ? params.value : ""}
-          alt={params.getValue("name")}
-        />
+        <ClickableImage src={params.value} alt={params.getValue("name")} />
       )
     },
     {
@@ -64,10 +61,7 @@ export default function StarWarsDataGrid(props) {
       headerName: "Reverse Image",
       width: 128,
       renderCell: params => (
-        <ClickableImage
-          src={params.value.length !== 0 ? params.value : ""}
-          alt={params.getValue("name")}
-        />
+        <ClickableImage src={params.value} alt={params.getValue("name")} />
       )
     }
   ];

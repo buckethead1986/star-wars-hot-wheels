@@ -337,7 +337,7 @@ export const starWarsShips = [
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91NYAQ7DaxL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc: "https://live.staticflickr.com/5767/30410049690_4572938c6a_b.jpg",
     model: "CGW63",
     assortment: "",
     packSize: 1,
