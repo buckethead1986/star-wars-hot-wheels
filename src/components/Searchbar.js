@@ -23,32 +23,32 @@ const useStyles = makeStyles(theme => ({
   focused: {}
 }));
 
-//tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
-const searchbarRegex = string => {
-  let lowerCaseString =
-    string !== null || undefined ? string.toLowerCase() : "";
-  let variable = lowerCaseString.substring(0, 1);
-  let regexChecker = dynamicRegexCreator(lowerCaseString, variable);
-  //matches misspellings of AT-AT. Capital or lowercase 'AT's, with any character or no character in between
-  const atst = /^at.?st/;
-  const atat = /^at.?at/;
-  if (regexChecker.test(lowerCaseString)) {
-    let substring = variable + "-wing";
-    return substring;
-  } else if (atst.test(lowerCaseString)) {
-    return "at-st";
-  } else if (atat.test(lowerCaseString)) {
-    return "at-at";
-  } else {
-    return lowerCaseString;
-  }
-};
-
-//makes regex for x, y, b, u, a-wing misspellings: xwing, x=wing, x wing, etc.
-const dynamicRegexCreator = (lowerCaseString, variable) => {
-  const regex = new RegExp("^" + variable + ".?w");
-  return regex;
-};
+// //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
+// const searchbarRegex = string => {
+//   let lowerCaseString =
+//     string !== null || undefined ? string.toLowerCase() : "";
+//   let variable = lowerCaseString.substring(0, 1);
+//   let regexChecker = dynamicRegexCreator(lowerCaseString, variable);
+//   //matches misspellings of AT-AT. Capital or lowercase 'AT's, with any character or no character in between
+//   const atst = /^at.?st/;
+//   const atat = /^at.?at/;
+//   if (regexChecker.test(lowerCaseString)) {
+//     let substring = variable + "-wing";
+//     return substring;
+//   } else if (atst.test(lowerCaseString)) {
+//     return "at-st";
+//   } else if (atat.test(lowerCaseString)) {
+//     return "at-at";
+//   } else {
+//     return lowerCaseString;
+//   }
+// };
+//
+// //makes regex for x, y, b, u, a-wing misspellings: xwing, x=wing, x wing, etc.
+// const dynamicRegexCreator = (lowerCaseString, variable) => {
+//   const regex = new RegExp("^" + variable + ".?w");
+//   return regex;
+// };
 
 export default function SearchBox(props) {
   const classes = useStyles();
@@ -58,7 +58,9 @@ export default function SearchBox(props) {
       id="star-wars-searchbar"
       freeSolo
       onChange={(event, value) => {
-        props.handleSearchbarData(searchbarRegex(value));
+        props.handleSearchbarData(
+          value !== null || undefined ? value.trim() : ""
+        );
       }}
       options={starWarsShips.map(ship => ship.name)}
       renderInput={params => (

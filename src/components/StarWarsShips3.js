@@ -560,8 +560,7 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/519zSc8iR4L._AC_SY400_.jpg",
     altsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91OJ7HLVmzL._AC_SL1500_.jpg",
-    packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/4/45/First_Order_Tie_Fighter_Pack_DJJ61.jpg/revision/latest/top-crop/width/220/height/220?cb=20170820031914",
+    packsrc: "",
     backsrc:
       "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/FirstOrderTIEFighter-DJJ61-Back.jpg",
     model: "DJJ61",
@@ -597,8 +596,7 @@ export const starWarsShips = [
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71UI1YgXCwL._AC_SL1486_.jpg",
     altsrc: "",
-    packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/b/b5/Phantom_%28CKJ65%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20170902001312",
+    packsrc: "",
     backsrc:
       "https://4.bp.blogspot.com/-FpClHnYzyWM/Vj1M2AzqrtI/AAAAAAAAnf8/Y9Ll8y1Il0Q/s1600/IMG_2283.JPG",
     model: "CKJ65",
@@ -671,13 +669,14 @@ export const starWarsShips = [
     name: "Resistance X-Wing Fighter",
     year: 2016,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/e/e0/Resistance_X-Wing_Fighter_%28CLJ71%29_01.jpg/revision/latest/scale-to-width-down/1000?cb=20170930013150",
+      "https://images-na.ssl-images-amazon.com/images/I/81rj1WYq8XL._AC_SL1500_.jpg",
     altsrc: "",
     packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/7/70/Resistance_X-Wing_Fighter_%28CKJ71%29_02.JPG/revision/latest/scale-to-width-down/1000?cb=20170930013315",
+      "https://images-na.ssl-images-amazon.com/images/I/A1Zc42mpTIL._AC_SL1500_.jpg",
     backsrc:
       "https://2.bp.blogspot.com/-PNHfFYb2tK0/VmJAzkW2b0I/AAAAAAAArAY/m0xqf3_-K1Y/s1600/IMG_2952.JPG",
     model: "CKJ71",
+    assortment: "CGW52",
     packSize: 1,
     special: "Wings Closed",
     faction: "Rebel",
@@ -729,10 +728,11 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81hEFevwMCL._AC_SL1500_.jpg",
     altsrc: "",
     packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/0/0e/Ghost_%28DRX07%29_02.JPG/revision/latest/top-crop/width/220/height/220?cb=20170930013109",
-    backsrc: "",
+      "https://i5.walmartimages.com/asr/949fc04f-b541-48f1-acd0-b2c5318d7c69_1.3e6a443e7fac901337c2840405a002ee.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    backsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/Ghost-DRX07-Back.jpg",
     model: "DRX07",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Rebel",
@@ -801,10 +801,11 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/71FHI9f6z1L._AC_SL1500_.jpg",
     altsrc: "",
     packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/9/99/First_Order_Snowspeeder_%28CKJ70%29_02.JPG/revision/latest/scale-to-width-down/1000?cb=20171015013903",
-    backsrc: "",
+      "https://i5.walmartimages.com/asr/784d924f-47e7-4ef1-9a8d-c04d977c2b86_1.87307cf6ffcf9fe07c3145d8b33fa744.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    backsrc:
+      "https://3.bp.blogspot.com/-ygkgSOmWZVU/Vul8PNymS1I/AAAAAAABWeM/zfF8FaPNmf0ZSjNnuDcMKxM03aN1zupzg/s1600/IMG_4994.JPG",
     model: "CKJ70",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "First Order",
@@ -820,10 +821,12 @@ export const starWarsShips = [
     altsrc:
       "https://i5.walmartimages.com/asr/619b57b3-d16d-4325-afea-55df179a7021_1.1776049a29223b536a49f89805356d75.jpeg",
     packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/3/38/Sith_Infiltrator_%28CGW72%29_02.jpg/revision/latest/top-crop/width/450/height/450?cb=20171018003352",
-    backsrc: "",
+      "https://i5.walmartimages.com/asr/9a46c839-aed0-41c6-ac79-cf795b6facd4_1.c305800579d8d0c11b8337b649508b51.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    backsrc: "https://i.ebayimg.com/images/g/BCQAAOSwEa5XPkp3/s-l1600.jpg",
+    altbacksrc:
+      "https://2.bp.blogspot.com/-56osCLRNBYU/WKkqWK-y6KI/AAAAAAAB6sA/ehQHvborWtsgFpLY33Mt7GrbLTq-kJFBgCKgB/s1600/IMG_1040.JPG",
     model: "CGW72",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Imperial",
@@ -838,10 +841,11 @@ export const starWarsShips = [
       "https://images-na.ssl-images-amazon.com/images/I/81wP%2BqSqCRL._AC_SL1500_.jpg",
     altsrc: "",
     packsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/3/3c/Y-Wing_Fighter_%28DRX10%29.jpg/revision/latest/scale-to-width-down/340?cb=20180204013137",
-    backsrc: "",
+      "https://i5.walmartimages.com/asr/18d5f40e-8b3b-43b2-a44c-1616f1a5a1c8.97c07f3d64ad4a853aa8373a9cbf9fbe.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    backsrc:
+      "https://i5.walmartimages.com/asr/6fded973-bb1a-4009-91c0-008c283a2e68.d15710a3c62929fe0b9312760227f7a1.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
     model: "DRX10",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Rebel",
@@ -976,12 +980,13 @@ export const starWarsShips = [
     name: "ARC-170 Starfighter",
     year: 2016,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/b/bd/Arc-170_Starfighter_%28DMP65%29_01.jpg/revision/latest/scale-to-width-down/800?cb=20171001004433",
+      "https://images-na.ssl-images-amazon.com/images/I/71cIU4tPw-L._SL1500_.jpg",
     altsrc: "",
-    packsrc: "",
-    backsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/91e5-FQOWhL._SL1500_.jpg",
+    backsrc: "https://i.ebayimg.com/images/g/fa0AAOSw0CJf8M-8/s-l1600.jpg",
     model: "DMP65",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "",
     faction: "Republic",
@@ -1216,13 +1221,13 @@ export const starWarsShips = [
     name: "Star Destroyer",
     year: 2017,
     src:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSnB4rEEayn2CFBxNGRNp2As78SAd_fIN-Bg&usqp=CAU",
-    altsrc:
-      "https://static.wikia.nocookie.net/hotwheels/images/0/0a/Star_Destroyer_%28DXX57%29_02.JPG/revision/latest/scale-to-width-down/1000?cb=20171018001136",
-    packsrc: "",
-    backsrc: "",
+      "https://images-na.ssl-images-amazon.com/images/I/418NdzlokjL._AC_.jpg",
+    altsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/613jaN0w75L._AC_.jpg",
+    backsrc: "https://i.ebayimg.com/images/g/mV4AAOSwfOhf-WLO/s-l1600.jpg",
     model: "DXX57",
-    assortment: "",
+    assortment: "DXD96",
     packSize: 1,
     special: "",
     faction: "Imperial",
@@ -2414,19 +2419,23 @@ export const starWarsShips = [
     name: "First Order AT-ST with BB-8",
     year: 2019,
     src:
-      "https://static.wikia.nocookie.net/hotwheels/images/9/95/First_Order_AT-ST_%28GGY71%29_01.jpg/revision/latest/scale-to-width-down/340?cb=20200422183217",
+      "https://forum.rebelscum.com/legacy/photogallery/data/500/FO_AT-ST_1.jpg",
     altsrc: "",
     packsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/FirstOrderATSTBB8-GGY71-Front.jpg",
+    altpacksrc:
       "https://s3-us-west-2.amazonaws.com/images.collecthw.com/f1299bd2-1ff5-478e-9e02-bbc5cc2f0e64_large.png",
-    backsrc: "",
+    backsrc:
+      "https://www.figurerealm.com/galleries/starwarshotwheelsstarships/FirstOrderATSTBB8-GGY71-Back.jpg",
     model: "GGY71",
-    assortment: "",
+    assortment: "FYT65",
     packSize: 1,
     special: "",
     faction: "First Order",
     class: "",
     type: "Walker"
   },
+
   {
     id: 115,
     name: "Naboo N-1 Starfighter",

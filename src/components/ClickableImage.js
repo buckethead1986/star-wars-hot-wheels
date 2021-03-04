@@ -34,16 +34,11 @@ export default function ClickableImage(props) {
     setOpen(false);
   };
 
-  const addDefaultSrc = ev => {
-    ev.target.src =
-      "https://starwarsblog.starwars.com/wp-content/uploads/2016/02/imperialseal.jpg";
-  };
-
-  return (
+  return props.src.length !== 0 ? (
     <div>
       <Button className={classes.root} onClick={handleOpen}>
         <img
-          onError={addDefaultSrc}
+          onError={event => (event.target.style.display = "none")}
           className={clsx(classes.img, classes.smallImage)}
           src={props.src}
           alt={props.alt}
@@ -57,5 +52,7 @@ export default function ClickableImage(props) {
         />
       </Dialog>
     </div>
+  ) : (
+    ""
   );
 }
