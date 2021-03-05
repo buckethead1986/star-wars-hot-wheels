@@ -1,6 +1,5 @@
 import * as react from "react";
 import { DataGrid } from "@material-ui/data-grid";
-// import clsx from "clsx";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import ClickableImage from "./ClickableImage.js";
@@ -14,15 +13,6 @@ const useStyles = makeStyles({
     }
   }
 });
-
-// const useStyles = makeStyles(theme => ({
-// root: {
-//   "& div.react-grid-Container": {
-//     color: "red",
-//     // color: theme.palette.text.color
-//   }
-// }
-// }));
 
 export default function StarWarsDataGrid(props) {
   const classes = useStyles();

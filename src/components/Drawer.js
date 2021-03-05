@@ -95,6 +95,8 @@ export default function ResponsiveDrawer(props) {
     setOpen(false);
   };
 
+  //makes a resizeable drawer with 3 DrawerList.js dropdown menus to filter from
+  //The DataGrid is inside the 'gridDiv' tag
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -114,7 +116,12 @@ export default function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography
+            className={classes.title}
+            align="center"
+            variant="h6"
+            noWrap
+          >
             Hot Wheels Star Wars Starships Wiki
           </Typography>
         </Toolbar>
@@ -140,7 +147,6 @@ export default function ResponsiveDrawer(props) {
         <Divider />
         <Searchbar handleSearchbarData={props.handleSearchbarData} />
         <Divider />
-
         <DrawerList
           handleShipFilter={props.handleShipFilter}
           primary="Year"
@@ -148,7 +154,6 @@ export default function ResponsiveDrawer(props) {
           icon={CalendarTodayIcon}
           list={["2015", "2016", "2017", "2018", "2019"]}
         />
-
         <DrawerList
           handleShipFilter={props.handleShipFilter}
           primary="Ship Type"
@@ -166,7 +171,6 @@ export default function ResponsiveDrawer(props) {
             "Commemorative"
           ]}
         />
-
         <DrawerList
           handleShipFilter={props.handleShipFilter}
           primary="Faction"
@@ -183,18 +187,22 @@ export default function ResponsiveDrawer(props) {
         />
       </Drawer>
 
-      <main
+      <gridDiv
         className={clsx(classes.content, {
           [classes.contentShift]: open
         })}
       >
-        <div className={classes.drawerHeader} />
-
+        <div
+          style={{
+            // necessary for content to be below app bar
+            ...theme.mixins.toolbar
+          }}
+        />
         <GridItemsContainer
           shipFilter={props.shipFilter}
           searchbarValue={props.searchbarValue}
         />
-      </main>
+      </gridDiv>
     </div>
   );
 }
