@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
-import StarWarsPaperGrid from "./paperComponents/StarWarsPaperGrid.js";
 import { starWarsShips } from "./StarWarsShips3.js";
 
 //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.

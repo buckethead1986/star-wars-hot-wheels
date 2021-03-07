@@ -1,15 +1,14 @@
 import * as react from "react";
-import { DataGrid } from "@material-ui/data-grid";
+import { DataGrid, GridToolbar } from "@material-ui/data-grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import ClickableImage from "./ClickableImage.js";
 
 const useStyles = makeStyles({
+  //Workaround to let text wrap in DataGrid cells
   wrapTextInCell: {
     "& div.MuiDataGrid-cell": {
       whiteSpace: "normal"
-      // lineHeight: "20px",
-      // overflow: "visible"
     }
   }
 });
@@ -24,12 +23,23 @@ export default function StarWarsDataGrid(props) {
       flex: 1,
       renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
     },
-    { field: "year", headerName: "Year", flex: 0.4 },
+    {
+      field: "year",
+      headerName: "Year",
+      flex: 0.4
+    },
     { field: "model", headerName: "Model", flex: 0.4 },
     { field: "class", headerName: "Class", flex: 0.4 },
-    { field: "type", headerName: "Ship Type", flex: 0.5 },
+    { field: "type", headerName: "Type", flex: 0.4 },
     { field: "faction", headerName: "Faction", flex: 0.5 },
-    { field: "special", filterable: "false", headerName: "Extra", flex: 0.5 },
+    {
+      field: "special",
+      headerName: "Extra",
+      flex: 0.5,
+      renderCell: params => (
+        <Typography fontSize="0.8rem">{params.value}</Typography>
+      )
+    },
     {
       field: "src",
       headerName: "Image",
@@ -69,7 +79,6 @@ export default function StarWarsDataGrid(props) {
   return (
     <div ref={gridWrapperRef} className={classes.wrapTextInCell}>
       <DataGrid
-        disableColumnMenu
         pageSize={25}
         rowsPerPageOptions={[25, 50, 75, 100]}
         rows={props.filteredShips}
