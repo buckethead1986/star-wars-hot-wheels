@@ -65,7 +65,7 @@
 
 export const starWarsShips = [
   {
-    id: 5,
+    id: 0,
     name: "TIE Fighter",
     year: 2015,
     src:
@@ -82,9 +82,8 @@ export const starWarsShips = [
     class: "TIE",
     type: "Fighter"
   },
-
   {
-    id: 5,
+    id: 1,
     name: "Blast Attack Resistance X-Wing Fighter",
     year: 2015,
     src:
@@ -103,7 +102,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 5,
+    id: 2,
     name: "Blast Attack First Order TIE Fighter",
     year: 2015,
     src:
@@ -121,7 +120,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 5,
+    id: 3,
     name: "Blast Attack Ghost",
     year: 2015,
     src:
@@ -141,7 +140,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 5,
+    id: 4,
     name: "Blast Attack Republic Gunship",
     year: 2015,
     src:
@@ -178,7 +177,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 5,
+    id: 6,
     name: "Blast Attack First Order Special Forces TIE Fighter",
     year: 2015,
     src:
@@ -195,9 +194,8 @@ export const starWarsShips = [
     class: "TIE",
     type: "Fighter"
   },
-
   {
-    id: 5,
+    id: 7,
     name: "Blast Attack First Order Star Destroyer",
     year: 2015,
     src:
@@ -215,9 +213,8 @@ export const starWarsShips = [
     class: "",
     type: "Capital Ship"
   },
-
   {
-    id: 4,
+    id: 8,
     name: "Boba Fett's Slave I",
     year: 2015,
     src:
@@ -236,7 +233,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 5,
+    id: 9,
     name: "TIE Fighter",
     year: 2015,
     src:
@@ -255,7 +252,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 0,
+    id: 10,
     name: "Millenium Falcon",
     year: 2015,
     src:
@@ -273,7 +270,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 2,
+    id: 11,
     name: "Y-Wing Fighter Gold Leader",
     year: 2015,
     src:
@@ -292,7 +289,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 3,
+    id: 12,
     name: "The Ghost",
     year: 2015,
     src:
@@ -310,7 +307,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 3,
+    id: 13,
     name: "First Order TIE Fighter vs Millenium Falcon",
     year: 2015,
     src:
@@ -329,7 +326,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 1,
+    id: 14,
     name: "Rebel Snowspeeder",
     year: 2015,
     src:
@@ -347,7 +344,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 8,
+    id: 15,
     name: "Vulture Droid",
     year: 2015,
     src:
@@ -365,7 +362,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 7,
+    id: 16,
     name: "X-Wing Fighter Red 3",
     year: 2015,
     src:
@@ -383,9 +380,8 @@ export const starWarsShips = [
     class: "X-Wing",
     type: "Fighter"
   },
-
   {
-    id: 9,
+    id: 17,
     name: "Star Destroyer",
     year: 2015,
     src:
@@ -404,7 +400,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 10,
+    id: 18,
     name: "Millenium Falcon",
     year: 2015,
     src:
@@ -423,7 +419,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 11,
+    id: 19,
     name: "First Order Special Forces TIE Fighter",
     year: 2016,
     src: "https://media.mattel.com/root/Images/MainImage/ckj67_r.jpg",
@@ -441,7 +437,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 12,
+    id: 20,
     name: "Obi-Wan Kenobi's Jedi Starfighter",
     year: 2015,
     src:
@@ -460,7 +456,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 13,
+    id: 21,
     name: "X-Wing Fighter Red 5",
     year: 2015,
     src:
@@ -479,7 +475,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 13,
+    id: 22,
     name: "X-Wing Fighter Red Five",
     year: 2016,
     src:
@@ -496,7 +492,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 14,
+    id: 23,
     name: "TIE Fighter",
     year: 2016,
     src:
@@ -514,7 +510,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 15,
+    id: 24,
     name: "Naboo N-1 Starfighter",
     year: 2016,
     src:
@@ -535,7 +531,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 16,
+    id: 25,
     name: "Poe's X-Wing Fighter",
     year: 2015,
     src: "https://i.ebayimg.com/images/g/nfQAAOSwTZpeTPC6/s-l640.jpg",
@@ -553,7 +549,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 17,
+    id: 26,
     name: "First Order TIE Fighter",
     year: 2016,
     src:
@@ -572,7 +568,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 18,
+    id: 27,
     name: "Rebel Snowspeeder",
     year: 2016,
     src:
@@ -590,7 +586,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 19,
+    id: 28,
     name: "Phantom",
     year: 2016,
     src:
@@ -608,7 +604,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 20,
+    id: 29,
     name: "Kylo Ren's Command Shuttle",
     year: 2016,
     src:
@@ -628,7 +624,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 21,
+    id: 30,
     name: "Darth Vader's TIE Advanced",
     year: 2016,
     src:
@@ -646,7 +642,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 22,
+    id: 31,
     name: "Republic Attack Gunship",
     year: 2016,
     src: "https://m.media-amazon.com/images/I/81cFbVHMHGL.jpg",
@@ -665,7 +661,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 23,
+    id: 32,
     name: "Resistance X-Wing Fighter",
     year: 2016,
     src:
@@ -684,7 +680,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 24,
+    id: 33,
     name: "First Order Star Destroyer",
     year: 2016,
     src:
@@ -703,7 +699,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 25,
+    id: 34,
     name: "Boba Fett's Slave I",
     year: 2016,
     src:
@@ -721,7 +717,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 26,
+    id: 35,
     name: "The Ghost",
     year: 2016,
     src:
@@ -740,7 +736,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 27,
+    id: 36,
     name: "Rey's Speeder",
     year: 2016,
     src: "https://m.media-amazon.com/images/I/71o3OoascwL.jpg",
@@ -758,16 +754,18 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 28,
+    id: 37,
     name: "Poe's X-Wing Fighter",
     year: 2016,
-    src: "",
+    src:
+      "https://4.bp.blogspot.com/-5KW_2y8LDCo/VrT_fykhmRI/AAAAAAABIiw/rqrN9Yr863w/s1600/IMG_3579.JPG",
     altsrc: "",
     packsrc:
       "https://images-na.ssl-images-amazon.com/images/I/91NZlmyExTL._AC_SL1500_.jpg",
-    backsrc: "",
+    backsrc:
+      "https://1.bp.blogspot.com/-7z6QLl7AO28/VrT_fw1XioI/AAAAAAABIiw/a4EJZDFVhQQ/s1600/IMG_3578.JPG",
     model: "DMP63",
-    assortment: "",
+    assortment: "CGW52",
     packSize: 1,
     special: "Wings Closed",
     faction: "Resistance",
@@ -775,7 +773,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 29,
+    id: 38,
     name: "Republic Gunship Tiger Shark",
     year: 2016,
     src:
@@ -794,7 +792,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 30,
+    id: 39,
     name: "First Order Snowspeeder",
     year: 2016,
     src:
@@ -813,7 +811,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 31,
+    id: 40,
     name: "Sith Infiltrator",
     year: 2016,
     src:
@@ -834,7 +832,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 32,
+    id: 41,
     name: "Y-Wing Fighter Gold Leader",
     year: 2016,
     src:
@@ -853,7 +851,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 36,
+    id: 42,
     name: "Star Destroyer vs Mon Calamari Cruiser",
     year: 2015,
     src:
@@ -871,7 +869,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 37,
+    id: 43,
     name: "First Order Transporter vs Resistance X-Wing Fighter",
     year: 2015,
     src:
@@ -889,7 +887,7 @@ export const starWarsShips = [
     type: "Shuttle, Fighter"
   },
   {
-    id: 38,
+    id: 44,
     name: "Jabba's Sail Barge",
     year: 2016,
     src:
@@ -906,7 +904,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 39,
+    id: 45,
     name: "Yoda's Jedi Starfighter",
     year: 2016,
     src:
@@ -923,7 +921,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 40,
+    id: 46,
     name: "Tantive IV",
     year: 2016,
     src:
@@ -940,7 +938,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 41,
+    id: 47,
     name: "Imperial Shuttle",
     year: 2016,
     src:
@@ -959,7 +957,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 42,
+    id: 48,
     name: "Inquisitor's TIE Fighter",
     year: 2016,
     src:
@@ -976,7 +974,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 43,
+    id: 49,
     name: "ARC-170 Starfighter",
     year: 2016,
     src:
@@ -994,7 +992,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 44,
+    id: 50,
     name: "AT-AT vs Rebel Snowspeeder",
     year: 2016,
     src:
@@ -1011,7 +1009,7 @@ export const starWarsShips = [
     type: "Walker, Speeder"
   },
   {
-    id: 45,
+    id: 51,
     name: "Jango Fett's Slave I vs Obi-Wan Kenobi's Jedi Starfighter",
     year: 2016,
     src:
@@ -1028,7 +1026,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 46,
+    id: 52,
     name: "Speeder Bike",
     year: 2017,
     src:
@@ -1044,9 +1042,8 @@ export const starWarsShips = [
     class: "",
     type: "Speeder"
   },
-
   {
-    id: 48,
+    id: 53,
     name: "Millenium Falcon",
     year: 2017,
     src:
@@ -1063,7 +1060,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 49,
+    id: 54,
     name: "Poe's X-Wing Fighter",
     year: 2017,
     src:
@@ -1080,7 +1077,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 50,
+    id: 55,
     name: "Resistance X-Wing Fighter",
     year: 2017,
     src: "https://m.media-amazon.com/images/I/815UUIPm5yL.jpg",
@@ -1098,7 +1095,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 50,
+    id: 56,
     name: "Resistance X-Wing Fighter",
     year: 2017,
     src:
@@ -1116,7 +1113,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 51,
+    id: 57,
     name: "First Order Special Forces TIE Fighter",
     year: 2017,
     src: "https://i5.walmartimages.ca/images/Enlarge/833/087/6000196833087.jpg",
@@ -1132,7 +1129,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 52,
+    id: 58,
     name: "The Ghost",
     year: 2017,
     src:
@@ -1149,7 +1146,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 53,
+    id: 59,
     name: "Tantive IV",
     year: 2017,
     src:
@@ -1166,7 +1163,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 54,
+    id: 60,
     name: "X-Wing Fighter (Red Five)",
     year: 2017,
     src:
@@ -1183,7 +1180,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 55,
+    id: 61,
     name: "AT-AT Walker",
     year: 2017,
     src:
@@ -1200,7 +1197,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 56,
+    id: 62,
     name: "TIE Fighter",
     year: 2017,
     src:
@@ -1217,7 +1214,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 57,
+    id: 63,
     name: "Star Destroyer",
     year: 2017,
     src:
@@ -1235,7 +1232,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 58,
+    id: 64,
     name: "Imperial Shuttle (Rogue One)",
     year: 2017,
     src: "https://i.ebayimg.com/images/g/FYcAAOSw6sZeT3Q1/s-l640.jpg",
@@ -1253,7 +1250,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 59,
+    id: 65,
     name: "Rey's Speeder",
     year: 2017,
     src:
@@ -1270,7 +1267,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 60,
+    id: 66,
     name: "The Phantom",
     year: 2017,
     src: "https://i.ebayimg.com/images/g/LMwAAOSw7RteTixU/s-l640.jpg",
@@ -1286,7 +1283,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 61,
+    id: 67,
     name: "Naboo N-1 Starfighter",
     year: 2017,
     src:
@@ -1304,7 +1301,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 62,
+    id: 68,
     name: "AT-ST (Rogue One)",
     year: 2017,
     src:
@@ -1323,7 +1320,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 63,
+    id: 69,
     name: "TIE Striker",
     year: 2017,
     src: "https://i.ebayimg.com/images/g/qsMAAOSwyuZdKaTy/s-l500.jpg",
@@ -1339,7 +1336,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 64,
+    id: 70,
     name: "Partisan X-Wing Fighter",
     year: 2017,
     src:
@@ -1356,7 +1353,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 65,
+    id: 71,
     name: "A-Wing Fighter",
     year: 2017,
     src:
@@ -1373,7 +1370,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 66,
+    id: 72,
     name: "Imperial Cargo Shuttle",
     year: 2017,
     src:
@@ -1390,7 +1387,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 67,
+    id: 73,
     name: "Kylo Ren's TIE Silencer",
     year: 2017,
     src:
@@ -1410,7 +1407,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 68,
+    id: 74,
     name: "First Order Heavy Assault Walker",
     year: 2017,
     src:
@@ -1430,7 +1427,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 69,
+    id: 75,
     name: "A-Wing Fighter",
     year: 2017,
     src:
@@ -1450,7 +1447,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 70,
+    id: 76,
     name: "Luke Skywalker's Landspeeder",
     year: 2017,
     src:
@@ -1468,7 +1465,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 71,
+    id: 77,
     name: "Anakin Skywalker's Jedi Starfighter",
     year: 2017,
     src:
@@ -1485,7 +1482,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 72,
+    id: 78,
     name: "First Order Star Destroyer",
     year: 2017,
     src:
@@ -1502,7 +1499,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 73,
+    id: 79,
     name: "Y-Wing Fighter Gold Leader",
     year: 2016,
     src:
@@ -1521,7 +1518,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 73,
+    id: 80,
     name: "Y-Wing Fighter",
     year: 2017,
     src:
@@ -1540,7 +1537,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 74,
+    id: 81,
     name: "Darth Vader's TIE Advanced X1 Prototype",
     year: 2017,
     src:
@@ -1557,7 +1554,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 75,
+    id: 82,
     name: "Resistance Bomber",
     year: 2017,
     src:
@@ -1576,7 +1573,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 76,
+    id: 83,
     name: "Imperial AT-ACT Cargo Walker",
     year: 2017,
     src: "https://m.media-amazon.com/images/I/717KKa88XVL.jpg",
@@ -1592,7 +1589,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 77,
+    id: 84,
     name: "Kylo Ren's Command Shuttle",
     year: 2017,
     src:
@@ -1611,7 +1608,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 78,
+    id: 85,
     name: "Mandalorian Talon Fighter",
     year: 2017,
     src:
@@ -1628,7 +1625,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 79,
+    id: 86,
     name: "Rebel U-Wing Fighter",
     year: 2017,
     src:
@@ -1645,7 +1642,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 82,
+    id: 87,
     name: "Rebel Snowspeeder",
     year: 2017,
     src:
@@ -1664,7 +1661,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 80,
+    id: 88,
     name: "Imperial Combat Assault Hovertank",
     year: 2017,
     src:
@@ -1683,7 +1680,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 81,
+    id: 89,
     name: "Star Destroyer",
     year: 2017,
     src:
@@ -1702,7 +1699,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 41,
+    id: 90,
     name: "Imperial Shuttle",
     year: 2017,
     src:
@@ -1721,7 +1718,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 47,
+    id: 91,
     name: "Poe's Ski Speeder",
     year: 2017,
     src:
@@ -1741,7 +1738,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 105,
+    id: 92,
     name: "TIE Fighter",
     year: 2016,
     src:
@@ -1760,7 +1757,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 41,
+    id: 93,
     name: "Imperial Shuttle",
     year: 2017,
     src:
@@ -1778,7 +1775,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 81,
+    id: 94,
     name: "Star Destroyer",
     year: 2017,
     src: "https://m.media-amazon.com/images/I/71PAzvN2V2L.jpg",
@@ -1793,9 +1790,8 @@ export const starWarsShips = [
     class: "",
     type: "Capital Ship"
   },
-
   {
-    id: 83,
+    id: 95,
     name: "AT-AT vs Rebel Snowspeeder",
     year: 2017,
     src:
@@ -1812,7 +1808,7 @@ export const starWarsShips = [
     type: "Walker, Speeder"
   },
   {
-    id: 84,
+    id: 96,
     name: "TIE Fighter vs Red Five X-Wing Fighter",
     year: 2017,
     src:
@@ -1829,7 +1825,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 85,
+    id: 97,
     name: "TIE Striker vs Red Five X-Wing Fighter",
     year: 2017,
     src:
@@ -1846,7 +1842,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 86,
+    id: 98,
     name: "TIE Interceptor vs Millenium Falcon",
     year: 2017,
     src:
@@ -1863,7 +1859,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 87,
+    id: 99,
     name: "AAT Battle Tank",
     year: 2018,
     src: "https://i.ebayimg.com/images/g/RIMAAOSwfZxeTKht/s-l640.jpg",
@@ -1879,7 +1875,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 88,
+    id: 100,
     name: "Republic Attack Cruiser",
     year: 2017,
     src:
@@ -1898,7 +1894,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 89,
+    id: 101,
     name: "Kessel Run Millenium Falcon",
     year: 2018,
     src:
@@ -1915,7 +1911,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 41,
+    id: 102,
     name: "Imperial Shuttle",
     year: 2019,
     src:
@@ -1934,7 +1930,7 @@ export const starWarsShips = [
     type: "Shuttle"
   },
   {
-    id: 90,
+    id: 103,
     name: "Han Solo's Speeder",
     year: 2018,
     src: "https://m.media-amazon.com/images/I/81k9v4Q4e2L.jpg",
@@ -1950,7 +1946,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 91,
+    id: 104,
     name: "Imperial Arrestor Cruiser",
     year: 2018,
     src: "https://images.mattel.com/scene7/FJF25_01?$oslarge$&wid=549&hei=549",
@@ -1966,7 +1962,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 92,
+    id: 105,
     name: "Imperial AT-Hauler",
     year: 2018,
     src:
@@ -1984,7 +1980,7 @@ export const starWarsShips = [
     type: "Walker, Shuttle"
   },
   {
-    id: 93,
+    id: 106,
     name: "B-Wing Fighter",
     year: 2018,
     src:
@@ -2004,7 +2000,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 93,
+    id: 107,
     name: "First Order AT-ST",
     year: 2018,
     src:
@@ -2023,7 +2019,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 93,
+    id: 108,
     name: "Jango Fett's Slave I",
     year: 2018,
     src:
@@ -2042,7 +2038,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 94,
+    id: 109,
     name: "Landspeeder",
     year: 2018,
     src:
@@ -2060,7 +2056,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 95,
+    id: 110,
     name: "Millenium Falcon",
     year: 2018,
     src:
@@ -2077,7 +2073,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 96,
+    id: 111,
     name: "Star Destroyer",
     year: 2018,
     src:
@@ -2094,7 +2090,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 97,
+    id: 112,
     name: "TIE Fighter",
     year: 2018,
     src:
@@ -2111,7 +2107,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 98,
+    id: 113,
     name: "X-Wing Fighter",
     year: 2018,
     src:
@@ -2128,7 +2124,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 99,
+    id: 114,
     name: "General Grievous Wheel Bike",
     year: 2018,
     src:
@@ -2145,7 +2141,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 100,
+    id: 115,
     name: "TIE Bomber",
     year: 2018,
     src:
@@ -2162,7 +2158,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 101,
+    id: 116,
     name: "Sandcrawler",
     year: 2018,
     src:
@@ -2179,7 +2175,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 102,
+    id: 117,
     name: "AT-ST Raider",
     year: 2019,
     src: "https://images-na.ssl-images-amazon.com/images/I/41e2o5%2BU4CL.jpg",
@@ -2197,7 +2193,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 102,
+    id: 118,
     name: "AT-ST Raider",
     year: 2019,
     src: "https://images-na.ssl-images-amazon.com/images/I/41e2o5%2BU4CL.jpg",
@@ -2215,7 +2211,7 @@ export const starWarsShips = [
     type: "Walker"
   },
   {
-    id: 103,
+    id: 119,
     name: "Y-Wing Starfighter Gold Leader",
     year: 2019,
     src:
@@ -2234,7 +2230,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 103,
+    id: 120,
     name: "Y-Wing Starfighter Gold Leader",
     year: 2019,
     src:
@@ -2253,7 +2249,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 104,
+    id: 121,
     name: "Resistance A-Wing Fighter",
     year: 2019,
     src:
@@ -2270,9 +2266,8 @@ export const starWarsShips = [
     class: "A-Wing",
     type: "Fighter"
   },
-
   {
-    id: 106,
+    id: 122,
     name: "First Order TIE Fighter",
     year: 2019,
     src:
@@ -2289,8 +2284,8 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 107,
-    name: "Poe's X-Wing Fighter (Wings Opened)",
+    id: 123,
+    name: "Poe's X-Wing Fighter",
     year: 2019,
     src:
       "https://images-na.ssl-images-amazon.com/images/I/71LP6OoYwcL._AC_SL1500_.jpg",
@@ -2301,13 +2296,13 @@ export const starWarsShips = [
     model: "FYT75",
     assortment: "",
     packSize: 1,
-    special: "",
+    special: "Wings Open",
     faction: "Resistance",
     class: "X-Wing",
     type: "Fighter"
   },
   {
-    id: 108,
+    id: 124,
     name: "Razor Crest",
     year: 2019,
     src:
@@ -2325,7 +2320,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 109,
+    id: 125,
     name: "B-Wing Fighter",
     year: 2019,
     src:
@@ -2344,7 +2339,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 110,
+    id: 126,
     name: "Super Star Destroyer",
     year: 2019,
     src: "https://m.media-amazon.com/images/I/51BCWDa17YL.jpg",
@@ -2361,7 +2356,7 @@ export const starWarsShips = [
     type: "Capital Ship"
   },
   {
-    id: 111,
+    id: 127,
     name: "Darth Maul's Speeder",
     year: 2019,
     src:
@@ -2379,7 +2374,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 112,
+    id: 128,
     name: "Sith Infiltrator",
     year: 2019,
     src:
@@ -2397,7 +2392,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 113,
+    id: 129,
     name: "First Order Treadspeeder",
     year: 2019,
     src:
@@ -2415,7 +2410,7 @@ export const starWarsShips = [
     type: "Walker, Speeder"
   },
   {
-    id: 114,
+    id: 130,
     name: "First Order AT-ST with BB-8",
     year: 2019,
     src:
@@ -2435,9 +2430,8 @@ export const starWarsShips = [
     class: "",
     type: "Walker"
   },
-
   {
-    id: 115,
+    id: 131,
     name: "Naboo N-1 Starfighter",
     year: 2019,
     src:
@@ -2454,7 +2448,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 116,
+    id: 132,
     name: "Republic Attack Gunship",
     year: 2019,
     src:
@@ -2471,7 +2465,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 117,
+    id: 133,
     name: "Obi-Wan Kenobi's Jedi Starfighter",
     year: 2019,
     src:
@@ -2488,7 +2482,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 118,
+    id: 134,
     name: "Darth Vader's TIE Fighter",
     year: 2019,
     src:
@@ -2505,7 +2499,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 119,
+    id: 135,
     name: "Boba Fett's Slave I",
     year: 2019,
     src: "https://m.media-amazon.com/images/I/51gsgf5VDZL._AC_SL1000_.jpg",
@@ -2521,7 +2515,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 120,
+    id: 136,
     name: "Speeder Bike",
     year: 2019,
     src:
@@ -2538,7 +2532,7 @@ export const starWarsShips = [
     type: "Speeder"
   },
   {
-    id: 121,
+    id: 137,
     name: "Resistance X-Wing Fighter",
     year: 2019,
     src: "http://www.norton.co.uk/images/products/1593944623-67122100.jpg",
@@ -2554,7 +2548,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 122,
+    id: 138,
     name: "Kylo Ren's TIE Silencer",
     year: 2019,
     src:
@@ -2571,7 +2565,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 123,
+    id: 139,
     name: "Millenium Falcon",
     year: 2019,
     src:
@@ -2588,7 +2582,7 @@ export const starWarsShips = [
     type: "Fighter"
   },
   {
-    id: 124,
+    id: 140,
     name: "Death Star",
     year: 2019,
     src: "",

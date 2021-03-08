@@ -23,11 +23,11 @@ export default function StarWarsDataGrid(props) {
       flex: 1,
       renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
     },
-    {
-      field: "year",
-      headerName: "Year",
-      flex: 0.4
-    },
+    // {
+    //   field: "year",
+    //   headerName: "Year",
+    //   flex: 0.4
+    // },
     { field: "model", headerName: "Model", flex: 0.4 },
     { field: "class", headerName: "Class", flex: 0.4 },
     { field: "type", headerName: "Type", flex: 0.4 },
@@ -37,7 +37,7 @@ export default function StarWarsDataGrid(props) {
       headerName: "Extra",
       flex: 0.5,
       renderCell: params => (
-        <Typography fontSize="0.8rem">{params.value}</Typography>
+        <Typography style={{ fontSize: "0.9rem" }}>{params.value}</Typography>
       )
     },
     {

@@ -5,27 +5,35 @@ import { starWarsShips } from "./StarWarsShips3.js";
 
 //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
 const searchbarRegex = string => {
-  let lowerCaseString =
-    string !== null || undefined ? string.toLowerCase() : "";
-  let variable = lowerCaseString.substring(0, 1);
-  let regexChecker = dynamicRegexCreator(lowerCaseString, variable);
-  //matches misspellings of AT-AT. Capital or lowercase 'AT's, with any character or no character in between
-  const atst = /^at.?st/;
-  const atat = /^at.?at/;
-  if (regexChecker.test(lowerCaseString)) {
+  // let lowerCaseString =
+  //   string !== null || undefined ? string.toLowerCase() : "";
+  let variable = string.substring(0, 1);
+  let regexChecker = dynamicRegexCreator(variable); //makes regex for x-wing, bwing, u.wing, S=wing, etc.
+  const atat = /^at[^s]?at?/gi; //matches misspellings of AT-AT.
+  // ^at: Any word starting with 'at'
+  //[^s]: zero to one symbol that isn't 's'
+  //a: a
+  //t?: zero to one 't'
+  //'g' is global, 'i' is case insensitive
+  const atst = /^at[^a]?st/gi; //Same for AT-ST
+
+  if (regexChecker.test(string)) {
     let substring = variable + "-wing";
     return substring;
-  } else if (atst.test(lowerCaseString)) {
+  } else if (atat.test(string)) {
+    return "at-a"; //not at-at, so 'AT-ACT' matches. Trust me, it's an AT-AT.
+  } else if (atst.test(string)) {
     return "at-st";
-  } else if (atat.test(lowerCaseString)) {
-    return "at-at";
   } else {
-    return lowerCaseString;
+    return string;
   }
 };
+//Old versions. Don't match 'ata' or 'ats'
+// const atat = /^at.?at/gi;
+// const atst = /^at.?st/gi; //Same for AT-ST
 
 //makes regex for x, y, b, u, a-wing misspellings: xwing, x=wing, x wing, etc.
-const dynamicRegexCreator = (lowerCaseString, variable) => {
+const dynamicRegexCreator = variable => {
   const regex = new RegExp("^" + variable + ".?w");
   return regex;
 };

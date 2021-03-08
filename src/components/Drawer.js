@@ -96,7 +96,6 @@ export default function ResponsiveDrawer(props) {
   };
 
   //makes a resizeable drawer with 3 DrawerList.js dropdown menus to filter from
-  //The DataGrid is inside the 'gridDiv' tag
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -187,7 +186,7 @@ export default function ResponsiveDrawer(props) {
         />
       </Drawer>
 
-      <gridDiv
+      <div
         className={clsx(classes.content, {
           [classes.contentShift]: open
         })}
@@ -202,7 +201,7 @@ export default function ResponsiveDrawer(props) {
           shipFilter={props.shipFilter}
           searchbarValue={props.searchbarValue}
         />
-      </gridDiv>
+      </div>
     </div>
   );
 }
