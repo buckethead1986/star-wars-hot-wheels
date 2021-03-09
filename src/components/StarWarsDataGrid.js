@@ -1,5 +1,5 @@
 import * as react from "react";
-import { DataGrid, GridToolbar } from "@material-ui/data-grid";
+import { DataGrid } from "@material-ui/data-grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import ClickableImage from "./ClickableImage.js";
@@ -23,15 +23,29 @@ export default function StarWarsDataGrid(props) {
       flex: 1,
       renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
     },
-    // {
-    //   field: "year",
-    //   headerName: "Year",
-    //   flex: 0.4
-    // },
+    {
+      field: "year",
+      headerName: "Year",
+      flex: 0.4
+    },
     { field: "model", headerName: "Model", flex: 0.4 },
     { field: "class", headerName: "Class", flex: 0.4 },
-    { field: "type", headerName: "Type", flex: 0.4 },
-    { field: "faction", headerName: "Faction", flex: 0.5 },
+    {
+      field: "faction",
+      headerName: "Faction",
+      flex: 0.4,
+      renderCell: params => (
+        <Typography style={{ fontSize: "0.9rem" }}>{params.value}</Typography>
+      )
+    },
+    {
+      field: "type",
+      headerName: "Type",
+      flex: 0.4,
+      renderCell: params => (
+        <Typography style={{ fontSize: "0.9rem" }}>{params.value}</Typography>
+      )
+    },
     {
       field: "special",
       headerName: "Extra",
@@ -67,17 +81,17 @@ export default function StarWarsDataGrid(props) {
   ];
 
   //default height for DataGrid is 0. This is a workaround I found to enable content to load below the grid
-  const gridWrapperRef = react.useRef(null);
-  react.useLayoutEffect(() => {
-    const gridDiv = gridWrapperRef.current;
-    if (gridDiv) {
-      const gridEl: HTMLDivElement = gridDiv.querySelector("div");
-      gridEl.style.height = "";
-    }
-  });
+  // const gridWrapperRef = react.useRef(null);
+  // react.useLayoutEffect(() => {
+  //   const gridDiv = gridWrapperRef.current;
+  //   if (gridDiv) {
+  //     const gridEl: HTMLDivElement = gridDiv.querySelector("div");
+  //     gridEl.style.height = "";
+  //   }
+  // });
 
   return (
-    <div ref={gridWrapperRef} className={classes.wrapTextInCell}>
+    <div className={classes.wrapTextInCell}>
       <DataGrid
         pageSize={25}
         rowsPerPageOptions={[25, 50, 75, 100]}

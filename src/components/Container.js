@@ -89,7 +89,6 @@ export default function Container() {
   //Toggles selected DrawerList.js filters and updates shipFilter.filterArray
   const handleShipFilter = (shipFilterSelection, shipFilterType) => {
     let filterParametersCopy = { ...shipFilter.filterParameters };
-
     //toggles selections
     if (shipFilterSelection !== undefined) {
       filterParametersCopy[shipFilterType][shipFilterSelection].selected
@@ -100,7 +99,6 @@ export default function Container() {
             shipFilterSelection
           ].selected = true);
     }
-
     //creates array of filterFunctions
     let filterFunctionsArray = ["year", "type", "faction"].map(value => {
       let obj = Object.values(filterParametersCopy[value]);

@@ -2,7 +2,7 @@ import React from "react";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import { starWarsShips } from "./StarWarsShips3.js";
+import { starWarsShips } from "../components/StarWarsShips.js";
 
 const useStyles = makeStyles(theme => ({
   root: {

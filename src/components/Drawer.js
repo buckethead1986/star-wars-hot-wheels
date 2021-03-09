@@ -8,13 +8,14 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
-import Searchbar from "./Searchbar.js";
+// import Searchbar from "./Searchbar.js";
+import Searchbar from "../UnusedComponents/AutoCompleteSearchbar.js";
 import GridItemsContainer from "./GridItemsContainer.js";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import FlightIcon from "@material-ui/icons/Flight";
 import CategoryIcon from "@material-ui/icons/Category";
-import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
@@ -95,6 +96,54 @@ export default function ResponsiveDrawer(props) {
     setOpen(false);
   };
 
+  const createDrawerList = [
+    {
+      primary: "Year",
+      name: "year",
+      icon: CalendarTodayIcon,
+      list: ["2015", "2016", "2017", "2018", "2019"]
+    },
+    {
+      primary: "Ship Type",
+      name: "type",
+      icon: FlightIcon,
+      list: [
+        "Capital Ship",
+        "Walker",
+        "Speeder",
+        "Fighter",
+        "Shuttle",
+        "X-Wing",
+        "TIE Fighter",
+        "Concept",
+        "Commemorative"
+      ]
+    },
+    {
+      primary: "Faction",
+      name: "faction",
+      icon: CategoryIcon,
+      list: [
+        "Rebel",
+        "Imperial",
+        "Republic",
+        "Resistance",
+        "First Order",
+        "Unaffiliated"
+      ]
+    }
+  ].map(item => {
+    return (
+      <DrawerList
+        handleShipFilter={props.handleShipFilter}
+        primary={item.primary}
+        name={item.name}
+        icon={item.icon}
+        list={item.list}
+      />
+    );
+  });
+
   //makes a resizeable drawer with 3 DrawerList.js dropdown menus to filter from
   return (
     <div className={classes.root}>
@@ -115,12 +164,7 @@ export default function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            className={classes.title}
-            align="center"
-            variant="h6"
-            noWrap
-          >
+          <Typography className={classes.title} align="center" variant="h6">
             Hot Wheels Star Wars Starships Wiki
           </Typography>
         </Toolbar>
@@ -146,44 +190,7 @@ export default function ResponsiveDrawer(props) {
         <Divider />
         <Searchbar handleSearchbarData={props.handleSearchbarData} />
         <Divider />
-        <DrawerList
-          handleShipFilter={props.handleShipFilter}
-          primary="Year"
-          name="year"
-          icon={CalendarTodayIcon}
-          list={["2015", "2016", "2017", "2018", "2019"]}
-        />
-        <DrawerList
-          handleShipFilter={props.handleShipFilter}
-          primary="Ship Type"
-          name="type"
-          icon={FlightIcon}
-          list={[
-            "Capital Ship",
-            "Walker",
-            "Speeder",
-            "Fighter",
-            "Shuttle",
-            "X-Wing",
-            "TIE Fighter",
-            "Concept",
-            "Commemorative"
-          ]}
-        />
-        <DrawerList
-          handleShipFilter={props.handleShipFilter}
-          primary="Faction"
-          name="faction"
-          icon={CategoryIcon}
-          list={[
-            "Rebel",
-            "Imperial",
-            "Republic",
-            "Resistance",
-            "First Order",
-            "Unaffiliated"
-          ]}
-        />
+        {createDrawerList}
       </Drawer>
 
       <div

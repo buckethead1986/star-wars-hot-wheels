@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
-import { starWarsShips } from "./StarWarsShips3.js";
+import { starWarsShips } from "./StarWarsShips.js";
 
 //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
 const searchbarRegex = string => {
@@ -28,9 +29,6 @@ const searchbarRegex = string => {
     return string;
   }
 };
-//Old versions. Don't match 'ata' or 'ats'
-// const atat = /^at.?at/gi;
-// const atst = /^at.?st/gi; //Same for AT-ST
 
 //makes regex for x, y, b, u, a-wing misspellings: xwing, x=wing, x wing, etc.
 const dynamicRegexCreator = variable => {
@@ -71,6 +69,14 @@ export default function GridItemsContainer(props) {
 
   return (
     <Container maxWidth="xl">
+      <Typography>
+        Welcome to the Hot Wheels Star Wars Starships Wiki!
+      </Typography>
+      <Typography style={{ marginBottom: 20 }}>
+        Filter the results below by using the Search box to the left, or by
+        selecting any combination of Production Year, Ship Type, and Faction
+        from the dropdown options.
+      </Typography>
       <StarWarsDataGrid filteredShips={filteredShips} />
     </Container>
   );
