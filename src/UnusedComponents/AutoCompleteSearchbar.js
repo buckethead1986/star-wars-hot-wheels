@@ -25,6 +25,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function SearchBox(props) {
   const classes = useStyles();
+  // const ships = starWarsShips.map(ship => ship.name);
 
   return (
     <Autocomplete
@@ -34,8 +35,17 @@ export default function SearchBox(props) {
         props.handleSearchbarData(
           value !== null || undefined ? value.trim() : ""
         );
+        // console.log(value);
       }}
-      options={starWarsShips.map(ship => ship.name)}
+      onInputChange={(event, newInputValue) => {
+        // console.log(newInputValue);
+      }}
+      options={[
+        ...new Set(starWarsShips.map(ship => ship.name))
+      ].sort((a, b) => {
+        console.log(a, b, a - b);
+        return a - b;
+      })}
       renderInput={params => (
         <div>
           <TextField

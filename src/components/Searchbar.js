@@ -1,6 +1,9 @@
 import React from "react";
 // import { fade, makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import SearchIcon from "@material-ui/icons/Search";
+// import ClearIcon from "@material-ui/icons/Clear";
 // import Autocomplete from "@material-ui/lab/Autocomplete";
 // import { starWarsShips } from "./StarWarsShips.js";
 
@@ -34,6 +37,13 @@ export default function SearchBox(props) {
       placeholder="Search"
       type="search"
       variant="outlined"
+      InputProps={{
+        startAdornment: (
+          <InputAdornment position="start">
+            <SearchIcon />
+          </InputAdornment>
+        )
+      }}
       onChange={event => {
         props.handleSearchbarData(
           event.target.value !== null || undefined

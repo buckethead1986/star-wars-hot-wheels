@@ -17,7 +17,6 @@ import CategoryIcon from "@material-ui/icons/Category";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 const drawerWidth = 240;
 
@@ -96,7 +95,7 @@ export default function ResponsiveDrawer(props) {
     setOpen(false);
   };
 
-  const createDrawerList = [
+  const createDrawerLists = [
     {
       primary: "Year",
       name: "year",
@@ -180,17 +179,13 @@ export default function ResponsiveDrawer(props) {
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
+            <ChevronLeftIcon />
           </IconButton>
         </div>
         <Divider />
         <Searchbar handleSearchbarData={props.handleSearchbarData} />
         <Divider />
-        {createDrawerList}
+        {createDrawerLists}
       </Drawer>
 
       <div
