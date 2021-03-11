@@ -396,7 +396,7 @@ export const starWarsShips = [
     packSize: 1,
     special: "",
     faction: "Imperial",
-    class: "Imperial",
+    class: "",
     type: "Capital Ship"
   },
   {

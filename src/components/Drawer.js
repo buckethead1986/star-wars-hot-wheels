@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -9,7 +9,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 // import Searchbar from "./Searchbar.js";
-import Searchbar from "../UnusedComponents/AutoCompleteSearchbar.js";
+import AutoCompleteSearchbar from "./AutoCompleteSearchbar.js";
 import GridItemsContainer from "./GridItemsContainer.js";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import FlightIcon from "@material-ui/icons/Flight";
@@ -85,15 +85,23 @@ const useStyles = makeStyles(theme => ({
 export default function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = React.useState(true);
+  // const [open, setOpen] = React.useState(true);
+  //
+  // const handleDrawerOpen = () => {
+  //   setOpen(true);
+  // };
+  //
+  // const handleDrawerClose = () => {
+  //   setOpen(false);
+  // };
+  const [open, setOpen] = useToggle();
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  function useToggle(initialValue = true) {
+    // Returns the tuple [state, dispatch]
+    // Normally with useReducer you pass a value to dispatch to indicate what action to
+    // take on the state, but in this case there's only one action.
+    return useReducer(state => !state, initialValue);
+  }
 
   const createDrawerLists = [
     {
@@ -157,7 +165,7 @@ export default function ResponsiveDrawer(props) {
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={handleDrawerOpen}
+            onClick={setOpen}
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
@@ -178,12 +186,14 @@ export default function ResponsiveDrawer(props) {
         }}
       >
         <div className={classes.drawerHeader}>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={setOpen}>
             <ChevronLeftIcon />
           </IconButton>
         </div>
         <Divider />
-        <Searchbar handleSearchbarData={props.handleSearchbarData} />
+        <AutoCompleteSearchbar
+          handleSearchbarData={props.handleSearchbarData}
+        />
         <Divider />
         {createDrawerLists}
       </Drawer>

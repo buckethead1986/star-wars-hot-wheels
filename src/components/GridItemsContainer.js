@@ -13,7 +13,7 @@ const searchbarRegex = string => {
   //   string !== null || undefined ? string.toLowerCase() : "";
   // let variable = string.substring(0, 1);
   // let regexChecker = dynamicRegexCreator(variable); //makes regex for x-wing, bwing, u.wing, S=wing, etc.
-  const atat = /^at[^s]?at?/gi; //matches misspellings of AT-AT.
+  const atat = /^at[^st]?at?/gi; //matches misspellings of AT-AT.
   // ^at: Any word starting with 'at'
   //[^s]: zero to one symbol that isn't 's'
   //a: a
@@ -31,17 +31,12 @@ const searchbarRegex = string => {
   } else if (atst.test(string)) {
     return "at-st";
   } else if (anyWing.test(string)) {
+    console.log(string, string.toLowerCase());
     return string.substring(0, 1) + "-wing";
   } else {
     return string;
   }
 };
-
-//makes regex for x, y, b, u, a-wing misspellings: xwing, x=wing, x wing, etc.
-// const dynamicRegexCreator = variable => {
-//   const regex = new RegExp("^" + variable + ".?w");
-//   return regex;
-// };
 
 export default function GridItemsContainer(props) {
   const [helpText, toggleHelpText] = useToggle();
@@ -56,31 +51,47 @@ export default function GridItemsContainer(props) {
   //filters starWarsShips by year, type, and faction, or by searchbarValue (name or model code) if it was most recently used
   //e.g. all Rebel Capital Ships, or Imperial ships from 2016 and 2017 that are also Walkers or TIE Fighters.
   //searchbarValue is checked against common misspellings of names in searchbarRegex function above.
-  const filteredShips = starWarsShips.filter(item => {
-    if (props.searchbarValue.length !== 0) {
-      return (
-        item.name.includes(props.searchbarValue) ||
+
+  //Filters ships based on searchbarValue. Returns exact matches, or a list of partial matches if there are no exact matches.
+  const searchbarMatches = () => {
+    const exactMatch = [];
+    const partialMatch = [];
+    starWarsShips.forEach(item => {
+      if (item.name === props.searchbarValue) {
+        exactMatch.push(item);
+      }
+      if (
         item.name
           .toLowerCase()
-          .includes(searchbarRegex(props.searchbarValue)) ||
+          .includes(searchbarRegex(props.searchbarValue).toLowerCase()) ||
         item.model.toLowerCase().includes(props.searchbarValue.toLowerCase())
-      );
-    } else {
-      if (props.shipFilter.filterArray.length === 0) {
-        return item;
-      } else {
-        return (
-          (props.shipFilter.filterArray[0].length !== 0
-            ? props.shipFilter.filterArray[0].some(f => f(item))
-            : item) &&
-          (props.shipFilter.filterArray[1].length !== 0
-            ? props.shipFilter.filterArray[1].some(f => f(item))
-            : item) &&
-          (props.shipFilter.filterArray[2].length !== 0
-            ? props.shipFilter.filterArray[2].some(f => f(item))
-            : item)
-        );
+      ) {
+        partialMatch.push(item);
       }
+    });
+    if (exactMatch.length > 0) {
+      return exactMatch;
+    } else {
+      return partialMatch;
+    }
+  };
+
+  //Filters ships based on checked filter parameters
+  const filteredShips = starWarsShips.filter(item => {
+    if (props.shipFilter.filterArray.length === 0) {
+      return item;
+    } else {
+      return (
+        (props.shipFilter.filterArray[0].length !== 0
+          ? props.shipFilter.filterArray[0].some(f => f(item))
+          : item) &&
+        (props.shipFilter.filterArray[1].length !== 0
+          ? props.shipFilter.filterArray[1].some(f => f(item))
+          : item) &&
+        (props.shipFilter.filterArray[2].length !== 0
+          ? props.shipFilter.filterArray[2].some(f => f(item))
+          : item)
+      );
     }
   });
 
@@ -129,7 +140,11 @@ export default function GridItemsContainer(props) {
         <div style={{ marginBottom: "10px" }}>{bulletedHelpList}</div>
       )}
 
-      <StarWarsDataGrid filteredShips={filteredShips} />
+      <StarWarsDataGrid
+        filteredShips={
+          props.searchbarValue.length !== 0 ? searchbarMatches() : filteredShips
+        }
+      />
     </Container>
   );
 }
