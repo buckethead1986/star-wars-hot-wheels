@@ -1,8 +1,120 @@
-import React from "react";
+import React, { useReducer } from "react";
 import Drawer from "./Drawer.js";
+
+//using useReducer
+const testFunctions = {
+  year: {
+    "2015": ship => ship.year === 2015,
+    "2016": ship => ship.year === 2016,
+    "2017": ship => ship.year === 2017,
+    "2018": ship => ship.year === 2018,
+    "2019": ship => ship.year === 2019
+    // "2020": { selected: false, function: ship => ship.year === 2020 }
+  },
+  type: {
+    "Capital Ship": ship => ship.type.indexOf("Capital Ship") !== -1,
+    Walker: ship => ship.type.indexOf("Walker") !== -1,
+    Speeder: ship => ship.type.indexOf("Speeder") !== -1,
+    Fighter: ship => ship.type.indexOf("Fighter") !== -1,
+    Shuttle: ship => ship.type.indexOf("Shuttle") !== -1,
+    "X-Wing": ship => ship.class.indexOf("X-Wing") !== -1,
+    "TIE Fighter": ship => ship.class.indexOf("TIE") !== -1,
+    Concept: ship => ship.special.indexOf("Concept") !== -1,
+    Commemorative: ship => ship.special.indexOf("Commemorative") !== -1
+  },
+  faction: {
+    Rebel: ship => ship.faction.indexOf("Rebel") !== -1,
+    Imperial: ship => ship.faction.indexOf("Imperial") !== -1,
+    Republic: ship => ship.faction.indexOf("Republic") !== -1,
+    Resistance: ship => ship.faction.indexOf("Resistance") !== -1,
+    "First Order": ship => ship.faction.indexOf("First Order") !== -1,
+    Unaffiliated: ship => ship.faction.indexOf("Unaffiliated") !== -1
+  }
+};
+
+const testSelections = {
+  year: {
+    "2015": false,
+    "2016": false,
+    "2017": false,
+    "2018": false,
+    "2019": false
+    // "2020": { selected: false, function: ship => ship.year === 2020 }
+  },
+  type: {
+    "Capital Ship": false,
+    Walker: false,
+    Speeder: false,
+    Fighter: false,
+    Shuttle: false,
+    "X-Wing": false,
+    "TIE Fighter": false,
+    Concept: false,
+    Commemorative: false
+  },
+  faction: {
+    Rebel: false,
+    Imperial: false,
+    Republic: false,
+    Resistance: false,
+    "First Order": false,
+    Unaffiliated: false
+  },
+  filters: []
+};
+
+const selectionReducer = (state, action) => {
+  switch (action.type) {
+    case "TOGGLE_SELECTION":
+      console.log(state);
+      return {
+        ...state,
+        [action.list]: {
+          ...state[action.list],
+          [action.name]: !state[action.list][action.name]
+        }
+      };
+    case "CREATE_FILTERS":
+      console.log(state);
+      return {
+        ...state,
+        [action.list]: ["year", "type", "faction"].map(value => {
+          // let obj = Object.values(state[value]);
+          // console.log(state[value]);
+          let arr = [];
+          for (const filter in state[value]) {
+            if (state[value][filter]) {
+              arr.push(testFunctions[value][filter]);
+            }
+          }
+          return arr;
+        })
+      };
+    default:
+      return state;
+  }
+};
 
 export default function Container() {
   const [searchbarValue, setSearchbarValue] = React.useState("");
+  const [testShipFilter, dispatch] = useReducer(
+    selectionReducer,
+    testSelections
+  );
+
+  const handleSelectionFilter = (item, name) => {
+    dispatch({
+      type: "TOGGLE_SELECTION",
+      list: item,
+      name: name
+    });
+    dispatch({
+      type: "CREATE_FILTERS",
+      list: "filters"
+    });
+  };
+
+  //using useState
   const [shipFilter, setShipFilter] = React.useState({
     //state containing toggles for selected filters from drawer.js, and functions to filter StarWarsShips.js with when 'selected' is true
     filterParameters: {
@@ -123,6 +235,7 @@ export default function Container() {
     <div>
       <Drawer
         handleShipFilter={handleShipFilter}
+        handleSelectionFilter={handleSelectionFilter}
         handleSearchbarData={handleSearchbarData}
         shipFilter={shipFilter}
         searchbarValue={searchbarValue}

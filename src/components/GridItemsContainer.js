@@ -9,29 +9,20 @@ import { starWarsShips } from "./StarWarsShips.js";
 
 //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
 const searchbarRegex = string => {
-  // let lowerCaseString =
-  //   string !== null || undefined ? string.toLowerCase() : "";
-  // let variable = string.substring(0, 1);
-  // let regexChecker = dynamicRegexCreator(variable); //makes regex for x-wing, bwing, u.wing, S=wing, etc.
   const atat = /^at[^st]?at?/gi; //matches misspellings of AT-AT.
   // ^at: Any word starting with 'at'
-  //[^s]: zero to one symbol that isn't 's'
+  //[^st]: zero to one symbol that isn't 's' or 't' ('attack' failed, and 'at-st' is a separate regex)
   //a: a
   //t?: zero to one 't'
   //'g' is global, 'i' is case insensitive
   const atst = /^at[^a]?st/gi; //Same for AT-ST
   const anyWing = /^[xyabu].?w/gi; // x|y|a|b|u-wing
 
-  // if (regexChecker.test(string)) {
-  //   let substring = variable + "-wing";
-  //   return substring;
-  // } else
   if (atat.test(string)) {
-    return "at-a"; //not at-at, so 'AT-ACT' matches. Trust me, it's an AT-AT.
+    return "at-a"; //not at-at, so 'AT-ACT' matches. Trust me, it's an AT-AT. Working on how to match Heavy Assault Walker as well
   } else if (atst.test(string)) {
     return "at-st";
   } else if (anyWing.test(string)) {
-    console.log(string, string.toLowerCase());
     return string.substring(0, 1) + "-wing";
   } else {
     return string;
@@ -41,18 +32,12 @@ const searchbarRegex = string => {
 export default function GridItemsContainer(props) {
   const [helpText, toggleHelpText] = useToggle();
 
+  //useReducer avoids uneccesary re-renders
   function useToggle(initialValue = true) {
-    // Returns the tuple [state, dispatch]
-    // Normally with useReducer you pass a value to dispatch to indicate what action to
-    // take on the state, but in this case there's only one action.
     return useReducer(state => !state, initialValue);
   }
 
-  //filters starWarsShips by year, type, and faction, or by searchbarValue (name or model code) if it was most recently used
-  //e.g. all Rebel Capital Ships, or Imperial ships from 2016 and 2017 that are also Walkers or TIE Fighters.
-  //searchbarValue is checked against common misspellings of names in searchbarRegex function above.
-
-  //Filters ships based on searchbarValue. Returns exact matches, or a list of partial matches if there are no exact matches.
+  //Filters ships based on searchbarValue. Returns an array of exact matches, or an array of partial matches if there are no exact matches.
   const searchbarMatches = () => {
     const exactMatch = [];
     const partialMatch = [];

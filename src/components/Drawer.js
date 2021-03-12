@@ -143,6 +143,7 @@ export default function ResponsiveDrawer(props) {
     return (
       <DrawerList
         handleShipFilter={props.handleShipFilter}
+        handleSelectionFilter={props.handleSelectionFilter}
         primary={item.primary}
         name={item.name}
         icon={item.icon}
