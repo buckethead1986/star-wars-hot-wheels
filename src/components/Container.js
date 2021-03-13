@@ -32,7 +32,7 @@ const testFunctions = {
   }
 };
 
-const testSelections = {
+const initialState = {
   year: {
     "2015": false,
     "2016": false,
@@ -60,27 +60,32 @@ const testSelections = {
     "First Order": false,
     Unaffiliated: false
   },
-  filters: []
+  filterArray: [],
+  searchbarValue: ""
 };
 
-const selectionReducer = (state, action) => {
+const filterReducer = (state, action) => {
   switch (action.type) {
     case "TOGGLE_SELECTION":
-      console.log(state);
+      // console.log(state);
       return {
         ...state,
-        [action.list]: {
-          ...state[action.list],
-          [action.name]: !state[action.list][action.name]
+        [action.category]: {
+          ...state[action.category],
+          [action.name]: !state[action.category][action.name]
         }
       };
-    case "CREATE_FILTERS":
-      console.log(state);
+    case "CHANGE_SEARCHBAR_DATA":
       return {
         ...state,
-        [action.list]: ["year", "type", "faction"].map(value => {
-          // let obj = Object.values(state[value]);
-          // console.log(state[value]);
+        searchbarValue:
+          action.searchbarValue !== undefined ? action.searchbarValue : ""
+      };
+    case "CREATE_FILTERS":
+      return {
+        ...state,
+        searchbarValue: "",
+        filterArray: ["year", "type", "faction"].map(value => {
           let arr = [];
           for (const filter in state[value]) {
             if (state[value][filter]) {
@@ -96,149 +101,153 @@ const selectionReducer = (state, action) => {
 };
 
 export default function Container() {
-  const [searchbarValue, setSearchbarValue] = React.useState("");
-  const [testShipFilter, dispatch] = useReducer(
-    selectionReducer,
-    testSelections
-  );
+  // const [searchbarValue, setSearchbarValue] = React.useState("");
+  const [state, dispatch] = useReducer(filterReducer, initialState);
 
-  const handleSelectionFilter = (item, name) => {
+  const handleFilterSelection = (item, name) => {
     dispatch({
       type: "TOGGLE_SELECTION",
-      list: item,
+      category: item,
       name: name
     });
     dispatch({
-      type: "CREATE_FILTERS",
-      list: "filters"
+      type: "CREATE_FILTERS"
+    });
+  };
+
+  const changeSearchbarData = searchbarValue => {
+    dispatch({
+      type: "CHANGE_SEARCHBAR_DATA",
+      searchbarValue: searchbarValue
     });
   };
 
   //using useState
-  const [shipFilter, setShipFilter] = React.useState({
-    //state containing toggles for selected filters from drawer.js, and functions to filter StarWarsShips.js with when 'selected' is true
-    filterParameters: {
-      year: {
-        "2015": { selected: false, function: ship => ship.year === 2015 },
-        "2016": { selected: false, function: ship => ship.year === 2016 },
-        "2017": { selected: false, function: ship => ship.year === 2017 },
-        "2018": { selected: false, function: ship => ship.year === 2018 },
-        "2019": { selected: false, function: ship => ship.year === 2019 }
-        // "2020": { selected: false, function: ship => ship.year === 2020 }
-      },
-      type: {
-        "Capital Ship": {
-          selected: false,
-          function: ship => ship.type.indexOf("Capital Ship") !== -1
-        },
-        Walker: {
-          selected: false,
-          function: ship => ship.type.indexOf("Walker") !== -1
-        },
-        Speeder: {
-          selected: false,
-          function: ship => ship.type.indexOf("Speeder") !== -1
-        },
-        Fighter: {
-          selected: false,
-          function: ship => ship.type.indexOf("Fighter") !== -1
-        },
-        Shuttle: {
-          selected: false,
-          function: ship => ship.type.indexOf("Shuttle") !== -1
-        },
-        "X-Wing": {
-          selected: false,
-          function: ship => ship.class.indexOf("X-Wing") !== -1
-        },
-        "TIE Fighter": {
-          selected: false,
-          function: ship => ship.class.indexOf("TIE") !== -1
-        },
-        Concept: {
-          selected: false,
-          function: ship => ship.special.indexOf("Concept") !== -1
-        },
-        Commemorative: {
-          selected: false,
-          function: ship => ship.special.indexOf("Commemorative") !== -1
-        }
-      },
-      faction: {
-        Rebel: {
-          selected: false,
-          function: ship => ship.faction.indexOf("Rebel") !== -1
-        },
-        Imperial: {
-          selected: false,
-          function: ship => ship.faction.indexOf("Imperial") !== -1
-        },
-        Republic: {
-          selected: false,
-          function: ship => ship.faction.indexOf("Republic") !== -1
-        },
-        Resistance: {
-          selected: false,
-          function: ship => ship.faction.indexOf("Resistance") !== -1
-        },
-        "First Order": {
-          selected: false,
-          function: ship => ship.faction.indexOf("First Order") !== -1
-        },
-        Unaffiliated: {
-          selected: false,
-          function: ship => ship.faction.indexOf("Unaffiliated") !== -1
-        }
-      }
-    },
-    filterArray: []
-  });
-
-  const handleSearchbarData = searchbarData => {
-    setSearchbarValue(searchbarData !== undefined ? searchbarData : "");
-  };
-
-  //Toggles selected DrawerList.js filters and updates shipFilter.filterArray
-  const handleShipFilter = (shipFilterSelection, shipFilterType) => {
-    let filterParametersCopy = { ...shipFilter.filterParameters };
-    //toggles selections
-    if (shipFilterSelection !== undefined) {
-      filterParametersCopy[shipFilterType][shipFilterSelection].selected
-        ? (filterParametersCopy[shipFilterType][
-            shipFilterSelection
-          ].selected = false)
-        : (filterParametersCopy[shipFilterType][
-            shipFilterSelection
-          ].selected = true);
-    }
-    //creates array of filterFunctions
-    let filterFunctionsArray = ["year", "type", "faction"].map(value => {
-      let obj = Object.values(filterParametersCopy[value]);
-      let arr = [];
-      obj.forEach(x => {
-        if (x.selected) {
-          arr.push(x.function);
-        }
-      });
-      return arr;
-    });
-
-    setShipFilter({
-      ...shipFilter,
-      filterParameters: filterParametersCopy,
-      filterArray: filterFunctionsArray
-    });
-    setSearchbarValue("");
-  };
+  // const [shipFilter, setShipFilter] = React.useState({
+  //   //state containing toggles for selected filters from drawer.js, and functions to filter StarWarsShips.js with when 'selected' is true
+  //   filterParameters: {
+  //     year: {
+  //       "2015": { selected: false, function: ship => ship.year === 2015 },
+  //       "2016": { selected: false, function: ship => ship.year === 2016 },
+  //       "2017": { selected: false, function: ship => ship.year === 2017 },
+  //       "2018": { selected: false, function: ship => ship.year === 2018 },
+  //       "2019": { selected: false, function: ship => ship.year === 2019 }
+  //       // "2020": { selected: false, function: ship => ship.year === 2020 }
+  //     },
+  //     type: {
+  //       "Capital Ship": {
+  //         selected: false,
+  //         function: ship => ship.type.indexOf("Capital Ship") !== -1
+  //       },
+  //       Walker: {
+  //         selected: false,
+  //         function: ship => ship.type.indexOf("Walker") !== -1
+  //       },
+  //       Speeder: {
+  //         selected: false,
+  //         function: ship => ship.type.indexOf("Speeder") !== -1
+  //       },
+  //       Fighter: {
+  //         selected: false,
+  //         function: ship => ship.type.indexOf("Fighter") !== -1
+  //       },
+  //       Shuttle: {
+  //         selected: false,
+  //         function: ship => ship.type.indexOf("Shuttle") !== -1
+  //       },
+  //       "X-Wing": {
+  //         selected: false,
+  //         function: ship => ship.class.indexOf("X-Wing") !== -1
+  //       },
+  //       "TIE Fighter": {
+  //         selected: false,
+  //         function: ship => ship.class.indexOf("TIE") !== -1
+  //       },
+  //       Concept: {
+  //         selected: false,
+  //         function: ship => ship.special.indexOf("Concept") !== -1
+  //       },
+  //       Commemorative: {
+  //         selected: false,
+  //         function: ship => ship.special.indexOf("Commemorative") !== -1
+  //       }
+  //     },
+  //     faction: {
+  //       Rebel: {
+  //         selected: false,
+  //         function: ship => ship.faction.indexOf("Rebel") !== -1
+  //       },
+  //       Imperial: {
+  //         selected: false,
+  //         function: ship => ship.faction.indexOf("Imperial") !== -1
+  //       },
+  //       Republic: {
+  //         selected: false,
+  //         function: ship => ship.faction.indexOf("Republic") !== -1
+  //       },
+  //       Resistance: {
+  //         selected: false,
+  //         function: ship => ship.faction.indexOf("Resistance") !== -1
+  //       },
+  //       "First Order": {
+  //         selected: false,
+  //         function: ship => ship.faction.indexOf("First Order") !== -1
+  //       },
+  //       Unaffiliated: {
+  //         selected: false,
+  //         function: ship => ship.faction.indexOf("Unaffiliated") !== -1
+  //       }
+  //     }
+  //   },
+  //   filterArray: []
+  // });
+  //
+  // const handleSearchbarData = searchbarData => {
+  //   setSearchbarValue(searchbarData !== undefined ? searchbarData : "");
+  // };
+  //
+  // // Toggles selected DrawerList.js filters and updates shipFilter.filterArray
+  // const handleShipFilter = (shipFilterSelection, shipFilterType) => {
+  //   let filterParametersCopy = { ...shipFilter.filterParameters };
+  //   //toggles selections
+  //   if (shipFilterSelection !== undefined) {
+  //     filterParametersCopy[shipFilterType][shipFilterSelection].selected
+  //       ? (filterParametersCopy[shipFilterType][
+  //           shipFilterSelection
+  //         ].selected = false)
+  //       : (filterParametersCopy[shipFilterType][
+  //           shipFilterSelection
+  //         ].selected = true);
+  //   }
+  //   //creates array of filterFunctions
+  //   let filterFunctionsArray = ["year", "type", "faction"].map(value => {
+  //     let obj = Object.values(filterParametersCopy[value]);
+  //     let arr = [];
+  //     obj.forEach(x => {
+  //       if (x.selected) {
+  //         arr.push(x.function);
+  //       }
+  //     });
+  //     return arr;
+  //   });
+  //
+  //   setShipFilter(
+  //     {
+  //       ...shipFilter,
+  //       filterParameters: filterParametersCopy,
+  //       filterArray: filterFunctionsArray
+  //     }
+  //   );
+  //   setSearchbarValue("");
+  // };
 
   return (
     <div>
       <Drawer
-        handleShipFilter={handleShipFilter}
-        handleSelectionFilter={handleSelectionFilter}
-        handleSearchbarData={handleSearchbarData}
-        shipFilter={shipFilter}
-        searchbarValue={searchbarValue}
+        handleFilterSelection={handleFilterSelection}
+        changeSearchbarData={changeSearchbarData}
+        filterArray={state.filterArray}
+        searchbarValue={state.searchbarValue}
       />
     </div>
   );

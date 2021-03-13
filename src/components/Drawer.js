@@ -142,8 +142,7 @@ export default function ResponsiveDrawer(props) {
   ].map(item => {
     return (
       <DrawerList
-        handleShipFilter={props.handleShipFilter}
-        handleSelectionFilter={props.handleSelectionFilter}
+        handleFilterSelection={props.handleFilterSelection}
         primary={item.primary}
         name={item.name}
         icon={item.icon}
@@ -193,7 +192,7 @@ export default function ResponsiveDrawer(props) {
         </div>
         <Divider />
         <AutoCompleteSearchbar
-          handleSearchbarData={props.handleSearchbarData}
+          changeSearchbarData={props.changeSearchbarData}
         />
         <Divider />
         {createDrawerLists}
@@ -211,7 +210,7 @@ export default function ResponsiveDrawer(props) {
           }}
         />
         <GridItemsContainer
-          shipFilter={props.shipFilter}
+          filterArray={props.filterArray}
           searchbarValue={props.searchbarValue}
         />
       </div>

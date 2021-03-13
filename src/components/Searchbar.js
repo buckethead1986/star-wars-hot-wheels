@@ -37,13 +37,6 @@ export default function SearchBox(props) {
       placeholder="Search"
       type="search"
       variant="outlined"
-      InputProps={{
-        startAdornment: (
-          <InputAdornment position="start">
-            <SearchIcon />
-          </InputAdornment>
-        )
-      }}
       onChange={event => {
         props.handleSearchbarData(
           event.target.value !== null || undefined
