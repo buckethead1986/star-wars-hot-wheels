@@ -10,6 +10,11 @@ const useStyles = makeStyles({
     "& div.MuiDataGrid-cell": {
       whiteSpace: "normal"
     }
+  },
+  column: {
+    "& div.MuiDataGrid-columnSeparator": {
+      padding: 0
+    }
   }
 });
 
@@ -26,10 +31,19 @@ export default function StarWarsDataGrid(props) {
     {
       field: "year",
       headerName: "Year",
-      flex: 0.4
+      flex: 0.3,
+      style: { marginLeft: 0 },
+      classes: classes.column
     },
-    { field: "model", headerName: "Model", flex: 0.4 },
-    { field: "class", headerName: "Class", flex: 0.4 },
+    { field: "model", headerName: "Model", flex: 0.3 },
+    {
+      field: "class",
+      headerName: "Class",
+      flex: 0.4,
+      renderCell: params => (
+        <Typography style={{ fontSize: "0.9rem" }}>{params.value}</Typography>
+      )
+    },
     {
       field: "faction",
       headerName: "Faction",
@@ -47,7 +61,7 @@ export default function StarWarsDataGrid(props) {
       )
     },
     {
-      field: "special",
+      field: "extra",
       headerName: "Extra",
       flex: 0.5,
       renderCell: params => (
@@ -91,7 +105,7 @@ export default function StarWarsDataGrid(props) {
   // });
 
   return (
-    <div className={classes.wrapTextInCell}>
+    <div className={(classes.wrapTextInCell, classes.column)}>
       <DataGrid
         pageSize={25}
         rowsPerPageOptions={[25, 50, 75, 100]}

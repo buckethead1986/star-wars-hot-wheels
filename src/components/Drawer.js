@@ -1,22 +1,31 @@
 import React, { useReducer } from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import Drawer from "@material-ui/core/Drawer";
+import {
+  Drawer,
+  CssBaseline,
+  AppBar,
+  Toolbar,
+  Typography,
+  Divider,
+  IconButton
+} from "@material-ui/core";
+// import CssBaseline from "@material-ui/core/CssBaseline";
+// import AppBar from "@material-ui/core/AppBar";
+// import Toolbar from "@material-ui/core/Toolbar";
+// import Typography from "@material-ui/core/Typography";
+// import Divider from "@material-ui/core/Divider";
+// import IconButton from "@material-ui/core/IconButton";
+
+import CalendarToday from "@material-ui/icons/CalendarToday";
+import Flight from "@material-ui/icons/Flight";
+import Category from "@material-ui/icons/Category";
+import Menu from "@material-ui/icons/Menu";
+import ChevronLeft from "@material-ui/icons/ChevronLeft";
 import DrawerList from "./DrawerList.js";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
 // import Searchbar from "./Searchbar.js";
 import AutoCompleteSearchbar from "./AutoCompleteSearchbar.js";
 import GridItemsContainer from "./GridItemsContainer.js";
-import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
-import FlightIcon from "@material-ui/icons/Flight";
-import CategoryIcon from "@material-ui/icons/Category";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 
 const drawerWidth = 240;
 
@@ -85,15 +94,6 @@ const useStyles = makeStyles(theme => ({
 export default function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
-  // const [open, setOpen] = React.useState(true);
-  //
-  // const handleDrawerOpen = () => {
-  //   setOpen(true);
-  // };
-  //
-  // const handleDrawerClose = () => {
-  //   setOpen(false);
-  // };
   const [open, setOpen] = useToggle();
 
   function useToggle(initialValue = true) {
@@ -103,17 +103,18 @@ export default function ResponsiveDrawer(props) {
     return useReducer(state => !state, initialValue);
   }
 
+  //creates expandable lists of filter options.
   const createDrawerLists = [
     {
       primary: "Year",
       name: "year",
-      icon: CalendarTodayIcon,
+      icon: CalendarToday,
       list: ["2015", "2016", "2017", "2018", "2019"]
     },
     {
       primary: "Ship Type",
       name: "type",
-      icon: FlightIcon,
+      icon: Flight,
       list: [
         "Capital Ship",
         "Walker",
@@ -129,7 +130,7 @@ export default function ResponsiveDrawer(props) {
     {
       primary: "Faction",
       name: "faction",
-      icon: CategoryIcon,
+      icon: Category,
       list: [
         "Rebel",
         "Imperial",
@@ -142,6 +143,7 @@ export default function ResponsiveDrawer(props) {
   ].map(item => {
     return (
       <DrawerList
+        key={`drawer-list-${item.name}`}
         handleFilterSelection={props.handleFilterSelection}
         primary={item.primary}
         name={item.name}
@@ -151,7 +153,8 @@ export default function ResponsiveDrawer(props) {
     );
   });
 
-  //makes a resizeable drawer with 3 DrawerList.js dropdown menus to filter from
+  //Makes a resizeable drawer with 3 DrawerList.js dropdown menus to filter from. The drawer is open by default, but closeable.
+  //The
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -169,7 +172,7 @@ export default function ResponsiveDrawer(props) {
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-            <MenuIcon />
+            <Menu />
           </IconButton>
           <Typography className={classes.title} align="center" variant="h6">
             Hot Wheels Star Wars Starships Wiki
@@ -187,12 +190,12 @@ export default function ResponsiveDrawer(props) {
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={setOpen}>
-            <ChevronLeftIcon />
+            <ChevronLeft />
           </IconButton>
         </div>
         <Divider />
         <AutoCompleteSearchbar
-          changeSearchbarData={props.changeSearchbarData}
+          handleSearchbarInput={props.handleSearchbarInput}
         />
         <Divider />
         {createDrawerLists}

@@ -61,9 +61,8 @@ export default function GridItemsContainer(props) {
     }
   };
 
-  //Filters ships based on checked filter parameters
+  //Filters ships based on toggled filter parameters from DrawerList.js
   const filteredShips = starWarsShips.filter(item => {
-    console.log(props);
     if (props.filterArray.length === 0) {
       return item;
     } else {
@@ -97,9 +96,6 @@ export default function GridItemsContainer(props) {
         </Typography>
       </li>
       <li>
-        <Typography>Click on any image to see a larger view.</Typography>
-      </li>
-      <li>
         <Typography>
           Select a column menu (
           <IconButton disabled style={{ padding: (0, 0, 3, 0) }}>
@@ -107,6 +103,9 @@ export default function GridItemsContainer(props) {
           </IconButton>) for more specific sorting, filtering, and to show/hide
           columns.
         </Typography>
+      </li>
+      <li>
+        <Typography>Click on any image to see a larger view.</Typography>
       </li>
     </ul>
   );
