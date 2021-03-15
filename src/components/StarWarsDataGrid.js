@@ -4,19 +4,51 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import ClickableImage from "./ClickableImage.js";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   //Workaround to let text wrap in DataGrid cells
   wrapTextInCell: {
     "& div.MuiDataGrid-cell": {
       whiteSpace: "normal"
-    }
-  },
-  column: {
-    "& div.MuiDataGrid-columnSeparator": {
-      padding: 0
+      // padding: theme.spacing(0, 1) //0px top and bottom, 8px left and right
     }
   }
-});
+}));
+
+const textColumns = () => {
+  return [
+    ["faction", "Faction", 0.4],
+    ["class", "Class", 0.4],
+    ["type", "Type", 0.4],
+    ["extra", "Extra", 0.5]
+  ].map(column => {
+    return {
+      field: column[0],
+      headerName: column[1],
+      flex: column[2],
+      renderCell: params => (
+        <Typography style={{ fontSize: "0.9rem" }}>{params.value}</Typography>
+      )
+    };
+  });
+};
+const imageColumns = () => {
+  return [
+    ["src", "Image"],
+    ["packsrc", "Pack"],
+    ["backsrc", "Reverse"]
+  ].map(column => {
+    return {
+      field: column[0],
+      headerName: column[1],
+      width: 100,
+      disableColumnMenu: true,
+      sortable: false,
+      renderCell: params => (
+        <ClickableImage src={params.value} alt={params.getValue("name")} />
+      )
+    };
+  });
+};
 
 export default function StarWarsDataGrid(props) {
   const classes = useStyles();
@@ -25,28 +57,41 @@ export default function StarWarsDataGrid(props) {
     {
       field: "name",
       headerName: "Name",
-      flex: 1,
+      flex: 0.8,
       renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
     },
     {
       field: "year",
       headerName: "Year",
-      flex: 0.3,
-      style: { marginLeft: 0 },
-      classes: classes.column
+      flex: 0.3
+    },
+    { field: "model", headerName: "Model", flex: 0.3 }
+  ].concat(textColumns(), imageColumns());
+
+  const longhandColumns = [
+    {
+      field: "name",
+      headerName: "Name",
+      flex: 0.8,
+      renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
+    },
+    {
+      field: "year",
+      headerName: "Year",
+      flex: 0.3
     },
     { field: "model", headerName: "Model", flex: 0.3 },
     {
-      field: "class",
-      headerName: "Class",
+      field: "faction",
+      headerName: "Faction",
       flex: 0.4,
       renderCell: params => (
         <Typography style={{ fontSize: "0.9rem" }}>{params.value}</Typography>
       )
     },
     {
-      field: "faction",
-      headerName: "Faction",
+      field: "class",
+      headerName: "Class",
       flex: 0.4,
       renderCell: params => (
         <Typography style={{ fontSize: "0.9rem" }}>{params.value}</Typography>
@@ -71,23 +116,29 @@ export default function StarWarsDataGrid(props) {
     {
       field: "src",
       headerName: "Image",
-      width: 128,
+      width: 100,
+      disableColumnMenu: true,
+      sortable: false,
       renderCell: params => (
         <ClickableImage src={params.value} alt={params.getValue("name")} />
       )
     },
     {
       field: "packsrc",
-      headerName: "Pack Image",
-      width: 128,
+      headerName: "Pack",
+      width: 100,
+      disableColumnMenu: true,
+      sortable: false,
       renderCell: params => (
         <ClickableImage src={params.value} alt={params.getValue("name")} />
       )
     },
     {
       field: "backsrc",
-      headerName: "Reverse Image",
-      width: 128,
+      headerName: "Reverse",
+      width: 100,
+      disableColumnMenu: true,
+      sortable: false,
       renderCell: params => (
         <ClickableImage src={params.value} alt={params.getValue("name")} />
       )
@@ -105,14 +156,14 @@ export default function StarWarsDataGrid(props) {
   // });
 
   return (
-    <div className={(classes.wrapTextInCell, classes.column)}>
+    <div className={classes.wrapTextInCell}>
       <DataGrid
         pageSize={25}
         rowsPerPageOptions={[25, 50, 75, 100]}
         rows={props.filteredShips}
-        columns={columns}
+        columns={longhandColumns}
         autoHeight
-        rowHeight={128}
+        rowHeight={100}
         showCellRightBorder={true}
         showColumnRightBorder={true}
       />

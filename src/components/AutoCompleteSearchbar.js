@@ -17,6 +17,8 @@ export default function SearchBar(props) {
       renderInput={params => (
         <TextField
           style={{
+            marginTop: "2%",
+            marginBottom: "2%",
             position: "relative"
           }}
           {...params}

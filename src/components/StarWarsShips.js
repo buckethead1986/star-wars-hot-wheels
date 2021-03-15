@@ -882,7 +882,7 @@ export const starWarsShips = [
     assortment: "CGW90",
     packSize: 2,
     extra: "",
-    faction: "First Order Resistance",
+    faction: "First Order, Resistance",
     class: "Shuttle, X-Wing",
     type: "Shuttle, Fighter"
   },

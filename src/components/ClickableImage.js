@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     maxWidth: "100%"
   },
   smallImage: {
-    maxHeight: 128
+    maxHeight: 100
   },
   largeImage: {
     maxHeight: "85vh"
