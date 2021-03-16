@@ -10,12 +10,6 @@ import {
   Divider,
   IconButton
 } from "@material-ui/core";
-// import CssBaseline from "@material-ui/core/CssBaseline";
-// import AppBar from "@material-ui/core/AppBar";
-// import Toolbar from "@material-ui/core/Toolbar";
-// import Typography from "@material-ui/core/Typography";
-// import Divider from "@material-ui/core/Divider";
-// import IconButton from "@material-ui/core/IconButton";
 
 import CalendarToday from "@material-ui/icons/CalendarToday";
 import Flight from "@material-ui/icons/Flight";
@@ -23,7 +17,7 @@ import Category from "@material-ui/icons/Category";
 import Menu from "@material-ui/icons/Menu";
 import ChevronLeft from "@material-ui/icons/ChevronLeft";
 import DrawerList from "./DrawerList.js";
-// import Searchbar from "./Searchbar.js";
+// import Searchbar from "../UnusedComponents/Searchbar.js";
 import AutoCompleteSearchbar from "./AutoCompleteSearchbar.js";
 import GridItemsContainer from "./GridItemsContainer.js";
 
@@ -154,7 +148,7 @@ export default function ResponsiveDrawer(props) {
   });
 
   //Makes a resizeable drawer with 3 DrawerList.js dropdown menus to filter from. The drawer is open by default, but closeable.
-  //The
+  //The DataGrid in on line 209, inside 2 divs that let it resize and render below the AppBar.
   return (
     <div className={classes.root}>
       <CssBaseline />

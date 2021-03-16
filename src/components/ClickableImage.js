@@ -11,11 +11,10 @@ const useStyles = makeStyles({
   },
   img: {
     margin: "auto",
-    display: "block",
     maxWidth: "100%"
   },
   smallImage: {
-    maxHeight: 100
+    maxHeight: 90
   },
   largeImage: {
     maxHeight: "85vh"

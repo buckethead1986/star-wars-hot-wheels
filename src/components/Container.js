@@ -32,8 +32,8 @@ const initialState = {
     "First Order": false,
     Unaffiliated: false
   },
-  filterArray: [],
-  searchbarValue: ""
+  searchbarValue: "",
+  filterArray: []
 };
 
 const filterFunctions = {
