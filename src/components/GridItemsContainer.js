@@ -9,35 +9,27 @@ import { starWarsShips } from "./StarWarsShips.js";
 
 //tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
 const searchbarRegex = string => {
-  const atat = /^at[^st]?at?/gi; //matches misspellings of AT-AT.
-  // ^at: Any word starting with 'at'
+  const atat = /at[^st]?at?/i; //matches misspellings of AT-AT.
+  // at: Any word containing 'at'
   //[^st]: zero to one symbol that isn't 's' or 't' ('attack' failed, and 'at-st' is a separate regex)
   //a: a
   //t?: zero to one 't'
-  //'g' is global, 'i' is case insensitive
-  const atst = /^at[^a]?st/gi; //Same for AT-ST
-  const anyWing = /^[xyabu].?w/gi; // x|y|a|b|u-wing
-
+  //'i' is case insensitive
+  const atst = /at[^a]?st/i; //Same for AT-ST
+  const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
   if (atat.test(string)) {
     return "at-a"; //not at-at, so 'AT-ACT' matches. Trust me, it's an AT-AT. Working on how to match Heavy Assault Walker as well
   } else if (atst.test(string)) {
     return "at-st";
   } else if (anyWing.test(string)) {
-    return string.substring(0, 1) + "-wing";
+    return string.match(anyWing)[1] + "-wing";
   } else {
     return string;
   }
 };
 
 export default function GridItemsContainer(props) {
-  const [helpText, toggleHelpText] = useToggle();
-
-  function useToggle(initialValue = true) {
-    // Returns the tuple [state, dispatch]
-    // Normally with useReducer you pass a value to dispatch to indicate what action to
-    // take on the state, but in this case there's only one action.
-    return useReducer(state => !state, initialValue);
-  }
+  const [helpText, toggleHelpText] = useReducer(state => !state, true);
 
   //Filters ships based on searchbarValue. Returns an array of exact matches, or an array of partial matches if there are no exact matches.
   const searchbarMatches = () => {

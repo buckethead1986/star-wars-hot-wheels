@@ -53,8 +53,8 @@ const filterFunctions = {
     Shuttle: ship => ship.type.indexOf("Shuttle") !== -1,
     "X-Wing": ship => ship.class.indexOf("X-Wing") !== -1,
     "TIE Fighter": ship => ship.class.indexOf("TIE") !== -1,
-    Concept: ship => ship.special.indexOf("Concept") !== -1,
-    Commemorative: ship => ship.special.indexOf("Commemorative") !== -1
+    Concept: ship => ship.extra.indexOf("Concept") !== -1,
+    Commemorative: ship => ship.extra.indexOf("Commemorative") !== -1
   },
   faction: {
     Rebel: ship => ship.faction.indexOf("Rebel") !== -1,

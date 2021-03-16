@@ -2442,7 +2442,8 @@ export const starWarsShips = [
     model: "FYT82",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 1 of 9 from Episode I: The Phantom Menace. Includes Build a Death Star Bonus Piece.",
     faction: "Republic",
     class: "",
     type: "Fighter"
@@ -2459,7 +2460,8 @@ export const starWarsShips = [
     model: "FYT83",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 2 of 9 from Episode II: Attack of the Clones. Includes Build a Death Star Bonus Piece.",
     faction: "Republic",
     class: "",
     type: "Fighter"
@@ -2476,7 +2478,8 @@ export const starWarsShips = [
     model: "FYT84",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 3 of 9 from Episode III: Revenge of the Sith. Includes Build a Death Star Bonus Piece.",
     faction: "Republic",
     class: "Eta-2 Actis",
     type: "Fighter"
@@ -2493,7 +2496,8 @@ export const starWarsShips = [
     model: "FYT85",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 4 of 9 from Episode IV: A New Hope. Includes Build a Death Star Bonus Piece.",
     faction: "Imperial",
     class: "TIE",
     type: "Fighter"
@@ -2509,7 +2513,8 @@ export const starWarsShips = [
     model: "FYT86",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 5 of 9 from Episode V: The Empire Strikes Back. Includes Build a Death Star Bonus Piece.",
     faction: "Unaffiliated",
     class: "Firespray",
     type: "Fighter"
@@ -2519,14 +2524,15 @@ export const starWarsShips = [
     name: "Speeder Bike",
     year: 2019,
     src:
-      "https://images-na.ssl-images-amazon.com/images/I/61HbXObh1GL._AC_SL1274_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71ylIH8KI1L._AC_SL1500_.jpg",
     altsrc: "https://m.media-amazon.com/images/I/71ylIH8KI1L._AC_SL1500_.jpg",
     packsrc: "",
     backsrc: "",
     model: "FYT87",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 6 of 9 from Episode VI: Return of the Jedi. Includes Build a Death Star Bonus Piece.",
     faction: "Rebel",
     class: "",
     type: "Speeder"
@@ -2542,7 +2548,8 @@ export const starWarsShips = [
     model: "FYT88",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 7 of 9 from Episode VII: The Force Awakens. Includes Build a Death Star Bonus Piece.",
     faction: "Resistance",
     class: "X-Wing",
     type: "Fighter"
@@ -2559,7 +2566,8 @@ export const starWarsShips = [
     model: "FYT89",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 8 of 9 from Episode VIII: The Last Jedi. Includes Build a Death Star Bonus Piece.",
     faction: "First Order",
     class: "TIE",
     type: "Fighter"
@@ -2576,7 +2584,8 @@ export const starWarsShips = [
     model: "FYT90",
     assortment: "",
     packSize: 1,
-    extra: "Commemorative",
+    extra:
+      "Commemorative series 9 of 9 from Episode IX: The Rise of Skywalker. Includes Build a Death Star Bonus Piece.",
     faction: "Rebel",
     class: "YT-1300",
     type: "Fighter"
@@ -2592,9 +2601,10 @@ export const starWarsShips = [
     model: "",
     assortment: "",
     packSize: 9,
-    extra: "Commemorative",
+    extra:
+      "Combine Death Star Bonus Pieces from Commemorative series ships 1-9",
     faction: "Imperial",
     class: "",
-    type: "Capital Ship"
+    type: ""
   }
 ];

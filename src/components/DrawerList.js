@@ -5,10 +5,10 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Collapse from "@material-ui/core/Collapse";
+import Checkbox from "@material-ui/core/Checkbox";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
-import Checkbox from "@material-ui/core/Checkbox";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import ArrowRight from "@material-ui/icons/ArrowRight";
 
 const useStyles = makeStyles(theme => ({
   nested: {
@@ -54,7 +54,7 @@ export default function DrawerList(props) {
             className={classes.nested}
           >
             <ListItemIcon>
-              <ArrowRightIcon fontSize="large" />
+              <ArrowRight fontSize="large" />
             </ListItemIcon>
             <ListItemText primary={item} />
             <Checkbox

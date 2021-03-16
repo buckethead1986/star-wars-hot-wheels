@@ -24,10 +24,10 @@ export default function StarWarsDataGrid(props) {
   const textColumns = [
     ["year", "Year", 0.3],
     ["model", "Model", 0.3],
-    ["faction", "Faction", 0.4],
-    ["class", "Class", 0.4],
-    ["type", "Type", 0.4],
-    ["extra", "Extra", 0.5]
+    ["faction", "Faction", 0.3],
+    ["class", "Class", 0.3],
+    ["type", "Type", 0.3],
+    ["extra", "Extra", 0.6]
   ].map(column => {
     return {
       field: column[0],
@@ -62,7 +62,7 @@ export default function StarWarsDataGrid(props) {
     {
       field: "name",
       headerName: "Name",
-      flex: 0.8,
+      flex: 0.7,
       renderCell: params => <Typography>{params.value}</Typography> //<Typography> has own styling and renders larger
     }
   ].concat(textColumns, imageColumns);
