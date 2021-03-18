@@ -10,7 +10,6 @@ const useStyles = makeStyles(theme => ({
     "& div.MuiDataGrid-cell": {
       whiteSpace: "normal"
     },
-    //padding for image cells is less than for text cells
     "& .less-padding-for-image-cells": {
       padding: "0 8px",
       justifyContent: "center"
