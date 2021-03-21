@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import Drawer from "./Drawer.js";
 
 //contains boolean toggles for all filter options, separated by type.
-//filterArray is modified when a filter selection is toggled on, to contain the corresponding function from filterFunctions below.
+//filterArray is modified when a filter selection is toggled on, to contain the corresponding functions from filterFunctions below.
 //searchbarValue is the searchbar value, and is reset to "" when a filter is toggled on or off (So whatever was last used, a filter toggle or searchbar input, is used to sort the data)
 const initialState = {
   year: {
@@ -104,6 +104,7 @@ const filterReducer = (state, action) => {
 export default function Container() {
   const [state, dispatch] = useReducer(filterReducer, initialState);
 
+  //Would it be better to pass these reducer calls down as props, and call dispatch straight from DrawerList.js?
   //toggles a filter selection on or off, and updates filterArray
   const handleFilterSelection = (category, name) => {
     dispatch({

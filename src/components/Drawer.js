@@ -87,14 +87,15 @@ const useStyles = makeStyles(theme => ({
 export default function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = useReducer(state => !state, true);
-
-  // function useToggle(initialValue = true) {
-  //   // Returns the tuple [state, dispatch]
-  //   // Normally with useReducer you pass a value to dispatch to indicate what action to
-  //   // take on the state, but in this case there's only one action.
-  //   return useReducer(state => !state, initialValue);
-  // }
+  const [open, dispatch] = useReducer(state => !state, true);
+  // Normally with useReducer you pass a value to dispatch to indicate what action to
+  // take on the state, but in this case there's only one action.
+  // e.g., useReducer(reducer, true),
+  //fucntion reducer(state, action) {
+  //  switch (action.type) {
+  //     case 'TOGGLE_OPEN': return !state
+  //     }
+  //  }, dispatch({type: "TOGGLE_OPEN"}), and function reducer
 
   //creates expandable lists of filter options.
   const createDrawerLists = [
@@ -161,7 +162,7 @@ export default function ResponsiveDrawer(props) {
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={setOpen}
+            onClick={dispatch}
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
@@ -182,7 +183,7 @@ export default function ResponsiveDrawer(props) {
         }}
       >
         <div className={classes.drawerHeader}>
-          <IconButton onClick={setOpen}>
+          <IconButton onClick={dispatch}>
             <ChevronLeft />
           </IconButton>
         </div>
