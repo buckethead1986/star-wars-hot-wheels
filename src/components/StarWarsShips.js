@@ -2220,7 +2220,7 @@ export const starWarsShips = [
   },
   {
     id: 119,
-    name: "Y-Wing Starfighter Gold Leader",
+    name: "Resistance Y-Wing Fighter",
     year: 2019,
     src:
       "https://i5.walmartimages.com/asr/4563a5f6-f077-48af-b03c-c3d4bade1f61_1.c4992d957070263669f8ea7e8f2c771f.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
@@ -2233,13 +2233,13 @@ export const starWarsShips = [
     assortment: "FYT65",
     packSize: 1,
     extra: "",
-    faction: "Rebel",
+    faction: "Resistance",
     class: "Y-Wing",
     type: "Fighter"
   },
   {
     id: 120,
-    name: "Y-Wing Starfighter Gold Leader",
+    name: "Resistance Y-Wing Fighter",
     year: 2019,
     src:
       "https://i5.walmartimages.com/asr/4563a5f6-f077-48af-b03c-c3d4bade1f61_1.c4992d957070263669f8ea7e8f2c771f.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
@@ -2252,7 +2252,7 @@ export const starWarsShips = [
     assortment: "FYT65",
     packSize: 1,
     extra: "White Card Variant",
-    faction: "Rebel",
+    faction: "Resistance",
     class: "Y-Wing",
     type: "Fighter"
   },

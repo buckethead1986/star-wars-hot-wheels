@@ -18,7 +18,7 @@ const searchbarRegex = string => {
   const atst = /at[^a]?st/i; //Same for AT-ST
   const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
   if (atat.test(string)) {
-    return "at-a"; //not at-at, so 'AT-ACT' matches. Trust me, it's an AT-AT. Working on how to match Heavy Assault Walker as well
+    return "at-at"; //not at-at, so 'AT-ACT' matches. Trust me, it's an AT-AT. Working on how to match Heavy Assault Walker as well
   } else if (atst.test(string)) {
     return "at-st";
   } else if (anyWing.test(string)) {
@@ -30,24 +30,86 @@ const searchbarRegex = string => {
 
 export default function GridItemsContainer(props) {
   const [helpText, toggleHelpText] = useReducer(state => !state, true);
+  // Normally with useReducer you pass a value to dispatch to indicate what action to
+  // take on the state, but in this case there's only one action.
+  // e.g. const [open, toggleHelpText] = useReducer(toggleReducer, true).
+  //'toggleReducer' would only ever return !state, because there aren't multiple actions to select from
 
   //Filters ships based on searchbarValue. Returns an array of exact matches, or an array of partial matches if there are no exact matches.
   const searchbarMatches = () => {
-    const exactMatch = [];
-    const partialMatch = [];
-    starWarsShips.forEach(item => {
-      if (item.name === props.searchbarValue) {
-        exactMatch.push(item);
-      }
-      if (
-        item.name
-          .toLowerCase()
-          .includes(searchbarRegex(props.searchbarValue).toLowerCase()) ||
-        item.model.toLowerCase().includes(props.searchbarValue.toLowerCase())
-      ) {
-        partialMatch.push(item);
-      }
+    let exactMatch = [];
+    let partialMatch = [];
+    const atat = /at[^st]?at?/i; //matches misspellings of AT-AT. 'at', 0-1 symbols besides s or t ('Attack' failed, and AT-ST is it's own regex), a, and 0-1 t's.
+    const atst = /at[^a]?st/i; //Same for AT-ST
+    const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
+    const atatCheck = atat.test(props.searchbarValue);
+    const atstCheck = atst.test(props.searchbarValue);
+    const anyWingCheck = anyWing.test(props.searchbarValue);
+
+    // Checks for eact name matches first
+    exactMatch = starWarsShips.filter(item => {
+      return item.name === props.searchbarValue;
     });
+
+    // If no exact matches, checks and filters for AT_AT's, AT-ST's, X|Y|A|B|U-Wing's, and defaults with any name or model number matches.
+    if (exactMatch.length === 0) {
+      if (atatCheck) {
+        partialMatch = starWarsShips.filter(item => {
+          return (
+            item.name.includes("AT-AT") ||
+            item.name.includes("AT-ACT") ||
+            item.name.includes("Heavy Assault Walker")
+          );
+        });
+      } else if (atstCheck) {
+        partialMatch = starWarsShips.filter(item => {
+          return item.name.includes("AT-ST");
+        });
+      } else if (anyWingCheck) {
+        let wingName =
+          props.searchbarValue.match(anyWing)[1].toLowerCase() + "-wing";
+        partialMatch = starWarsShips.filter(item => {
+          return item.name.toLowerCase().includes(wingName);
+        });
+      } else {
+        partialMatch = starWarsShips.filter(item => {
+          return (
+            item.name
+              .toLowerCase()
+              .includes(props.searchbarValue.toLowerCase()) ||
+            item.model
+              .toLowerCase()
+              .includes(props.searchbarValue.toLowerCase())
+          );
+        });
+      }
+    }
+
+    //less selective version of searchbarMatches, updated to above version.
+    // const searchbarMatches = () => {
+    //   const exactMatch = [];
+    //   const partialMatch = [];
+    //   starWarsShips.forEach(item => {
+    //     if (item.name === props.searchbarValue) {
+    //       exactMatch.push(item);
+    //     }
+    //     if (
+    //       item.name
+    //         .toLowerCase()
+    //         .includes(searchbarRegex(props.searchbarValue).toLowerCase()) ||
+    //       item.model.toLowerCase().includes(props.searchbarValue.toLowerCase())
+    //     ) {
+    //       partialMatch.push(item);
+    //     }
+    //   });
+    //   if (exactMatch.length > 0) {
+    //     return exactMatch;
+    //   } else {
+    //     return partialMatch;
+    //   }
+    // };
+
+    // exactMatch and partialMatch could be the same variable, but I think it increases readbility/understanding to separate them.
     if (exactMatch.length > 0) {
       return exactMatch;
     } else {

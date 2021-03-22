@@ -104,7 +104,6 @@ const filterReducer = (state, action) => {
 export default function Container() {
   const [state, dispatch] = useReducer(filterReducer, initialState);
 
-  //Would it be better to pass these reducer calls down as props, and call dispatch straight from DrawerList.js?
   //toggles a filter selection on or off, and updates filterArray
   const handleFilterSelection = (category, name) => {
     dispatch({

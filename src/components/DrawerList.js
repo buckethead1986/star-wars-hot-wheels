@@ -38,7 +38,6 @@ export default function DrawerList(props) {
     }
 
     setChecked(newChecked);
-    // props.handleShipFilter(item, props.name); //useState
     props.handleFilterSelection(props.name, item); //useReducer
   };
 
