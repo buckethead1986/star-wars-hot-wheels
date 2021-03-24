@@ -16,7 +16,6 @@ import Category from "@material-ui/icons/Category";
 import Menu from "@material-ui/icons/Menu";
 import ChevronLeft from "@material-ui/icons/ChevronLeft";
 import DrawerList from "./DrawerList.js";
-// import Searchbar from "../UnusedComponents/Searchbar.js";
 import AutoCompleteSearchbar from "./AutoCompleteSearchbar.js";
 import GridItemsContainer from "./GridItemsContainer.js";
 

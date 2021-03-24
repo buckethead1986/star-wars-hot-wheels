@@ -7,27 +7,6 @@ import Link from "@material-ui/core/Link";
 import StarWarsDataGrid from "./StarWarsDataGrid.js";
 import { starWarsShips } from "./StarWarsShips.js";
 
-//tests search input against regex for common mispellings of X-Wing, Y-Wing, AT-AT, etc.
-const searchbarRegex = string => {
-  const atat = /at[^st]?at?/i; //matches misspellings of AT-AT.
-  // at: Any word containing 'at'
-  //[^st]: zero to one symbol that isn't 's' or 't' ('attack' failed, and 'at-st' is a separate regex)
-  //a: a
-  //t?: zero to one 't'
-  //'i' is case insensitive
-  const atst = /at[^a]?st/i; //Same for AT-ST
-  const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
-  if (atat.test(string)) {
-    return "at-at"; //not at-at, so 'AT-ACT' matches. Trust me, it's an AT-AT. Working on how to match Heavy Assault Walker as well
-  } else if (atst.test(string)) {
-    return "at-st";
-  } else if (anyWing.test(string)) {
-    return string.match(anyWing)[1] + "-wing";
-  } else {
-    return string;
-  }
-};
-
 export default function GridItemsContainer(props) {
   const [helpText, toggleHelpText] = useReducer(state => !state, true);
   // Normally with useReducer you pass a value to dispatch to indicate what action to
@@ -42,9 +21,9 @@ export default function GridItemsContainer(props) {
     const atat = /at[^st]?at?/i; //matches misspellings of AT-AT. 'at', 0-1 symbols besides s or t ('Attack' failed, and AT-ST is it's own regex), a, and 0-1 t's.
     const atst = /at[^a]?st/i; //Same for AT-ST
     const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
-    const atatCheck = atat.test(props.searchbarValue);
-    const atstCheck = atst.test(props.searchbarValue);
-    const anyWingCheck = anyWing.test(props.searchbarValue);
+    // const atatCheck = atat.test(props.searchbarValue);
+    // const atstCheck = atst.test(props.searchbarValue);
+    // const anyWingCheck = anyWing.test(props.searchbarValue);
 
     // Checks for eact name matches first
     exactMatch = starWarsShips.filter(item => {
@@ -53,7 +32,7 @@ export default function GridItemsContainer(props) {
 
     // If no exact matches, checks and filters for AT_AT's, AT-ST's, X|Y|A|B|U-Wing's, and defaults with any name or model number matches.
     if (exactMatch.length === 0) {
-      if (atatCheck) {
+      if (atat.test(props.searchbarValue)) {
         partialMatch = starWarsShips.filter(item => {
           return (
             item.name.includes("AT-AT") ||
@@ -61,11 +40,11 @@ export default function GridItemsContainer(props) {
             item.name.includes("Heavy Assault Walker")
           );
         });
-      } else if (atstCheck) {
+      } else if (atst.test(props.searchbarValue)) {
         partialMatch = starWarsShips.filter(item => {
           return item.name.includes("AT-ST");
         });
-      } else if (anyWingCheck) {
+      } else if (anyWing.test(props.searchbarValue)) {
         let wingName =
           props.searchbarValue.match(anyWing)[1].toLowerCase() + "-wing";
         partialMatch = starWarsShips.filter(item => {
@@ -84,30 +63,6 @@ export default function GridItemsContainer(props) {
         });
       }
     }
-
-    //less selective version of searchbarMatches, updated to above version.
-    // const searchbarMatches = () => {
-    //   const exactMatch = [];
-    //   const partialMatch = [];
-    //   starWarsShips.forEach(item => {
-    //     if (item.name === props.searchbarValue) {
-    //       exactMatch.push(item);
-    //     }
-    //     if (
-    //       item.name
-    //         .toLowerCase()
-    //         .includes(searchbarRegex(props.searchbarValue).toLowerCase()) ||
-    //       item.model.toLowerCase().includes(props.searchbarValue.toLowerCase())
-    //     ) {
-    //       partialMatch.push(item);
-    //     }
-    //   });
-    //   if (exactMatch.length > 0) {
-    //     return exactMatch;
-    //   } else {
-    //     return partialMatch;
-    //   }
-    // };
 
     // exactMatch and partialMatch could be the same variable, but I think it increases readbility/understanding to separate them.
     if (exactMatch.length > 0) {
