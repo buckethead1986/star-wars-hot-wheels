@@ -8,6 +8,7 @@ import StarWarsDataGrid from "./StarWarsDataGrid.js";
 import { starWarsShips } from "./StarWarsShips.js";
 
 export default function GridItemsContainer(props) {
+  const searchbarValue = props.searchbarValue;
   const [helpText, toggleHelpText] = useReducer(state => !state, true);
   // Normally with useReducer you pass a value to dispatch to indicate what action to
   // take on the state, but in this case there's only one action.
@@ -16,63 +17,100 @@ export default function GridItemsContainer(props) {
 
   //Filters ships based on searchbarValue. Returns an array of exact matches, or an array of partial matches if there are no exact matches.
   const searchbarMatches = () => {
-    let exactMatch = [];
-    let partialMatch = [];
+    let matches = [];
     const atat = /at[^st]?at?/i; //matches misspellings of AT-AT. 'at', 0-1 symbols besides s or t ('Attack' failed, and AT-ST is it's own regex), a, and 0-1 t's.
     const atst = /at[^a]?st/i; //Same for AT-ST
     const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
-    // const atatCheck = atat.test(props.searchbarValue);
-    // const atstCheck = atst.test(props.searchbarValue);
-    // const anyWingCheck = anyWing.test(props.searchbarValue);
+    const atatCheck = atat.test(searchbarValue);
+    const atstCheck = atst.test(searchbarValue);
+    const anyWingCheck = anyWing.test(searchbarValue);
 
-    // Checks for eact name matches first
-    exactMatch = starWarsShips.filter(item => {
-      return item.name === props.searchbarValue;
+    // Checks for eact name matches first (For selections from the searchBar suggestions)
+    matches = starWarsShips.filter(item => {
+      return item.name === searchbarValue;
     });
 
     // If no exact matches, checks and filters for AT_AT's, AT-ST's, X|Y|A|B|U-Wing's, and defaults with any name or model number matches.
-    if (exactMatch.length === 0) {
-      if (atat.test(props.searchbarValue)) {
-        partialMatch = starWarsShips.filter(item => {
+    if (matches.length === 0) {
+      if (atatCheck) {
+        matches = starWarsShips.filter(item => {
           return (
             item.name.includes("AT-AT") ||
             item.name.includes("AT-ACT") ||
-            item.name.includes("Heavy Assault Walker")
+            item.name.includes("Heavy Assault Walker") //It's an AT-AT, but there wasn't a good way to filter for it besides hardcoding it in
           );
         });
-      } else if (atst.test(props.searchbarValue)) {
-        partialMatch = starWarsShips.filter(item => {
+      } else if (atstCheck) {
+        matches = starWarsShips.filter(item => {
           return item.name.includes("AT-ST");
         });
-      } else if (anyWing.test(props.searchbarValue)) {
-        let wingName =
-          props.searchbarValue.match(anyWing)[1].toLowerCase() + "-wing";
-        partialMatch = starWarsShips.filter(item => {
+      } else if (anyWingCheck) {
+        let wingName = searchbarValue.match(anyWing)[1].toLowerCase() + "-wing"; //modifies any misspellings, using captured letter from 'anyWing' regex
+        matches = starWarsShips.filter(item => {
           return item.name.toLowerCase().includes(wingName);
         });
       } else {
-        partialMatch = starWarsShips.filter(item => {
+        matches = starWarsShips.filter(item => {
           return (
-            item.name
-              .toLowerCase()
-              .includes(props.searchbarValue.toLowerCase()) ||
-            item.model
-              .toLowerCase()
-              .includes(props.searchbarValue.toLowerCase())
+            item.name.toLowerCase().includes(searchbarValue.toLowerCase()) ||
+            item.model.toLowerCase().includes(searchbarValue.toLowerCase())
           );
         });
       }
     }
-
-    // exactMatch and partialMatch could be the same variable, but I think it increases readbility/understanding to separate them.
-    if (exactMatch.length > 0) {
-      return exactMatch;
-    } else {
-      return partialMatch;
-    }
+    return matches;
   };
 
-  //Filters ships based on toggled filter parameters from DrawerList.js
+  // //iterates through starWarsShips, pushing exact matches to an array, or combinations of regex tests of searchbarValue and item.name.includes() to a different array.
+  // //This method only has one iteration through starWarsShips (vs twice in the above method, once for exact matches, then once for partial matches), but feels less readable and understandable.
+  // const searchbarMatches2 = () => {
+  //   let exactMatches = [];
+  //   let partialMatches = [];
+  //   const searchbarValue = props.searchbarValue;
+  //   const atat = /at[^st]?at?/i; //matches misspellings of AT-AT. 'at', 0-1 symbols besides s or t ('Attack' failed, and AT-ST is it's own regex), a, and 0-1 t's.
+  //   const atst = /at[^a]?st/i; //Same for AT-ST
+  //   const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
+  //   const atatCheck = atat.test(searchbarValue);
+  //   const atstCheck = atst.test(searchbarValue);
+  //   const anyWingCheck = anyWing.test(searchbarValue);
+  //
+  //   starWarsShips.forEach(item => {
+  //     if (item.name === searchbarValue) {
+  //       exactMatches.push(item);
+  //     } else if (
+  //       atatCheck &&
+  //       (item.name.includes("AT-AT") ||
+  //         item.name.includes("AT-ACT") ||
+  //         item.name.includes("Heavy Assault Walker"))
+  //     ) {
+  //       partialMatches.push(item);
+  //     } else if (atstCheck && item.name.includes("AT-ST")) {
+  //       partialMatches.push(item);
+  //     } else if (
+  //       anyWingCheck &&
+  //       item.name
+  //         .toLowerCase()
+  //         .includes(searchbarValue.match(anyWing)[1].toLowerCase() + "-wing")
+  //     ) {
+  //       partialMatches.push(item);
+  //     } else if (
+  //       item.name.toLowerCase().includes(searchbarValue.toLowerCase()) ||
+  //       item.model.toLowerCase().includes(searchbarValue.toLowerCase())
+  //     ) {
+  //       partialMatches.push(item);
+  //     }
+  //   });
+  //
+  //   if (exactMatches.length > 0) {
+  //     return exactMatches;
+  //   } else {
+  //     return partialMatches;
+  //   }
+  // };
+
+  //Filters ships based on toggled filter options from DrawerList.js, sent up to Container.js,
+  //with the corresponding filterFunctions passed down as filterArray[[Year Filters], [Ship Filters], [Faction Filters]]
+  //Returns results that match any selected Years AND any selected ship types AND any selected Factions.
   const filteredShips = starWarsShips.filter(item => {
     if (props.filterArray.length === 0) {
       return item;
@@ -138,7 +176,7 @@ export default function GridItemsContainer(props) {
 
       <StarWarsDataGrid
         filteredShips={
-          props.searchbarValue.length !== 0 ? searchbarMatches() : filteredShips
+          searchbarValue.length !== 0 ? searchbarMatches() : filteredShips
         }
       />
     </Container>
