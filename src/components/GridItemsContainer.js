@@ -10,10 +10,8 @@ import { starWarsShips } from "./StarWarsShips.js";
 export default function GridItemsContainer(props) {
   const searchbarValue = props.searchbarValue;
   const [helpText, toggleHelpText] = useReducer(state => !state, true);
-  // Normally with useReducer you pass a value to dispatch to indicate what action to
-  // take on the state, but in this case there's only one action.
-  // e.g. const [open, toggleHelpText] = useReducer(toggleReducer, true).
-  //'toggleReducer' would only ever return !state, because there aren't multiple actions to select from
+  //No separate reducer function needed, as there's only one action to take on the state, toggling state to !state
+  //useState would be fine, but I decided to use useReducer throughout this App
 
   //Filters ships based on searchbarValue. Returns an array of exact matches, or an array of partial matches if there are no exact matches.
   const searchbarMatches = () => {
@@ -60,53 +58,6 @@ export default function GridItemsContainer(props) {
     }
     return matches;
   };
-
-  // //iterates through starWarsShips, pushing exact matches to an array, or combinations of regex tests of searchbarValue and item.name.includes() to a different array.
-  // //This method only has one iteration through starWarsShips (vs twice in the above method, once for exact matches, then once for partial matches), but feels less readable and understandable.
-  // const searchbarMatches2 = () => {
-  //   let exactMatches = [];
-  //   let partialMatches = [];
-  //   const searchbarValue = props.searchbarValue;
-  //   const atat = /at[^st]?at?/i; //matches misspellings of AT-AT. 'at', 0-1 symbols besides s or t ('Attack' failed, and AT-ST is it's own regex), a, and 0-1 t's.
-  //   const atst = /at[^a]?st/i; //Same for AT-ST
-  //   const anyWing = /([xyabu]).?w/i; // x|y|a|b|u-wing. Captures x,y,a,b, or u in string.match(anyWing)
-  //   const atatCheck = atat.test(searchbarValue);
-  //   const atstCheck = atst.test(searchbarValue);
-  //   const anyWingCheck = anyWing.test(searchbarValue);
-  //
-  //   starWarsShips.forEach(item => {
-  //     if (item.name === searchbarValue) {
-  //       exactMatches.push(item);
-  //     } else if (
-  //       atatCheck &&
-  //       (item.name.includes("AT-AT") ||
-  //         item.name.includes("AT-ACT") ||
-  //         item.name.includes("Heavy Assault Walker"))
-  //     ) {
-  //       partialMatches.push(item);
-  //     } else if (atstCheck && item.name.includes("AT-ST")) {
-  //       partialMatches.push(item);
-  //     } else if (
-  //       anyWingCheck &&
-  //       item.name
-  //         .toLowerCase()
-  //         .includes(searchbarValue.match(anyWing)[1].toLowerCase() + "-wing")
-  //     ) {
-  //       partialMatches.push(item);
-  //     } else if (
-  //       item.name.toLowerCase().includes(searchbarValue.toLowerCase()) ||
-  //       item.model.toLowerCase().includes(searchbarValue.toLowerCase())
-  //     ) {
-  //       partialMatches.push(item);
-  //     }
-  //   });
-  //
-  //   if (exactMatches.length > 0) {
-  //     return exactMatches;
-  //   } else {
-  //     return partialMatches;
-  //   }
-  // };
 
   //Filters ships based on toggled filter options from DrawerList.js, sent up to Container.js,
   //with the corresponding filterFunctions passed down as filterArray[[Year Filters], [Ship Filters], [Faction Filters]]

@@ -3,7 +3,7 @@ import Drawer from "./Drawer.js";
 
 //contains boolean toggles for all filter options, separated by type.
 //filterArray is modified when a filter selection is toggled on, to contain the corresponding functions from filterFunctions below.
-//searchbarValue is the searchbar value, and is reset to "" when a filter is toggled on or off (So whatever was last used, a filter toggle or searchbar input, is used to sort the data)
+//A length check on searchbarValue determines if the data is filtered by toggled selections, or searchbar input, an is reset to "" on any toggled selection.
 const initialState = {
   year: {
     "2015": false,
@@ -69,6 +69,7 @@ const filterFunctions = {
 const filterReducer = (state, action) => {
   switch (action.type) {
     case "TOGGLE_SELECTION":
+      //toggles boolean values on or off. 'category' is year, type, or faction, and 'name' is '2015', 'Walker', 'Imperial', etc.
       return {
         ...state,
         [action.category]: {
@@ -83,6 +84,8 @@ const filterReducer = (state, action) => {
           action.searchbarValue !== undefined ? action.searchbarValue : ""
       };
     case "CREATE_FILTERS":
+      //sets searchbarValue to "" (results are filtered by toggled DrawerList.js selections or searchbar value based on a length check on searchbarValue)
+      //updates filterArray to include corresponding filterFunctions for toggled state selections.
       return {
         ...state,
         searchbarValue: "",
