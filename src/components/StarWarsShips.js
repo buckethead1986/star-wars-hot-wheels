@@ -1907,9 +1907,11 @@ export const starWarsShips = [
     name: "Kessel Run Millenium Falcon",
     year: 2018,
     src:
+      "https://images-na.ssl-images-amazon.com/images/I/81oq0n6q%2B-L._AC_SL1500_.jpg",
+    altsrc:
       "https://images.mattel.com/scene7//wcsstore/MattelCAS/FJF23_01?storeId=10151&SKU=FJF23",
-    altsrc: "",
-    packsrc: "",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81PdQHo7D0L._AC_SL1500_.jpg",
     backsrc: "",
     model: "FJF23",
     assortment: "",
@@ -1924,8 +1926,10 @@ export const starWarsShips = [
     name: "Han Solo's Speeder",
     year: 2018,
     src: "https://m.media-amazon.com/images/I/81k9v4Q4e2L.jpg",
-    altsrc: "",
-    packsrc: "",
+    altsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81k9v4Q4e2L._AC_SL1500_.jpg",
+    packsrc:
+      "https://images-na.ssl-images-amazon.com/images/I/81oDLL%2BErLL._AC_SL1500_.jpg",
     backsrc: "",
     model: "FJF24",
     assortment: "",
